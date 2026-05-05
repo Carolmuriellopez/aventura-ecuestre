@@ -1,13 +1,14 @@
 <!-- Menú: oculto en mobile, horizontal en desktop -->
 <ul id="menu" class="
-    flex-col items-center justify-center gap-10 
-    fixed top-[100px] left-0 h-[calc(100vh-100px)] w-full z-50
-    bg-black/70 backdrop-blur-sm 
-    px-4 py-4 
+    flex-col items-center justify-center gap-10
+    fixed inset-0 z-40
+    bg-black/70 backdrop-blur-sm
+    
 
     md:flex md:static md:h-auto md:w-auto md:flex-row md:items-center md:justify-end
     md:bg-transparent md:backdrop-blur-none
-    md:px-4 md:py-0">
+    md:px-4 md:py-0"
+    ">
 
     <li>
         <a href="{% url 'home' %}" class="text-(--color-oceano) transition-colors duration-200 hover:text-(--color-cal) hover:font-bold">INICIO</a>
