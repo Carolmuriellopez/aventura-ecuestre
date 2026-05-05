@@ -10,20 +10,34 @@
     flex flex-col justify-bottom
     ">
         <!-- Imagen de fondo -->
-        <img 
+        <img id="hero-image"
             src="{% static 'main/images/aventura_ecuestre_hero_about.jpg' %}" 
             alt="" 
-            class="absolute inset-0 w-full h-full object-cover object-[80%_center]"
+            class="
+                absolute 
+                inset-0 
+                w-full 
+                h-full 
+                object-cover 
+                object-[80%_center]
+                
+                
+                md:object-content
+                md:object-[50% center]"
         >
-        <!-- Capa oscura encima de la imagen -->
-        <div class="absolute inset-0 bg-white/20"></div>
         <!-- Texto sobre la imagen -->
+        <h1 class="
+            font-cormorantgaramond font-bold text-5xl text-(--color-tierra)
+            
+            ">AVENTURA ECUESTRE</h1>
         <div id="content_hero" class="
             z-10 p-10        
         
-            md:w-[60%]
+        
+            md:w-[40%]
+            md:h-full
             md:self-start">
-            <h2 class="
+            <h3 class="
                 font-cormorantgaramond font-bold text-(--color-mar)
                 text-center
                 py-5
@@ -33,7 +47,7 @@
                 md:text-left
                 "> 
                 ---- TARIFA · CÁDIZ · PARQUE NATURAL DEL ESTRECHO</h2>
-            <h1 class="
+            <h2 class="
                 relative 
                 text-center
                 text-(--color-tierra) text-5xl font-cormorantgaramond font-bold
