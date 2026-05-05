@@ -27,7 +27,7 @@ SECRET_KEY = config('SECRET_KEY')
 DEBUG = config('DEBUG', cast=bool)
 
 ALLOWED_HOSTS = [
-    'aventura-ecuestre.onrender.com',
+    'aventuraecuestre.irenemendoza.dev',
     'localhost', '127.0.0.1'
 ]
 
