@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/svg+xml" href="{% static 'main/images/aventura_ecuestre_favicon.svg' %}">
     <title>{% block title %}Aventura Ecuestre - Layout{% endblock %}</title>
+    
     <link rel="stylesheet" href="{% static 'main/css/output.css' %}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 </head>
 <body class="bg-(--color-dark)">
     <!-- Header -->
@@ -17,8 +19,8 @@
     <!-- Main Content -->
     <main class="
         w-full
-        
-         bg-(--color-cal)"
+        {% block main_class %}bg-(--color-cal){% endblock %}
+        overflow-hidden"
          >
         {% block content %}{% endblock %}
     </main>
@@ -28,7 +30,7 @@
         {% include 'main/partials/footer.html' %}
     </footer>
     
-    <script src="{% static 'main/js/main.js' %}" defer></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="{% static 'main/js/main.js' %}"></script>
 </body>
 </html>

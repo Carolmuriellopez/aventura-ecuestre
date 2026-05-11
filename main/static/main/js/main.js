@@ -11,6 +11,8 @@ if (menu && toggle) {
 
     if (isMobile()) {
         menu.style.display = 'none';
+    } else {
+        menu.style.display = 'flex';
     }
 
     toggle.addEventListener('click', () => {
@@ -28,3 +30,31 @@ if (menu && toggle) {
         }
     });
 }
+
+const rutasCarousel = new Swiper('#rutas-carousel', {
+    loop: false,
+    loopedSlides: 5,
+    slidesPerView: 1,
+    spaceBetween: 16,
+    pagination: {
+        el: '#rutas-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        768: { slidesPerView: 2 },
+    }
+})
+
+const packsCarousel = new Swiper('#packs-carousel', {
+    loop: false,
+    loopedSlides: 2,
+    slidesPerView: 1,
+    spaceBetween: 16,
+    pagination: {
+        el: '#packs-pagination',
+        clickable: true,
+    },
+    breakpoints: {
+        768: { slidesPerView: 2 },
+    }
+})

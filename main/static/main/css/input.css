@@ -48,6 +48,14 @@
   font-style: italic;
   font-display: swap;
 }
+
+@font-face {
+  font-family: 'TitanOne';
+  src: url('/static/main/fonts/TitanOne.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 @theme {
   --color-cal: #F8F4EE; /* Fondo base */
   --color-cielo: #4A90C4; /* Color primario */
@@ -63,4 +71,5 @@
 
   --font-cormorantgaramond: 'Cormorant Garamond', Georgia, sans-serif;
   --font-sans: 'Jost', sans-serif;
+  --font-titan: 'TitanOne', 'sans-serif';
 }
