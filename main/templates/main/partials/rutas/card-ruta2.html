@@ -1,0 +1,74 @@
+{% load static %}
+<article class="
+    border border-transparent
+    rounded-xl
+    overflow-hidden
+    bg-white
+    mb-5                  
+    ">
+    <img src="{% static 'main/images/aventura_ecuestre_hero.jpg' %}" 
+        alt="Caballos paseando por la playa" 
+        class="
+        h-80
+        object-cover 
+        w-full
+        mb-4
+        
+        md:h-120">
+    <div class="p-5">
+        <div class="flex justify-between items-center md:mb-10">
+            <h3 class="
+                font-titan font-bold
+                text-(--color-tierra) text-4xl
+                inline-block                
+                ">Iniciación a caballo
+            </h3>
+            <span class="
+                p-2
+                border border-(--color-poniente)
+                bg-(--color-poniente)
+                text-xs text-(--color-cal)
+                inline-block
+                font-titan
+                font-bold
+                    
+                md:text-lg">PRINCIPIANTES
+            </span>
+        </div>
+        <p class="
+            text-(--color-trece) 
+            mb-4
+            
+            md:mb-10
+            md:text-xl">El punto de partida perfecto para quien nunca ha montado o lleva tiempo sin hacerlo. Sin prisas, sin presión — solo tú, tu caballo y el entorno natural de Tarifa.
+        </p>
+        <hr class="border-(--color-trece) mb-4 md:text-xl md:mb-10">
+        <div class="flex items-center justify-between mb-5 md:mb-10">
+            <div class="flex justify-start">
+                <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
+                <span class="font-titan font-bold md:text-xl">1 hora</span>
+            </div>
+            <p class="
+                font-titan
+                font-bold text-xl">
+                60€<span class="text-(--color-trece) text-xs font-titan font-bold md:text-lg">/persona</span>
+            </p>
+        </div>
+        <a href="{% url 'contact' %}" class="
+            font-titan
+            font-bold
+            text-white
+            border
+            bg-(--color-luz)
+            rounded-xl
+            p-5
+            block
+            w-fit
+            mx-auto
+
+            md:text-xl
+            ">RESERVAR EXPERIENCIA
+        </a>
+    </div>
+</article>
+

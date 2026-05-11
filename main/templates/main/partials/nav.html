@@ -1,25 +1,28 @@
 <!-- Menú: oculto en mobile, horizontal en desktop -->
-<ul id="menu" class="
-    flex-col items-center justify-center gap-10
-    fixed inset-0 z-40
-    bg-black/70 backdrop-blur-sm
+
+    <ul id="menu" class="
+        flex-col items-center justify-center gap-10
+        fixed inset-0 z-40
+        bg-black/70 backdrop-blur-sm
     
 
-    md:flex md:static md:h-auto md:w-auto md:flex-row md:items-center md:justify-end
-    md:bg-transparent md:backdrop-blur-none
-    md:px-4 md:py-0"
-    ">
+        md:flex md:static md:h-auto md:w-auto md:flex-row md:items-center md:justify-end
+        md:bg-transparent md:backdrop-blur-none
+        md:px-4 md:py-0"
+    
+        style="display: none">
 
-    <li>
-        <a href="{% url 'home' %}" class="text-(--color-oceano) transition-colors duration-200 hover:text-(--color-cal) hover:font-bold">INICIO</a>
-    </li>
-    <li>
-        <a href="{% url 'about' %}" class="text-(--color-oceano)  transition-colors duration-200 hover:text-(--color-cal) hover:font-bold">QUIÉNES SOMOS</a>
-    </li>
-    <li>
-        <a href="{% url 'activities' %}" class="text-(--color-oceano)  transition-colors duration-200 hover:text-(--color-cal) hover:font-bold">ACTIVIDADES</a>
-    </li>
-    <li>
-        <a href="{% url 'contact' %}"  class="text-(--color-oceano)  transition-colors duration-200 hover:text-(--color-cal) hover:font-bold">CONTACTO</a>
-    </li>
-</ul>
+        <li>
+            <a href="{% url 'home' %}" class="text-(--color-cal) transition-colors duration-200 font-titan font-bold hover:text-white">INICIO</a>
+        </li>
+        <li>
+            <a href="{% url 'about' %}" class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white">QUIÉNES SOMOS</a>
+        </li>
+        <li>
+            <a href="{% url 'activities' %}" class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white">ACTIVIDADES</a>
+        </li>
+        <li>
+            <a href="{% url 'contact' %}"  class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white">CONTACTO</a>
+        </li>
+    </ul>
+

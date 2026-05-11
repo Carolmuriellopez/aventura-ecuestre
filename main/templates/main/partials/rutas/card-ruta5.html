@@ -1,0 +1,64 @@
+{% load static %}
+<article class="
+    border border-transparent
+    rounded-xl
+    overflow-hidden
+    bg-white
+    mb-5                  
+    ">
+    <img src="{% static 'main/images/paseo_playa.png' %}" 
+        alt="Caballos paseando por la playa" 
+        class="
+        h-80
+        object-cover 
+        w-full
+        mb-4
+        
+        md:h-120">
+    <div class="p-5">
+        <div class="flex justify-between items-center md:mb-10">
+            <h3 class="
+                font-titan font-bold
+                text-(--color-tierra) text-4xl
+                inline-block
+                ">Punta Paloma + PICNIC
+            </h3>
+        </div>
+        <p class="
+            text-(--color-trece) 
+            mb-4
+
+            md:text-xl
+            md:mb-10
+            ">Nos adentramos en el interior del bosque de la Duna, paseamos por senderos de costa y hacemos picnic en el pinar.
+        </p>
+        <hr class="border-(--color-trece) mb-4 md:mb-10">
+        <div class="flex items-center justify-between mb-5 md:mb-10">
+            <div class="flex justify-start">
+                <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
+                <span class="font-titan font-bold md:text-xl">4 horas</span>
+            </div>
+            <p class="
+                font-titan
+                font-bold text-xl">
+                200€<span class="text-(--color-trece) text-xs font-tita font-bold md:text-lg">/persona</span>
+            </p>
+        </div>
+        <a href="{% url 'contact' %}" class="
+            font-titan
+            font-bold
+            text-white
+            border
+            bg-(--color-luz)
+            rounded-xl
+            p-5
+            block
+            w-fit
+            mx-auto
+
+            md:text-xl
+            ">RESERVAR EXPERIENCIA
+        </a>
+    </div>
+</article>
+

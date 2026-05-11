@@ -4,614 +4,308 @@
 {% block title %}Aventura Ecuestre - activities{% endblock %}
 
 {% block content %}
-    
     <header class="
         bg-(--color-mar)
         p-5">
         <nav class="
             text-(--color-oceano)
-            mb-4">INICIO  >  ACTIVIDADES
+            mb-4
+            
+            md:text-3xl
+            md:mb-10">
+            INICIO  >  ACTIVIDADES
         </nav>
         <h1 class="
             font-cormorantgaramond
             text-(--color-cal) text-5xl
-            mb-4">
-            Elige tu <strong class="
-                text-normal italic
-                text-(--color-luz) text-4xl
-                ">aventura a caballo</strong>
-        </h1>
-        <p class="
-            text-(--color-oceano)">
-            Hemos diseñado diferentes rutas para adaptarnos a tus deseos y nivel de experiencia. Todos nuestros servicios incluyen guía experta, equipo de seguridad y un caballo asignado específicamente para ti.
-        </p>
+            mb-4
 
-    </header> 
-            
+            md:mb-15
+            md:text-7xl">
+            Elige tu <span class="
+                font-cormorantgaramond font-normal italic
+                text-(--color-luz)
+                ">aventura a caballo
+            </span>
+        </h1>
+        <div class="">
+            <p class="
+                text-(--color-cal)
+                mb-5
+
+                md:text-xl">
+                Hemos diseñado diferentes rutas para adaptarnos a tus deseos y nivel de experiencia. Todos nuestros servicios incluyen guía experta, equipo de seguridad y un caballo asignado específicamente para ti.
+            </p>
+            <div class="
+                font-titan
+                p-5 mb-5
+                bg-(--color-cielo)
+                w-full
+                rounded-tl-3xl
+                rounded-br-3xl
+
+                md:text-xl
+                md:grid
+                md:grid-cols-2
+                gap-5
+                ">
+                <div class="
+                    text-center 
+                    mb-5">
+                    <h4 class="
+                        text-(--color-cal) 
+                        text-sg 
+                        mb-1
+                        ">
+                        Incluido
+                    </h4>
+                    <p class="
+                        text-(--color-cal) 
+                        text-lg     
+                        font-bold
+                        ">
+                        Guía · Casco
+                    </p>
+                </div>
+                <div class="text-center mb-5">
+                    <h4 class="
+                        text-(--color-cal) 
+                        text-sg 
+                        mb-1
+                        ">
+                        Idiomas
+                    </h4>
+                    <p class="
+                        text-(--color-cal) 
+                        text-lg     
+                        font-bold
+                        ">Español · English
+                    </p>
+                </div>
+                <div class="text-center mb-5">
+                    <h4 class="
+                        text-(--color-cal) 
+                        text-sg 
+                        mb-1
+                        ">Grupos</h4>
+                    <p class="
+                        text-(--color-cal) 
+                        text-lg     
+                        font-bold">Máximo 8 personas
+                    </p>
+                </div>
+                <div class="text-center">
+                    <h4 class="
+                        text-(--color-cal) 
+                        text-sg 
+                        mb-1">
+                        Cancelación
+                    </h4>
+                    <p class="
+                        text-(--color-cal) 
+                        text-lg     
+                        font-bold">
+                        Gratuita 24h antes
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
     <section class="
         bg-(--color-cal)
-        p-10">
-        <div class="flex flex-row justify-between gap-2 items-top mb-4">
-            <span class="
-                text-(--color-oceano)
-                text-cormorantgaramond
-                text-6xl">01
-            </span>
-            <h2 class="
-                text-(--color-tierra)
-                text-cormorantgaramond
-                text-xl
-                mb-4">RUTAS ECUESTRES</strong>
-            </h2>
-            <p class="
-                w-[45%]">Desde la emoción de la costa atlántica hasta la serenidad del bosque mediterráneo — tenemos la aventura perfecta esperándote.</p>
+        p-5">
+        <div class="flex flex-col">
+            <div class="flex flex-row gap-2 items-end mb-4">
+                <span class="
+                    text-(--color-oceano)
+                    text-cormorantgaramond
+                    text-6xl
+                    
+                    md:text-7xl">01
+                </span>
+                <h2 class="
+                    text-(--color-tierra)
+                    text-cormorantgaramond
+                    text-xl
+                    mb-4
+                    
+                    md:text-3xl">RUTAS ECUESTRES</h2>
+                </h2>
+            </div>
+
+            <p class="mb-5
+            
+                md:text-xl">
+                Desde la emoción de la costa atlántica hasta la serenidad del bosque mediterráneo — tenemos la aventura perfecta esperándote.
+            </p>
         </div>
-        
-        <div class="
-            mb-4
-            md:grid md:grid-cols-2 md:gap-6">
-            <article class="
-                border border-(--color-oceano)
-                rounded
-                bg-white
-                mb-5                  
-                ">
-                <img src="{% static 'main/images/pony.png' %}" alt="Niña con protecciones de seguridad a lomos de un pony" class="
-                    object-cover w-full
-                    mb-4">
-                <div class="p-5">
-                    <div class="flex justify-between items-center">
-                            <h3 class="
-                                font-cormorantgaramond font-bold
-                                text-(--color-tierra) text-4xl
-                                mb-4
-                                inline-block
-                                ">Paseo en pony
-                            </h3>
-                            <span class="
-                                bg-(--color-marisma)
-                                text-(--color-cal) text-xs
-                                inline-flex items-center
-                                px-2 py-1
-                                ">NIÑOS
-                            </span>
-                    </div>
-                    <p class="
-                            text-(--color-trece) 
-                            mb-4
-                            ">Dirigido a los más pequeños. Un primer encuentro mágico con el caballo por el pinar y la playa de los Lances en un paseo tranquilo, seguro y lleno de ilusión.
-                    </p>
-                    <hr class="border-(--color-oceano) mb-4">
-                    <div class="flex items-center justify-between mb-4">
-                        <div class="flex items-start mb-2">
-                            <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                            <span>30 min</span>
-                        </div>
-                        <p class="
-                            font-cormorantgaramond text-2xl mb-2">
-                            35€<span class="text-(--color-trece) text-xs">/niño</span>
-                        </p>                        
-                    </div>
-                    <a href="{% url 'contact' %}" class="
-                        text-(--color-tierra)
-                        border
-                        bg-(--color-cal)
-                        border-(--color-tierra) hover:bg-(--color-tierra) hover:text-(--color-cal)
-                        p-2
-                        mb-2">RESERVAR EXPERIENCIA
-                    </a>
+        <div class="swiper" id="rutas-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    {% include 'main/partials/rutas/card-ruta1.html' %}
                 </div>
-                <div class="p-1 grid grid-cols-4 bg-(--color-cielo) w-full">
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">INCLUIDO</h4>
-                        <p class="text-(--color-cal)">Guía · Casco</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">IDIOMAS</h4>
-                        <p class="text-(--color-cal)">Español · English</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">GRUPOS</h4>
-                        <p class="text-(--color-cal)">Máximo 8 personas</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">CANCELACIÓN</h4>
-                        <p class="text-(--color-cal)">Gratuita 24h antes</p>
-                    </div>
+                <div class="swiper-slide">
+                    {% include 'main/partials/rutas/card-ruta2.html' %}
                 </div>
-            </article>
-            <article class="
-                border border-(--color-oceano)
-                rounded
-                bg-white
-                h-fit
-                ">
-                <img src="{% static 'main/images/aventura_ecuestre_hero.jpg' %}" alt="Caballos paseando por la playa" class="
-                    object-cover h-150
-                    mb-4">
-                <div class="p-5">
-                    <div class="flex justify-between items-center">
-                        <h3 class="
-                            font-cormorantgaramond font-bold
-                            text-(--color-tierra) text-4xl
-                            mb-4
-                            inline-block
-                            ">Iniciación a caballo
-                        </h3>
-                        <span class="
-                            bg-(--color-cielo)
-                            text-(--color-cal) text-xs
-                            inline-flex items-center
-                            px-2 py-1
-                            ">PRINCIPIANTES
-                        </span>
-                    </div>
-                    <p class="
-                        text-(--color-trece) 
-                        mb-4
-                        ">El punto de partida perfecto para quien nunca ha montado o lleva tiempo sin hacerlo. Sin prisas, sin presión — solo tú, tu caballo y el entorno natural de Tarifa.
-                    </p>
-                    <hr class="border-(--color-oceano) mb-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start mb-2">
-                            <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                            <span>1 hora</span>
-                        </div>
-                        <p class="
-                            font-cormorantgaramond text-2xl mb-4">
-                            60€<span class="text-(--color-trece) text-xs">/persona</span>
-                        </p>
-                    </div>
-                    <a href="{% url 'contact' %}" class="
-                        text-(--color-tierra)
-                        border
-                        bg-(--color-cal)
-                        border-(--color-tierra)
-                        hover:bg-(--color-tierra) hover:text-(--color-cal)
-                        p-2">RESERVAR EXPERIENCIA
-                    </a>
+                <div class="swiper-slide">
+                    {% include 'main/partials/rutas/card-ruta3.html' %}
                 </div>
-                <div class="p-1 grid grid-cols-4 bg-(--color-cielo) w-full">
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">INCLUIDO</h4>
-                        <p class="text-(--color-cal)">Guía · Casco</p>
-                    </div>
-                     <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">IDIOMAS</h4>
-                        <p class="text-(--color-cal)">Español · English</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">GRUPOS</h4>
-                        <p class="text-(--color-cal)">Máximo 8 personas</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">CANCELACIÓN</h4>                            
-                        <p class="text-(--color-cal)">Gratuita 24h antes</p>
-                    </div>
+                <div class="swiper-slide">
+                    {% include 'main/partials/rutas/card-ruta4.html' %}
                 </div>
-            </article>
+                <div class="swiper-slide">
+                    {% include 'main/partials/rutas/card-ruta5.html' %}
+                </div>
+            </div>
+            <div class="swiper-pagination" id="rutas-pagination"></div>
         </div>
 
-        <div class="
-            md:grid md:grid-cols-3 md:gap-6">
-            <article class="
-                border border-(--color-oceano)
-                rounded
-                bg-white
-                mb-5
-                p-0
-                h-fit                  
-                ">
-                <img src="{% static 'main/images/paseo_playa.png' %}" alt="Caballo paseando por la playa" class="
-                    object-cover w-full
-                    mb-4">
-                <div class="p-5">
-                    <div class="flex justify-between items-center">
-                        <h3 class="
-                            font-cormorantgaramond font-bold
-                            text-(--color-tierra) text-4xl
-                             mb-4
-                            inline-block
-                            ">Playa y montaña
-                        </h3>
-                    </div>
-                    <p class="
-                        text-(--color-trece) 
-                        mb-4
-                        ">Desde la arena de la playa hasta los senderos de montaña. Paisaje doble — mar y cumbre — en una sola ruta.
-                    </p>
-                    <hr class="border-(--color-oceano) mb-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start mb-2">
-                            <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                            <span>2 horas</span>
-                        </div>
-                        <p class="
-                            font-cormorantgaramond text-2xl mb-4">
-                            110€<span class="text-(--color-trece) text-xs">/persona</span>
-                        </p>
-                    </div>
-                    <a href="{% url 'contact' %}" class="
-                        text-(--color-tierra)
-                        border
-                        bg-(--color-cal)
-                        border-(--color-tierra)
-                        hover:bg-(--color-tierra) hover:text-(--color-cal)                            
-                        p-2">RESERVAR EXPERIENCIA
-                    </a>
-                </div>
-                <div class="p-1 grid grid-cols-4 bg-(--color-cielo) w-full">
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">INCLUIDO</h4>
-                        <p class="text-(--color-cal)">Guía · Casco</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">IDIOMAS</h4>
-                        <p class="text-(--color-cal)">Español · English</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">GRUPOS</h4>
-                        <p class="text-(--color-cal)">Máximo 8 personas</p>                        
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">CANCELACIÓN</h4>
-                        <p class="text-(--color-cal)">Gratuita 24h antes</p>
-                    </div>
-                </div>
-            </article>
-            <article class="
-                border border-(--color-oceano)
-                rounded
-                bg-white
-                h-fit
-                ">
-                <img src="{% static 'main/images/paseo_playa_2.jpg' %}" alt="Caballo paseando por la playa" class="
-                object-cover h-150
-                mb-4">
-                <div class="p-5">
-                    <div class="flex justify-between items-center">
-                        <h3 class="
-                            font-cormorantgaramond font-bold
-                           text-(--color-tierra) text-4xl
-                            mb-4
-                            inline-block
-                            ">Punta Paloma
-                        </h3>
-                    </div>
-                    <p class="
-                        text-(--color-trece) 
-                        mb-4
-                        ">Cruzamos la playa de Valdevaqueros hasta bordear la preciosa Duna de Punta Paloma por la costa. Mágica y maravillosa.
-                    </p>
-                    <hr class="border-(--color-oceano) mb-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start mb-2">
-                            <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                            <span>3 horas</span>
-                        </div>
-                        <p class="
-                            font-cormorantgaramond text-2xl mb-4">
-                            150€<span class="text-(--color-trece) text-xs">/persona</span>
-                        </p>
-                    </div>
-                    <a href="{% url 'contact' %}" class="                            
-                        text-(--color-tierra)
-                        border
-                        bg-(--color-cal)
-                        border-(--color-tierra)
-                        hover:bg-(--color-tierra) hover:text-(--color-cal)
-                        p-2">RESERVAR EXPERIENCIA
-                    </a>
-                </div>    
-                <div class="p-1 grid grid-cols-4 bg-(--color-cielo) w-full">
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">INCLUIDO</h4>
-                        <p class="text-(--color-cal)">Guía · Casco</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">IDIOMAS</h4>
-                        <p class="text-(--color-cal)">Español · English</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">GRUPOS</h4>
-                        <p class="text-(--color-cal)">Máximo 8 personas</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">CANCELACIÓN</h4>
-                        <p class="text-(--color-cal)">Gratuita 24h antes</p>                        
-                    </div>
-                </div>
-            </article>
-            <article class="
-                border border-(--color-oceano)
-                rounded
-                bg-white
-                h-fit
-                ">
-                <img src="{% static 'main/images/paseo_playa_3.jpg' %}" alt="Caballo paseando por la playa" class="
-                    object-cover h-150
-                    mb-4">
-                <div class="p-5">
-                    <div class="flex justify-between items-center">
-                        <h3 class="
-                            font-cormorantgaramond font-bold
-                            text-(--color-tierra) text-4xl
-                            mb-4
-                            inline-block
-                            ">Punta Paloma
-                        </h3>
-                        <span class="
-                            bg-(--color-estrecho)
-                            text-(--color-cal) text-xs
-                            inline-flex items-center
-                            px-2 py-1">PICNIC
-                        </span>
-                    </div>
-                    <p class="
-                        text-(--color-trece) 
-                        mb-4
-                        ">Nos adentramos en el interior del bosque de la Duna, paseamos por senderos de costa y hacemos picnic en el pinar.
-                    </p>
-                    <hr class="border-(--color-oceano) mb-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start mb-2">
-                            <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                            <span>4 horas</span>
-                        </div>
-                        <p class="
-                            font-cormorantgaramond text-2xl mb-4">
-                            200€<span class="text-(--color-trece) text-xs">/persona</span>
-                        </p>
-                    </div>
-                    <a href="{% url 'contact' %}" class="
-                        text-(--color-tierra)
-                        border
-                        bg-(--color-cal)
-                        border-(--color-tierra)
-                        hover:bg-(--color-tierra) hover:text-(--color-cal)                            
-                        p-2">RESERVAR EXPERIENCIA
-                    </a>
-                </div>
-                <div class="p-1 grid grid-cols-4 bg-(--color-cielo) w-full">
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">INCLUIDO</h4>
-                        <p class="text-(--color-cal)">Guía · Casco</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">IDIOMAS</h4>
-                        <p class="text-(--color-cal)">Español · English</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">GRUPOS</h4>                            
-                        <p class="text-(--color-cal)">Máximo 8 personas</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">CANCELACIÓN</h4>
-                        <p class="text-(--color-cal)">Gratuita 24h antes</p>
-                    </div>
-                </div>
-            </article>
-        </div>
     </section>
-    
+
     <section class="
         bg-(--color-arena)
         p-5">
-        <div class="flex flex-row justify-between gap-2 items-top mb-4">
-            <span class="
-                text-(--color-oceano)
-                text-cormorantgaramond
-                text-6xl">02
-            </span>
-            <h2 class="
-                text-(--color-tierra)
-                text-cormorantgaramond
-                text-xl
-                mb-4">PACKS VACACIONALES</strong>
-            </h2>
-            <p class="
-                w-[45%]">Para jinetes que quieren vivir Tarifa a caballo durante varios días. Elige tu ritmo.</p>
+        <div class="flex flex-col">
+            <div class="flex flex-row gap-2 items-end mb-4">
+                <span class="
+                    text-(--color-oceano)
+                    text-cormorantgaramond
+                    text-6xl
+                    
+                    md:text-7xl">02
+                </span>
+                <h2 class="
+                    text-(--color-tierra)
+                    text-cormorantgaramond
+                    text-xl
+                    mb-4
+                    
+                    md:text-3xl">PACKS VACACIONALES
+                </h2>
+            </div>
+            <p class="mb-5
+            
+                md:text-xl">
+                Para jinetes que quieren vivir Tarifa a caballo durante varios días. Elige tu ritmo.
+            </p>
         </div>
-        
-        <div class="
-            mb-4
-            md:grid md:grid-cols-2 md:gap-6">
-            <article class="
-                border border-(--color-oceano)
-                rounded
-                bg-white
-                mb-5    
-                h-fit">
-                <img src="{% static 'main/images/atardecer.jpg' %}" alt="Jinete y caballo al atardecer" class="
-                object-cover w-full
-                mb-4">
-                <div class="p-5">
-                    <div class="flex justify-between items-center">
-                        <h3 class="
-                            font-cormorantgaramond font-bold
-                            text-(--color-tierra) text-4xl
-                            mb-4
-                            inline-block">Relax Holidays
-                        </h3>    
-                    </div>
-                    <p class="
-                        text-(--color-trece) 
-                        mb-4
-                        ">Pack vacacional para jinetes que buscan conocer el paraíso tarifeño a caballo combinándolo con playas, gastronomía y el entorno natural. El ritmo perfecto para desconectar de verdad.
-                    </p>
-                    <hr class="border-(--color-oceano) mb-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start mb-2">
-                                <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                            <span>10 horas en 5 días</span>
-                        </div>
-                        <p class="
-                            font-cormorantgaramond text-2xl mb-4">                                
-                            600€<span class="text-(--color-trece) text-xs">/pack</span>
-                        </p>
-                    </div>
-                    <a href="{% url 'contact' %}" class="
-                        text-(--color-tierra)
-                        border
-                         bg-(--color-cal)
-                        border-(--color-tierra)
-                        hover:bg-(--color-tierra) hover:text-(--color-cal)
-                        p-2">RESERVAR EXPERIENCIA
-                    </a>
+        <div class="swiper" id="packs-carousel">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    {% include 'main/partials/packs/card-pack1.html' %}
                 </div>
-                <div class="p-1 grid grid-cols-4 bg-(--color-cielo) w-full">
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">INCLUIDO</h4>
-                        <p class="text-(--color-cal)">Guía · Casco</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">IDIOMAS</h4>
-                        <p class="text-(--color-cal)">Español · English</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">GRUPOS</h4>
-                        <p class="text-(--color-cal)">Máximo 8 personas</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">CANCELACIÓN</h4>
-                        <p class="text-(--color-cal)">Gratuita 24h antes</p>
-                      </div>
+                <div class="swiper-slide">
+                    {% include 'main/partials/packs/card-pack2.html' %}
                 </div>
-            </article>
-            <article class="
-                border border-(--color-oceano)
-                rounded
-                bg-white
-                ">
-                <img src="{% static 'main/images/paseo_playa.jpg' %}" alt="Caballos paseando por la playa" class="
-                object-cover h-150
-                mb-4">
-                <div class="p-5">
-                    <div class="flex justify-between items-center">
-                        <h3 class="
-                            font-cormorantgaramond font-bold
-                            text-(--color-tierra) text-4xl
-                            mb-4
-                            inline-block">Weekly Holidays
-                        </h3>
-                        <span class="
-                            bg-(--color-tierra)
-                            text-(--color-cal) text-xs
-                            inline-flex items-center
-                            px-2 py-1
-                            ">AVANZADOS                            
-                        </span>
-                    </div>
-                    <p class="
-                        text-(--color-trece) 
-                        mb-4
-                        ">Para jinetes expertos. Conocerás los rincones más hermosos — las dunas, los senderos del Parque de los Alcornocales y los lugares más salvajes de nuestra naturaleza.
-                    </p>
-                    <hr class="border-(--color-oceano) mb-4">
-                    <div class="flex items-center justify-between">
-                        <div class="flex items-start mb-2">
-                            <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                            <span>3-4 horas · 5 días</span>
-                        </div>
-                        <p class="
-                            font-cormorantgaramond text-2xl mb-4">                                
-                            990€<span class="text-(--color-trece) text-xs">/pack</span>
-                        </p>
-                    </div>
-                    <a href="{% url 'contact' %}" class="
-                        text-(--color-tierra)
-                        border
-                        bg-(--color-cal)
-                        border-(--color-tierra)
-                        hover:bg-(--color-tierra) hover:text-(--color-cal)
-                        p-2">RESERVAR EXPERIENCIA
-                    </a>
-                </div>
-                <div class="p-1 grid grid-cols-4 bg-(--color-cielo) w-full">
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">INCLUIDO</h4>
-                        <p class="text-(--color-cal)">Guía · Casco</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">IDIOMAS</h4>
-                        <p class="text-(--color-cal)">Español · English</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">GRUPOS</h4>
-                        <p class="text-(--color-cal)">Máximo 8 personas</p>
-                    </div>
-                    <div class="text-center p-1">
-                        <h4 class="text-(--color-oceano) text-xs mb-2">CANCELACIÓN</h4>                            
-                        <p class="text-(--color-cal)">Gratuita 24h antes</p>
-                    </div>
-                </div>
-            </article>
+            </div>
+            <div class="swiper-pagination" id="packs-pagination"></div>
         </div>
-    </section>
 
+
+    </section>
     <section class="
         bg-(--color-cal)
         p-5 pb-0">
-        <div class="flex flex-row justify-between gap-2 items-top mb-4">
+        <div class="flex flex-row gap-2 items-end mb-4">
             <span class="
                 text-(--color-oceano)
                 text-cormorantgaramond
-                text-6xl">03
+                text-6xl
+                
+                md:text-7xl">03
             </span>
             <h2 class="
                 text-(--color-tierra)
                 text-cormorantgaramond
                 text-xl
-                mb-4">SERVICIO ESPECIALIZADO</strong>
+                mb-4
+                
+                md:text-3xl">SERVICIO ESPECIALIZADO</strong>
             </h2>
         </div>
         <article class="
-            border border-(--color-oceano)
-            rounded
+            border border-transparent
+            rounded-xl
+            overflow-hidden
             bg-white
-            mb-5      
-            md:grid md:grid-cols-2 md:gap-6
-            ">
-                    
+            mb-5
+            
+            md:flex
+            md:items-center">
             <img src="{% static 'main/images/paddock.jpg' %}" alt="Caballo pastando" class="
+                h-80
                 object-cover w-full
-                mb-4">
-            <div class="p-5 text-center">
+                mb-4
+                
+                md:h-120
+                md:mb-0">
+            <div class="p-5">
                 <h3 class="
-                    font-cormorantgaramond font-bold
-                    text-(--color-tierra) text-xl
-                    mb-4
+                    font-titan font-bold
+                    text-(--color-tierra) text-4xl
+                    mb-5
                     inline-block
+
+                    md:mb-10
                     ">SERVICIO DE PUPILAJE
                 </h3>
                 <p class="
-                    text-(--color-trece) 
+                    text-(--color-trece)
                     mb-4
-                    ">El lugar ideal para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
+                    
+                    md:text-xl">El lugar ideal para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
                 </p>
-                <ul class="mb-5">
+                <ul class="mb-5
+                
+                    md:text-xl">
                     <li class="mb-2">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline-block">Alquiler del espacio individual</p>
+                        <p class="inline">
+                            Alquiler del espacio individual
+                        </p>
                     </li>
                     <li class="mb-2">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline-block">Limpieza diaria y agua continua</p>
+                        <p class="inline">Limpieza diaria y agua continua</p>
                     </li>
                     <li class="mb-2">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline-block">Dos pistas de entrenamiento — circular y de grandes dimensiones</p>
+                        <p class="inline">Dos pistas de entrenamiento — circular y de grandes dimensiones</p>
                     </li>
                     <li class="mb-2">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline-block">Alquiler del espacio individual</p>
+                        <p class="inline">Alquiler del espacio individual</p>
                     </li>
                 </ul>
-                <p class="text-(--color-trece) italic mb-5">Pregúntanos sin compromiso — adaptamos el servicio a tus necesidades.</p>        
-                <a href="" class="px-3 py-1 bg-(--color-oceano) text-(--color-cal) hover:text-black">CONSULTAR DISPONIBILIDAD</a>                
-            </div>                
-        </article>      
+                <p class="
+                    text-(--color-trece) 
+                    italic 
+                    mb-5
+                    
+                    md:text-xl
+                    md:mb-10">
+                    Pregúntanos sin compromiso — adaptamos el servicio a tus necesidades.
+                </p>
+                <a href="{% url 'contact' %}"
+                    class="
+                    font-titan
+                    font-bold
+                    text-white
+                    border
+                    bg-(--color-oceano)
+                    rounded-xl
+                    p-5
+                    block
+                    w-fit
+                    mx-auto
+                    
+                    md:text-xl">
+                    CONSULTAR DISPONIBILIDAD
+                </a>
+            </div>
+        </article>
     </section>
 
-    
+
 {% endblock %}
