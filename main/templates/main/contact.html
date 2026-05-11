@@ -10,115 +10,201 @@
         p-5">
         <nav class="
             text-(--color-oceano)
-            mb-4">INICIO  >  CONTACTO
+            mb-4
+
+            md:text-3xl
+            md:mb-10">INICIO  >  CONTACTO
         </nav>
         <h1 class="
-            font-CormorantGaramond text-(--color-cal) text-4xl mb-2">Escríbenos o <span class="
-            font-CormorantGaramond text-(--color-luz) text-4xl italic">llámanos</span></h1>
-            <p class="text-(--color-oceano) mb-4 md:w-[50%]">Respondemos en menos de 24 horas. Para reservas urgentes, llámanos directamente — solemos estar en el campo pero siempre cogemos el teléfono.</p>
+            font-cormorantgaramond
+            text-(--color-cal) text-5xl
+            mb-4
+
+            md:mb-15
+            md:text-7xl">
+            Escríbenos o <span class="
+                text-(--color-luz) italic">
+                llámanos
+            </span>
+        </h1>
+        <p class="text-(--color-cal) mb-5 md:text-xl">Respondemos en menos de 24 horas. Para reservas urgentes, llámanos directamente — solemos estar en el campo pero siempre cogemos el teléfono.</p>
     </header>
-    <section class="md:grid md:grid-cols-2">
-        
+    <section class="p-5">
         <div class="
             bg-(--color-cal)
-            p-5">
-            <h2 class="text-(--color-oceano) mb-4">FORMULARIO DE CONTACTO</h2>
-            <form method="post" class="grid grid-cols-2 gap-4">
+            p-5
+            rounded-xl
+            bg-white">
+            <h2 class="
+                text-(--color-oceano) text-center 
+                mb-5 
+                
+                md:text-xl 
+                md:mb-10">
+                FORMULARIO DE CONTACTO
+            </h2>
+            <form 
+                method="post" 
+                class="
+                md:grid md:grid-cols-2 
+                md:gap-4">
+                
                 {% csrf_token %}
 
-                <div>
-                    <p class="text-(--color-trece) mb-1">NOMBRE</p>
+                <div class=" mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2
+                        ">
+                        NOMBRE
+                    </p>
                     {{ form.name|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div>
-                    <p class="text-(--color-trece) mb-1">EMAIL</p>
+                <div class="mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2">
+                        EMAIL
+                    </p>
                     {{ form.email|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div>
-                    <p class="text-(--color-trece) mb-1">TELÉFONO</p>
+                <div class="mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2">
+                        TELÉFONO
+                    </p>
                     {{ form.phone|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div>
-                    <p class="text-(--color-trece) mb-1">IDIOMA</p>
+                <div class="mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2">
+                        IDIOMA
+                    </p>
                     {{ form.language|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div class="col-span-2">
-                    <p class="text-(--color-trece) mb-1">ACTIVIDAD DE INTERÉS</p>
+                <div class="col-span-2 mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2">
+                        ACTIVIDAD DE INTERÉS
+                    </p>
                     {{ form.activity|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div>
-                    <p class="text-(--color-trece) mb-1">FECHA PREFERIDA</p>
+                <div class="mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2">
+                        FECHA PREFERIDA
+                    </p>
                     {{ form.date|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div>
-                    <p class="text-(--color-trece) mb-1">NÚMERO DE PERSONAS</p>
+                <div class="mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2">
+                        NÚMERO DE PERSONAS
+                    </p>
                     {{ form.people|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div class="col-span-2 mb-5">
-                    <p class="text-(--color-trece) mb-1">MENSAJE</p>
+                <div class="col-span-2 mb-4">
+                    <p class="
+                        text-(--color-trece) 
+                        mb-2">
+                        MENSAJE
+                    </p>
                     {{ form.message|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
-                <div class="col-span-2">
+                <div class="col-span-2 mb-4">
                     <button 
                         type="submit" 
                         class="
-                            w-full 
-                            text-xl text-(--color-tierra) text-center 
-                            p-2 mb-2 
-                            border border-(--color-tierra) rounded 
-                            hover:bg-(--color-tierra) hover:text-(--color-cal)">
-                                ENVIAR CONSULTA
+                        w-full 
+                        font-titan
+                        font-bold
+                        text-white
+                        border
+                        bg-(--color-mar)
+                        rounded-xl
+                        p-5 mb-4
+
+                        md:text-xl">
+                        ENVIAR CONSULTA
                     </button>
                     <p class="text-xs text-(--color-trece)">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
                 </div>
                 
                 {{ form.name.errors }}
-
-                
             </form>
         </div>
-        <div class="grid grid-rows-3 gap-0">
-            <iframe class="row-span-2 h-full w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.5320038506475!2d-5.649954070916753!3d36.05612592637158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c8bf9de8327f1%3A0xdc4aeb9ce88b7e79!2sAventura%20Ecuestre%20Ride%20on%20de%20Beach!5e0!3m2!1ses!2ses!4v1773571041090!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            <div class="p-5 flex justify-between align-center gap-2">
-                <ul>
-                    <li class="flex mb-2">
-                        <div class="w-2 h-2 rounded-full bg-(--color-cielo) mt-[0.5rem] mr-2"></div>
-                        <div>
-                            <span class="text-(--color-trece)">DIRECCIÓN</span>
-                            <p>Carretera N-340 km 78<br>Frente al Camping Tarifa, 11380 Cádiz</p>
-                        </div>
-                    </li>
-                    <li class="flex mb-2">
-                        <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                        <div>
-                            <span class="text-(--color-trece)">TELÉFONO</span>
-                            <a href="tel:+34626480019" class="block">+34 626 480 019</a>
-                        </div>
-                    </li>
-                    <li class="flex mb-2">
-                        <div class="w-2 h-2 rounded-full bg-(--color-luz) mt-[0.5rem] mr-2"></div>
-                        <div>
-                            <span class="text-(--color-trece)">EMAIL</span>
-                            <a href="mailto:carolenbrasil@gmail.com" class="block">carolenbrasil@gmail.com</a>
-                        </div>
-                    </li>
-                </ul>
-                <div class="
-                    bg-(--color-arena) text-(--color-tierra) 
-                    p-5
-                    text-center
-                    h-fit">
-                    <div class="mb-4">
-                        <p>SALIDAS DIARIAS</p>
-                        <p>9:00 h · 17:00 h · 19:30 h</p>
-                    </div>
-                    <hr class="mb-4">
-                    <div>
-                        <p>RESPUESTA</p>
-                        <p>Menos de 24 horas</p>
-                    </div>
+    </section>
+    
+    
+    <div class=" md:flex md:items-center md: justify-center">
+        <div class="mb-5 mx-5 md:mb-0 md:mx-0 md:p-5 md:w-[70%]">
+            <iframe class="w-full h-120" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.5320038506475!2d-5.649954070916753!3d36.05612592637158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c8bf9de8327f1%3A0xdc4aeb9ce88b7e79!2sAventura%20Ecuestre%20Ride%20on%20de%20Beach!5e0!3m2!1ses!2ses!4v1773571041090!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="">
+            <div class="
+                bg-(--color-arena) text-(--color-tierra) 
+                mx-5 p-5 mb-5
+                rounded-xl
+                text-center
+                h-fit
+                ">
+                <div class="font-titan font-bold mb-4">
+                    <p>SALIDAS DIARIAS</p>
+                    <p>9:00 h · 17:00 h · 19:30 h</p>
+                </div>
+                <hr class="mb-4">
+                <div>
+                    <p>RESPUESTA</p>
+                    <p>Menos de 24 horas</p>
                 </div>
             </div>
+            <ul class="mx-5">
+                <li class="mb-5 text-center">
+                    <div class="flex justify-center">
+                        <div class="
+                            w-2 h-2 
+                            rounded-full 
+                            bg-(--color-cielo) 
+                            mt-[0.5rem] mr-2">
+                        </div>
+                        <span class="text-(--color-trece)">DIRECCIÓN</span>
+                    </div>
+                    <p>Carretera N-340 km 78<br>Frente al Camping Tarifa, 11380 Cádiz</p>  
+                </li>
+                <li class="mb-5 text-center">
+                    <div class="flex justify-center">
+                        <div class="
+                            w-2 h-2 
+                            rounded-full 
+                            bg-(--color-poniente) 
+                            mt-[0.5rem] mr-2">
+                        </div>
+                        <span class="text-(--color-trece) inline-block">TELÉFONO</span>
+                    </div>
+                    <a href="tel:+34626480019" class="block text-center mx-auto">+34 626 480 019</a>
+                </li>
+                <li class="mb-5 text-center">
+                    <div class="flex justify-center">
+                        <div class="
+                            w-2 h-2 
+                            rounded-full 
+                            bg-(--color-luz) 
+                            mt-[0.5rem] mr-2">
+                        </div>
+                        <span class="text-(--color-trece)">EMAIL</span>
+                    </div>
+                    
+                    <div>
+                        
+                        <a href="mailto:carolenbrasil@gmail.com" class="block">carolenbrasil@gmail.com</a>
+                    </div>
+                </li>
+            </ul>          
         </div>
     </section>
     

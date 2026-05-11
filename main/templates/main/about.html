@@ -16,25 +16,33 @@
             md:justify-center"
             
             >
-            <h1 class="
+            <nav class="
                 text-(--color-oceano)
-                text-center
-                mb-4">
+                mb-4
+                
+                md:text-3xl
+                md:mb-10">
                 INICIO  >  QUIÉNES SOMOS
-            </h1>
-            <h2 class="
+            </nav>
+            <h1 class="
                 font-cormorantgaramond
                 text-(--color-cal)
                 text-5xl
-                mb-4">
+                mb-4
+                
+                md:mb-15
+                md:text-7xl">
                 Detrás de cada ruta hay una 
                 <strong class="
                     font-cormorantgaramond font-normal italic
                     text-(--color-luz)">
                     historia real
                 </strong>
-            </h2>
-            <p class="text-(--color-cal)">Aventura Ecuestre no es una empresa de turismo al uso. Es el proyecto de vida de Carolina — una mujer enamorada de los caballos y del entorno privilegiado que comparten.</p>
+            </h1>
+            <p class="
+            text-(--color-cal) 
+            
+            md:text-xl">Aventura Ecuestre no es una empresa de turismo al uso. Es el proyecto de vida de Carolina — una mujer enamorada de los caballos y del entorno privilegiado que comparten.</p>
         </div>
     </section>
     <section class="
@@ -44,7 +52,7 @@
             bg-(--color-cal)
             p-10
 
-            md:w-[40%]
+            md:w-[35%]
             md:flex md:flex-col
             md:justify-center
             "
@@ -52,84 +60,92 @@
             <h3 class="
                 text-(--color-oceano)
                 text-center
-                mb-4">
+                mb-4
+                
+                md:text-xl">
                 LA PERSONA DETRÁS DEL PROYECTO
             </h3>
             <h2 class="
                 font-cormorantgaramond
                 text-(--color-tierra)
                 text-4xl
-                mb-4">
+                mb-4
+                
+                md:text-6xl
+                md:mb-15">
                 Carolina: guía, propietaria y alma de Aventura Ecuestre
             </h2>
             <p class="
                 text-(--color-trece)
-                mb-3">Tarifa llegó a Carolina y ya no la soltó. Desde siempre sintió una conexión especial con los caballos y con los animales en general — una empatía que con los años se convirtió en vocación, oficio y forma de vida.</p>
+                mb-3
+                
+                md:text-xl
+                md:mb-5">Tarifa llegó a Carolina y ya no la soltó. Desde siempre sintió una conexión especial con los caballos y con los animales en general — una empatía que con los años se convirtió en vocación, oficio y forma de vida.</p>
             <p class="
                 text-(--color-trece)
-                mb-3">Trabajó como guía ecuestre en distintos rincones de la zona hasta que llegó la oportunidad que lo cambió todo: tomar las riendas de Aventura Ecuestre y convertirlo en su propio proyecto. Su mayor sueño hecho realidad — una manada a la que cuida con todo su amor y un trabajo que no siente como trabajo.
+                mb-3
+                
+                md:text-xl
+                md:mb-5">Trabajó como guía ecuestre en distintos rincones de la zona hasta que llegó la oportunidad que lo cambió todo: tomar las riendas de Aventura Ecuestre y convertirlo en su propio proyecto. Su mayor sueño hecho realidad — una manada a la que cuida con todo su amor y un trabajo que no siente como trabajo.
             </p>
-            <ul>
-                <li class="flex items-start mb-2">
-                    <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                    <div>
-                        <p>Técnico Deportivo Nivel 1 en Hípica</p>
-                        <p class="
-                        text-(--color-trece)">Titulación oficial — formación en seguridad, didáctica y manejo equino</p>
-                    </div>
-                </li>
-                <li class="flex items-start">
-                    <div class="w-2 h-2 rounded-full bg-(--color-cielo) mt-[0.5rem] mr-2"></div>
-                    <div>
-                        <p>Guía con amplia trayectoria local</p>
-                        <p class="
-                        text-(--color-trece)">Español e inglés · Conoce el Parque Natural del Estrecho como nadie</p>
-                    </div>
-                </li>
-            </ul>
         </div>
+        
         <div class="
             relative
-            
-            md:w-[60%]">
+            mb-5
+            md:w-[65%]">
             <img src="{% static 'main/images/about.jpg' %}" alt="" class="
                 relative
                 
                 md:w-full md:h-full md:object-cover">
             <div class="
-                relative
+                absolute
                 inline-block
-                bottom-[5rem]
-                left-[1rem]
+                bottom-1
+                right-1
                 bg-(--color-mar)
-                p-3
-                rounded">
+                p-5
+                rounded
+        
+                ">
                 <p class="
-                    font-cormorantgaramond font-bold
+                    font-titan font-bold
                     text-(--color-cal) text-2xl
+
+                    md:text-5xl
+                    md:mb-5
                     ">Carol
                 </p>
                 <p class="
-                    text-(--color-oceano) text-xs">
+                    text-(--color-oceano) text-xs
+                    
+                    md:text-base">
                     GUÍA CERTIFICADA  ·  PROPIETARIA
                 </p>
             </div>
         </div>
+        
     </section>
-    <div class="
-        bg-(--color-mar)
-        px-10 py-5">
+    
+    <div class="bg-(--color-mar)
+        rounded-xl
+        m-5 p-5">
         <p class="
-            font-cormorantgaramond italic
-            text-(--color-cal) text-lg
+            font-cormorantgaramond font-italic
+            text-xl
             text-center
-            mb-2">
+            text-(--color-cal)
+            mb-4
+
+            md:text-3xl md:text-center"
+            >
             "Siempre supe que quería dedicarme a esto por completo. Tener mi propia manada, conocer a cada caballo por su nombre y su carácter, y llevar a la gente a descubrir Tarifa desde su lomo — eso es todo lo que necesito."
         </p>
         <p class="
-            text-(--color-oceano)
-            text-xs
-            text-center">CAROLINA  ·  GUÍA Y PROPIETARIA DE AVENTURA ECUESTRE
+            text-sm text-(--color-oceano) text-center
+
+            md:text-base
+            ">CAROLINA  ·  GUÍA Y PROPIETARIA DE AVENTURA ECUESTRE
         </p>
     </div>
     <section class="
@@ -150,14 +166,16 @@
                 mb-2
                 
                 md:text-left
-                md:text-6xl">01</p>
+                md:text-7xl">01</p>
             <h5 class="
                 font-cormorantgaramond font-bold
                 text-2xl
                 text-(--color-tierra)
                 mb-2
-                ">Trato personal</h5>
-            <p>Carol guía cada salida en persona. Conoce a sus caballos y selecciona el más adecuado para cada jinete. Grupos de máximo 8 personas</p>
+                
+                md:mb-5
+                md:text-3xl">Trato personal</h5>
+            <p class="md:text-xl">Carol guía cada salida en persona. Conoce a sus caballos y selecciona el más adecuado para cada jinete. Grupos de máximo 8 personas</p>
         </div>
         <div class="
             p-10
@@ -172,14 +190,16 @@
                 mb-2
                 
                 md:text-left
-                md:text-6xl">02</p>
+                md:text-7xl">02</p>
             <h5 class="
                 font-cormorantgaramond font-bold
                 text-2xl
                 text-(--color-tierra)
                 mb-2
-                ">Doma natural</h5>
-            <p>Interesada en la doma natural, trabaja desde el respeto y el vínculo. Sus caballos viven en semilibertad —  no en boxes. El bienestar animal no es un eslogan, es un día a día. </p>
+                
+                md:mb-5
+                md:text-3xl">Doma natural</h5>
+            <p class="md:text-xl">Interesada en la doma natural, trabaja desde el respeto y el vínculo. Sus caballos viven en semilibertad —  no en boxes. El bienestar animal no es un eslogan, es un día a día. </p>
         </div>
         <div class="
             p-10
@@ -192,20 +212,22 @@
                 mb-2
                 
                 md:text-left
-                md:text-6xl">03</p>
+                md:text-7xl">03</p>
             <h5 class="
                 font-cormorantgaramond font-bold
                 text-2xl
                 text-(--color-tierra)
                 mb-2
-                ">Territorio vivido</h5>
-            <p>Casi toda una vida en Tarifa. Ella no solo conoce las rutas —  conoce la luz de cada hora, el comportamiento del viento y los rincones que no salen en ningún mapa.</p>
+                
+                md:mb-5
+                md:text-3xl">Territorio vivido</h5>
+            <p class="text-xl">Casi toda una vida en Tarifa. Ella no solo conoce las rutas —  conoce la luz de cada hora, el comportamiento del viento y los rincones que no salen en ningún mapa.</p>
         </div>
     </section>
     <section class="
         md:flex md:flex-row-reverse
         ">
-        <img src="{% static 'main/images/caballos.jpg' %}" alt="Caballos" class="md:w-[50%]">
+        <img src="{% static 'main/images/pupilaje.png' %}" alt="Caballos" class="md:w-[50%]">
         <div class="
             p-10
             bg-(--color-arena)
@@ -214,42 +236,69 @@
             <h3 class="
                 text-(--color-estrecho)
                 mb-5
+
+                md:text-xl
                 ">LA MANADA</h3>
             <h2 class="
                 font-cormorantgaramond
                 text-(--color-tierra)
                 text-4xl
-                mb-4">Caballos cuidados con amor, cada uno con su historia</h2>
+                mb-4
+                
+                md:text-6xl
+                md:mb-15">Caballos cuidados con amor, cada uno con su historia</h2>
             <p class="
                 text-(--color-tierra)
-                mb-4">
+                mb-5
+                
+                md:text-xl">
                 Carol conoce a cada uno de sus caballos por su nombre, su historia y sus manías. Cuando llega un jinete, sabe qué caballo va a conectar mejor con él. Porque su manada no es el medio para trabajar — es la razón por la que trabaja.</p>
             <div class="
-                flex-row flex-nowrap gap-4">
+                flex
+                flex-wrap 
+                gap-x-4 
+                gap-y-2
+                ">
                 <p class="
                     p-2
                     border border-(--color-poniente)
-                    bg-(--color-luz)
-                    text-xs text-(--color-trece)
-                    inline-block">PURA RAZA ESPAÑOLA</p>
+                    bg-(--color-poniente)
+                    text-xs text-(--color-cal)
+                    inline-block
+                    text-titan
+                    font-bold
+                    
+                    md:text-lg">PURA RAZA ESPAÑOLA</p>
                 <p class="
                     p-2
                     border border-(--color-poniente)
-                    bg-(--color-luz)
-                    text-xs text-(--color-trece)
-                    inline-block">HISPANO-ÁRABE</p>
+                    bg-(--color-poniente)
+                    text-xs text-(--color-cal)
+                    inline-block
+                    text-titan
+                    font-bold
+                    
+                    md:text-lg">HISPANO-ÁRABE</p>
                 <p class="
                     p-2
                     border border-(--color-poniente)
-                    bg-(--color-luz)
-                    text-xs text-(--color-trece)
-                    inline-block">HISPANO-BRETÓN</p>
+                    bg-(--color-poniente)
+                    text-xs text-(--color-cal)
+                    inline-block
+                    text-titan
+                    font-bold
+                    
+                    md:text-lg">HISPANO-BRETÓN</p>
                 <p class="
                     p-2
                     border border-(--color-poniente)
-                    bg-(--color-luz)
-                    text-xs text-(--color-trece)
-                    inline-block">CRUZADOS</p>
+                    bg-(--color-poniente)
+                    text-xs text-(--color-cal)
+                    inline-block
+                    text-titan
+                    font-bold
+                    
+                    md:text-lg">CRUZADOS</p>
             </div>
         </div>
     </section>
@@ -263,17 +312,26 @@
         <div class="mb-4">
             <h2 class="
                 text-(--color-cal) text-4xl text-center
-                mb-2">Siente la libertad</h2>
+                mb-2
+                
+                md:text-6xl">Siente la libertad</h2>
             <p class="
-                text-(--color-mar) text-s text-center">Reserva tu experiencia y ven a Tarifa</p>
+                text-(--color-cal) 
+                text-lg text-center 
+                mb-5
+                
+                md:text-xl">Reserva tu experiencia y ven a Tarifa</p>
         </div>
         <a href="{% url 'contact' %}" class="
-            p-2
-            text-(--color-tierra) text-center
-            border border-(--color-tierra)
-            rounded
-            hover:bg-(--color-tierra) hover:text-(--color-cal)
-            inline-block
+            font-titan
+            font-bold
+            text-white
+            border
+            bg-(--color-luz)
+            rounded-xl
+            p-5
+
+            md:text-xl
             ">RESERVAR AHORA</a>
     </section>
         

@@ -6,49 +6,68 @@
 {% block content %}
     <section class="
     relative 
-    h-[80vh] w-full
+    w-full
     flex flex-col justify-bottom
     ">
         <!-- Imagen de fondo -->
         <img id="hero-image"
             src="{% static 'main/images/aventura_ecuestre_hero_about.jpg' %}" 
             alt="" 
-            class="
-                absolute 
+            class=" 
                 inset-0 
                 w-full 
                 h-full 
                 object-cover 
                 object-[80%_center]
-                
-                
+                              
                 md:object-content
                 md:object-[50% center]"
         >
+        
         <!-- Texto sobre la imagen -->
         <h1 class="
-            font-cormorantgaramond font-bold text-5xl text-(--color-tierra)
-            
-            ">AVENTURA ECUESTRE</h1>
-        <div id="content_hero" class="
-            z-10 p-10        
-        
-        
-            md:w-[40%]
-            md:h-full
-            md:self-start">
-            <h3 class="
-                font-cormorantgaramond font-bold text-(--color-mar)
-                text-center
-                py-5
-                
+            font-titan font-bold text-3xl/6 
+            inline-block
+            w-[50%]
+            text-(--color-luz)
+            z-10
+            p-5
+            absolute
 
+            md:text-9xl
+            ">AVENTURA ECUESTRE
+        </h1>
+        <h3 class="
+                 text-(--color-tierra)
+                text-center
+                p-5
+                absolute
+                left-0 w-full
+                text-xs
+                top-50
+                inline
+                text-center
+                z-10
+
+                md:text-(--color-cal)
                 md:text-xl
                 md:text-left
+                md:top-80
                 "> 
-                ---- TARIFA · CÁDIZ · PARQUE NATURAL DEL ESTRECHO</h2>
+                TARIFA · CÁDIZ · PARQUE NATURAL DEL ESTRECHO
+        </h3>
+        <div id="content_hero" class="
+            z-10 p-5      
+            bg-white/50
+            
+            md:w-fit
+            md:m-5 
+            md:self-start
+            md:absolute
+            md:bottom-0
+            md:rounded-xl">
+            
             <h2 class="
-                relative 
                 text-center
                 text-(--color-tierra) text-5xl font-cormorantgaramond font-bold
 
@@ -62,7 +81,7 @@
 
                 md:text-left
                 ">Cabalga libre </span><span class="">en la <strong class="text-(--color-arena)">Costa de la Luz</strong></span>
-            </h1>
+            </h2>
             <p class="
                 py-5
                 text-center text-(--color-tierra)
@@ -74,29 +93,32 @@
                 py-5
                 text-center
                 flex
+                flex-col
                 gap-2
 
                 md:text-left
-                md:flex md:items-center md:gap-7
+                md:flex-row md:items-center md:gap-7
                 ">
                 <a href="{% url 'contact' %}" class="
-                    text-(--color-tierra)
+                    font-titan
+                    font-bold
+                    text-white
                     border
-                    bg-(--color-cal)
-                    border-(--color-tierra)
-                    hover:bg-(--color-tierra) hover:text-(--color-cal)
-                    p-2">RESERVAR EXPERIENCIA</a>
+                    bg-(--color-luz)
+                    rounded-xl
+                    p-5">RESERVAR EXPERIENCIA</a>
                 <a href="{% url 'activities' %}" class="
-                    text-(--color-tierra)
+                    font-titan
+                    font-bold
+                    text-white
                     border
-                    bg-(--color-cal)
-                    border-(--color-tierra)
-                    hover:bg-(--color-tierra) hover:text-(--color-cal)
-                    p-2"
+                    bg-(--color-mar)
+                    rounded-xl
+                    p-5"
                     >VER ACTIVIDADES</a>
             </div>
             
-            <ul class="flex justify-center md:justify-start">
+            <ul class="flex justify-center md:justify-center">
                 <li>
                     <a href="https://www.instagram.com/explore/locations/49608182887/aventura-ecuestre-tarifa/"><img src="{% static 'main/images/icons/instagram.svg' %}" alt="instagram" class="h-8 w-auto"></a>
                 </li>    
@@ -108,131 +130,199 @@
             </div>
     </section>
     <section class="
-        grid grid-cols-3
-        gap-0.5
+        mb-10
+        md:grid grid-cols-3
+        md:gap-0.5
         ">
         <div id="cta1" class="
             bg-(--color-cielo)
-            p-5">
-            <p class="text-(--color-cal)
-            text-2xl">+13</p>
+            p-5
+            mb-1
+            ">
+            <p class="
+                text-(--color-cal)
+                text-2xl
+                text-center">+13</p>
             <p class="
             text-(--color-cal) text-xs
-            font-light">AÑOS DE EXPERIENCIA</p>          
+            font-light
+            text-center
+            ">AÑOS DE EXPERIENCIA</p>          
         </div>
         <div id="cta2" class="
             bg-(--color-cielo)
-            p-5">
-            <p class="text-(--color-cal)
-            text-2xl
-            ">Doma natural</p>
+            p-5
+            mb-1">
             <p class="
-            text-(--color-cal) text-xs">BIENESTAR ANIMAL</p>
+                text-(--color-cal)
+                text-2xl
+                text-center">
+                Doma natural</p>
+            <p class="
+                text-(--color-cal) 
+                text-xs
+                text-center">
+                BIENESTAR ANIMAL</p>
                
         </div>
         <div id="cta3" class="
             bg-(--color-cielo)
-            p-5">
-            <p class="text-(--color-cal)
-            md:text-2xl">Todos los niveles</p>
+            p-5
+            mb-1
+            ">
             <p class="
-            text-(--color-cal) text-xs">SIN EXPERIENCIA PREVIA</p>
+                text-(--color-cal)
+                text-2xl
+                text-center">Todos los niveles</p>
+            <p class="
+                text-(--color-cal) 
+                text-xs
+                text-center">
+                SIN EXPERIENCIA PREVIA</p>
         </div>
     </section>
     <section class="
-        p-10
+        p-5
         ">
         <h2 class="
-            text-xs text-(--color-mar)"
+            text-2xl text-(--color-mar)"
             >NUESTRAS RUTAS</h2>
         <h3 class="
-            py-5">Elige tu aventura</h3>
+            pb-5">Elige tu aventura</h3>
         <div class="
             md:grid md:grid-cols-3 md:gap-4">
             <article class="
-                border border-(--color-marisma) rounded-xl
-                mb-2
+                rounded-xl
+                overflow-hidden
+                mb-5
+                bg-white
                 ">
-                <img src="{% static 'main/images/paseo_playa_2.jpg' %}" alt="Caballos paseando por la playa" class="
-                mb-4
-                
-                md:h-100">
-                <div class="p-2">
-                    <h4 class="mb-2">Paseo por la playa</h4>
+                <img src="{% static 'main/images/rutasEcuestres.jpg' %}" alt="Caballos paseando por la playa" class="
+                    h-60
+                    w-full
+                    object-cover
+
+                    md:h-100">
+                <div class="p-5">
+                    <div class="
+                        flex
+                        items-center
+                        justify-between
+                        mb-5">
+                        <h4 class="
+                            text-lg">
+                            Rutas ecuestres
+                        </h4>
+                        <span class="
+                            group
+                            inline-flex items-center gap-1
+                            p-2
+                            border 
+                            text-(--color-poniente) hover:text-(--color-cal)
+                            hover:bg-(--color-poniente)">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="block h-3 w-auto fill-(--color-poniente) group-hover:fill-(--color-cal)" viewBox="0 0 640 640">
+                                <path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"/>
+                            </svg>
+                            <span>MÁS POPULAR</span>
+                        </span>
+                    </div>
+                    
                     <p class="
                         mb-4
                         text-(--color-tierra)
                         ">
-                        Arena, olas y otro continente en el horizonte.<br>La experiencia más demandada.
+                        Diseñadas para todos las edades y niveles.<br>La experiencia más demandada. <a href="" class="">
+                        [Ver más]
+                    </a>
                     </p>
-                    <a href="" class="
+
+                </div>
+                
+            </article>
+            <article class="
+                rounded-xl
+                overflow-hidden
+                mb-5
+                bg-white
+                ">
+                <img src="{% static 'main/images/atardecer.jpg' %}" alt="Caballos paseando por el pinar" class="
+                        h-60
+                        w-full
+                        object-cover
+
+                        md:h-100">
+                <div class="p-5">
+                    <div class="
+                    flex 
+                    items-center 
+                    justify-between
+                    mb-5">
+                        <h4 class="
+                            text-lg">
+                            Packs Vacacionales
+                        </h4>
+                        <span class="
                         p-2
                         inline-block
                         border 
                         text-(--color-poniente) hover:text-(--color-cal)
                         hover:bg-(--color-poniente)
                         ">NATURALEZA
-                    </a>
-                </div>
-                
-            </article>
-            <article class="
-                border border-(--color-marisma) rounded-xl
-                mb-2
-                ">
-                <img src="{% static 'main/images/pinar.jpg' %}" alt="Caballos paseando por el pinar" class="
-                        mb-4
-                        md:h-100">
-                <div class="p-2">
-                    <h4 class="mb-2">Ruta por el pinar</h4>
+                        </span>
+                    </div>
+                    
                     <p class="
                         mb-4
                         text-(--color-tierra)
                         ">
-                        Senderos sombreados por el Parque Natural del Estrecho.
-                    </p>
-                    <a href="" class="
-                        group
-                        inline-flex items-center gap-1
-                        p-2
-                        border 
-                        text-(--color-poniente) hover:text-(--color-cal)
-                        hover:bg-(--color-poniente)">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="block h-3 w-auto fill-(--color-poniente) group-hover:fill-(--color-cal)" viewBox="0 0 640 640">
-                            <path d="M341.5 45.1C337.4 37.1 329.1 32 320.1 32C311.1 32 302.8 37.1 298.7 45.1L225.1 189.3L65.2 214.7C56.3 216.1 48.9 222.4 46.1 231C43.3 239.6 45.6 249 51.9 255.4L166.3 369.9L141.1 529.8C139.7 538.7 143.4 547.7 150.7 553C158 558.3 167.6 559.1 175.7 555L320.1 481.6L464.4 555C472.4 559.1 482.1 558.3 489.4 553C496.7 547.7 500.4 538.8 499 529.8L473.7 369.9L588.1 255.4C594.5 249 596.7 239.6 593.9 231C591.1 222.4 583.8 216.1 574.8 214.7L415 189.3L341.5 45.1z"/>
-                        </svg>
-                        <span>MÁS POPULAR</span>
+                        Senderos sombreados por el Parque Natural del Estrecho. <a href="" class="">
+                        [Ver más]
                     </a>
+                    </p>
                 </div>
                 
             </article>
             <article class="
-                border border-(--color-marisma) rounded-xl
+                rounded-xl
                 overflow-hidden
+                bg-white
                 mb-2 pb-3
                 ">
-                <img src="{% static 'main/images/atardecer.jpg' %}" alt="" class="
-                mb-4
-                object-cover
+                <img src="{% static 'main/images/pupilaje.png' %}" alt="" class="
+                    h-60
+                    w-full
+                    object-cover
 
                 md:h-100">
-                <div class="p-2">
-                    <h4 class="mb-2">Atardecer en libertad</h4>
-                    <p class="
-                        mb-4
-                        text-(--color-tierra)
-                        ">
-                        Los caballos en su hábitat natural al caer el sol.<br>Una experiencia única.
-                    </p>
-                    <a href="" class="
+                <div class="p-5">
+                    <div class="
+                    flex
+                    items-center
+                    justify-between
+                    mb-5">
+                        <h4 class="
+                            text-lg">
+                            Pupilaje
+                        </h4>
+                        <span class="
                         p-2 
                         inline-block
                         border 
                         text-(--color-poniente) hover:text-(--color-cal)
                         hover:bg-(--color-poniente)">
                         EXCLUSIVO
-                    </a>
-
+                        </span>
+                    </div>
+                    
+                    <p class="
+                        mb-4
+                        text-(--color-tierra)
+                        ">
+                        El lugar perfecto para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse. <a href="" class="">
+                        [Ver más]
+                        </a>
+                    </p>
+                    
                 </div>
             </article>
         </div>
@@ -242,19 +332,20 @@
     <section class="
         bg-(--color-arena)
         rounded-xl
-        m-10 p-5        ">
+        m-5 p-5">
         <p class="
             font-cormorantgaramond font-italic
+            text-xl
+            text-center
             text-(--color-tierra)
             mb-4
 
-            md:text-2xl md:text-center
+            md:text-3xl md:text-center
             ">
             "Nuestros caballos viven libres en el campo. Creemos en el vínculo real, no en la doma forzada."</p>
         <p class="
-            text-xs text-(--color-tierra)
+            text-sm text-(--color-tierra) text-center
 
-            md:text-center
             ">FILOSOFÍA · DOMA NATURAL · BIENESTAR ANIMAL</p>
     </section>
 {% endblock %}
