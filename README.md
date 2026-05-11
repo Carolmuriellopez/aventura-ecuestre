@@ -5,11 +5,12 @@ Corporate website for **Aventura Ecuestre**, an equestrian excursions company ba
 ## 🛠 Stack
 
 - **Backend:** Django
-- **Frontend:** Tailwind CSS v4, Cormorant Garamond + Jost (Google Fonts)
+- **Frontend:** Tailwind CSS v4, Cormorant Garamond + Jost (Google Fonts), Swiper (carousels)
 - **Database:** SQLite (development) / PostgreSQL (production)
 - **Server:** Gunicorn + Nginx
 - **Hosting:** DigitalOcean
 - **SSL:** Let's Encrypt (Certbot)
+
 
 ---
 
