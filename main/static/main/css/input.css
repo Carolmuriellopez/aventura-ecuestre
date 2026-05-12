@@ -56,6 +56,15 @@
   font-style: normal;
   font-display: swap;
 }
+@layer base {
+  #rutas-pagination {
+    --swiper-pagination-bottom: 16px;
+  }
+  #packs-pagination {
+    --swiper-pagination-bottom: 16px;
+  }
+}
+
 @theme {
   --color-cal: #F8F4EE; /* Fondo base */
   --color-cielo: #4A90C4; /* Color primario */
@@ -74,4 +83,5 @@
   --font-cormorantgaramond: 'Cormorant Garamond', Georgia, sans-serif;
   --font-sans: 'Jost', sans-serif;
   --font-titan: 'TitanOne', 'sans-serif';
+
 }

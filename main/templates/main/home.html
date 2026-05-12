@@ -11,6 +11,7 @@
     h-min-950
     flex flex-col justify-bottom
     overflow-y-hidden
+    
     ">
         <!-- Imagen de fondo -->
         <img id="hero-image"
@@ -29,54 +30,34 @@
         
         <!-- Texto sobre la imagen -->
         <h1 class="
-            font-titan font-bold text-3xl/6 
+            font-titan font-bold text-[11vw]
             inline-block
-            w-[50%]
+            w-[0.5vw]
             text-(--color-luz)
             z-10
             p-5
             absolute
 
-            md:text-9xl
+            md:text-[11vw]/[9vw]
             ">AVENTURA ECUESTRE
         </h1>
-        <h3 class="
-                 text-(--color-tierra)
-                text-center
-                p-5
-                absolute
-                left-0 w-full
-                text-xs
-                top-50
-                inline
-                text-center
-                z-10
-
-                md:text-(--color-cal)
-                md:text-xl
-                md:text-left
-                md:top-80
-                "> 
-                TARIFA · CÁDIZ · PARQUE NATURAL DEL ESTRECHO
-        </h3>
         <div id="content_hero" class="
             z-10 p-5      
             bg-white/50
             
             
-            md:w-fit
-            md:m-5
-            md:p-10 
+            md:mx-5
+            md:h-fit
+            md:p-[2vw] 
             md:self-start
             md:absolute
-            md:top-100
+            md:bottom-5
             md:rounded-xl">
             
             <h2 class="
                 text-center
                 text-(--color-tierra) text-5xl font-cormorantgaramond font-bold
 
-                md:text-[60px]
                 md:inline
                 md:leading-tight
                 "
@@ -84,8 +65,9 @@
                 <span class="
                 block
 
+                md:text-[5vw]/[4vw]
                 md:text-left
-                ">Cabalga libre </span><span class="">en la <strong class="text-(--color-arena)">Costa de la Luz</strong></span>
+                ">Cabalga libre </span><span class="md:text-[5vw]">en la <strong class="text-(--color-arena) md:text-[5vw]">Costa de la Luz</strong></span>
             </h2>
             <p class="
                 py-5
@@ -95,7 +77,6 @@
                 md:text-left
                 ">Paseos a caballo por las playas más salvajes de Andalucía,<br>con vistas al continente africano.</p>
             <div id="hero_buttons" class="
-                py-5
                 text-center
                 flex
                 flex-col
@@ -103,7 +84,6 @@
 
                 md:text-left
                 md:flex-row md:items-center md:gap-7
-                md:mb-5
                 ">
                 <a href="{% url 'contact' %}" class="
                     font-titan
@@ -139,17 +119,7 @@
                     md:text-xl"
                     >VER ACTIVIDADES</a>
             </div>
-            
-            <ul class="flex justify-center md:justify-center">
-                <li>
-                    <a href="https://www.instagram.com/explore/locations/49608182887/aventura-ecuestre-tarifa/"><img src="{% static 'main/images/icons/instagram.svg' %}" alt="instagram" class="h-8 w-auto"></a>
-                </li>    
-                <li>
-                    <a href="https://www.facebook.com/Beachridingholidays"><img src="{% static 'main/images/icons/facebook.svg' %}" alt="facebook" class="h-8 w-auto"></a>
-                </li>
-            </ul>
-        
-            </div>
+        </div>
     </section>
     <section class="
         mb-10
