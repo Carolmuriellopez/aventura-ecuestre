@@ -34,12 +34,16 @@
             bg-(--color-cal)
             p-5
             rounded-xl
-            bg-white">
+            bg-white
+            
+            
+            md:w-[80%]
+            md:mx-auto">
             <h2 class="
-                text-(--color-oceano) text-center 
-                mb-5 
-                
-                md:text-xl 
+                text-2xl text-(--color-mar)
+                text-center
+            
+                md:text-3xl
                 md:mb-10">
                 FORMULARIO DE CONTACTO
             </h2>
@@ -128,11 +132,13 @@
                         bg-(--color-mar)
                         rounded-xl
                         p-5 mb-4
+                        hover:shadow-xl/30
 
                         md:text-xl">
                         ENVIAR CONSULTA
                     </button>
-                    <p class="text-xs text-(--color-trece)">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
+                    <input type="checkbox" required>
+                    <p class="text-xs text-(--color-trece) inline md:text-base">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
                 </div>
                 
                 {{ form.name.errors }}
@@ -152,7 +158,8 @@
                 rounded-xl
                 text-center
                 h-fit
-                ">
+                
+                md:text-xl">
                 <div class="font-titan font-bold mb-4">
                     <p>SALIDAS DIARIAS</p>
                     <p>9:00 h · 17:00 h · 19:30 h</p>
@@ -163,7 +170,7 @@
                     <p>Menos de 24 horas</p>
                 </div>
             </div>
-            <ul class="mx-5">
+            <ul class="mx-5 md:text-xl">
                 <li class="mb-5 text-center">
                     <div class="flex justify-center">
                         <div class="

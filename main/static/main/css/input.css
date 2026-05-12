@@ -68,6 +68,8 @@
   --color-luz: #F2C06A; /* Destacados suaves */
   --color-marisma: #8AA89A; /* Verde neutro */
   --color-mar: #2A5C8A; /* navbar */
+  --color-link: #0000EE;
+  --color-link-visited: #551A8B;
 
   --font-cormorantgaramond: 'Cormorant Garamond', Georgia, sans-serif;
   --font-sans: 'Jost', sans-serif;
