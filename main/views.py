@@ -37,3 +37,9 @@ def contact(request):
 
 def aviso(request):
     return render(request, 'main/aviso.html')
+
+def cookies(request):
+    return render(request, 'main/cookies.html')
+
+def privacidad(request):
+    return render(request, 'main/privacidad.html')

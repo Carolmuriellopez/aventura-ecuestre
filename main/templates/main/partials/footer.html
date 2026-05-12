@@ -1,24 +1,23 @@
 {% load static %}
 
 <section class="
-    p-8 bg-(--color-mar)
+    p-5 bg-(--color-mar)
+    text-xs
     justify-center 
-    ">
-    <ul class="flex mb-8 gap-x-10 justify-center flex-wrap">
-        <li class="mb-2">
+    
+    md:text-sm">
+    <ul class="flex mb-2 gap-x-10 justify-center flex-wrap">
+        <li class="mb-1">
             <a href="{% url 'aviso' %}" class="text-(--color-cal) hover:text-(--color-oceano)">Aviso legal</a>
         </li>
-        <li class="mb-2">
-            <a href="" class="text-(--color-cal) hover:text-(--color-oceano)">Política de privacidad</a>
+        <li class="mb-1">
+            <a href="{% url 'privacidad' %}" class="text-(--color-cal) hover:text-(--color-oceano)">Política de privacidad</a>
         </li>
-        <li class="mb-2">
-            <a href="" class="text-(--color-cal) hover:text-(--color-oceano)">Política de cookies</a>
-        </li>
-        <li class="mb-2">
-            <a href="" class="text-(--color-cal) hover:text-(--color-oceano)">Declaración de accesibilidad</a>
+        <li class="mb-1">
+            <a href="{% url 'cookies' %}" class="text-(--color-cal) hover:text-(--color-oceano)">Política de cookies</a>
         </li>
     </ul>
-    <hr class="text-(--color-cal) mb-4">
+    <hr class="text-(--color-cal) mb-2">
     <p class="text-(--color-cal)">Copyright 2026 © All Right Reserved Aventura Ecuestre Tarifa. Hecho con mucho ♥️ por irenemendoza.dev</p>
     
 </section>
