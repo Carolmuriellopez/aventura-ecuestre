@@ -4,7 +4,7 @@
     rounded-xl
     overflow-hidden
     bg-white
-    mb-5                  
+    h-full flex flex-col
     ">
     <img src="{% static 'main/images/atardecer.jpg' %}" 
         alt="Jinete y caballo al atardecer" 
@@ -15,11 +15,11 @@
         mb-4
         
         md:h-120">
-    <div class="p-5">
+    <div class="p-5 flex flex-col grow">
         <div class="flex justify-between items-center">
             <h3 class="
                 font-titan font-bold
-                text-(--color-tierra) text-4xl
+                text-(--color-tierra) text-4xl md:text-fluid-title
                 mb-5
                 inline-block
 
@@ -31,57 +31,59 @@
             text-(--color-trece) 
             mb-4
 
-            md:text-xl
+            md:text-fluid-body
             md:mb-10
             ">Pack vacacional para jinetes que buscan conocer el paraíso tarifeño a caballo combinándolo con playas, gastronomía y el entorno natural. El ritmo perfecto para desconectar de verdad.
         </p>
-        <hr class="border-(--color-trece) mb-4 md:mb-10">
-        <div class="flex items-center justify-between mb-5 md:mb-10">
-            <div class="flex justify-start">
-                <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                <span class="
-                    font-titan 
-                    font-bold
+        <div class="mt-auto">
+            <hr class="border-(--color-trece) mb-4 md:mb-10">
+            <div class="flex items-center justify-between mb-5 md:mb-10">
+                <div class="flex justify-start">
+                    <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
+                        <span class="
+                            font-titan 
+                            font-bold
                     
-                    md:text-xl">
-                    10 horas en 5 días
-                </span>
-            </div>
-            <p class="
-                font-titan
-                font-bold 
+                            md:text-fluid-body">
+                            10 horas en 5 días
+                        </span>
+                    </div>
+                    <p class="
+                        font-titan
+                        font-bold 
                 
-                md:text-xl">
-                600€<span class="
-                    text-(--color-trece) 
-                    text-xs 
-                    font-titan 
-                    font-bold
+                        md:text-fluid-body">
+                        600€<span class="
+                        text-(--color-trece) 
+                        text-xs 
+                        font-titan 
+                        font-bold
                     
-                    md:text-lg">/persona</span>
-            </p>
-        </div>
-        <a href="{% url 'contact' %}" class="
-            font-titan
-            font-bold
-            text-white
-            border
-            bg-(--color-luz)
-            rounded-xl
-            p-5
-            block
-            w-fit
-            mx-auto
-            transition
-            delay-100 
-            duration-200 
-            ease-in-out 
-            hover:-translate-y-1 
-            hover:scale-105
+                        md:text-fluid-body">/persona</span>
+                    </p>
+                </div>
+                <a href="{% url 'contact' %}" class="
+                    font-titan
+                    font-bold
+                    text-white
+                    border
+                    bg-(--color-luz)
+                    rounded-xl
+                    p-5
+                    block
+                    w-fit
+                    mx-auto
+                    transition
+                    delay-100 
+                    duration-200 
+                    ease-in-out 
+                    hover:-translate-y-1 
+                    hover:scale-105
 
-            md:text-xl
-            ">RESERVAR EXPERIENCIA
-        </a>
-    </div>
+                    md:text-fluid-body
+                    ">RESERVAR EXPERIENCIA
+                </a>
+            </div>
+        </div>
 </article>
 

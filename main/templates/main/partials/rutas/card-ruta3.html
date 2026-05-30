@@ -4,7 +4,7 @@
     rounded-xl
     overflow-hidden
     bg-white
-    mb-5                  
+    h-full flex flex-col
     ">
     <img src="{% static 'main/images/paseo_playa_3.jpg' %}" 
         alt="Caballos paseando por la playa" 
@@ -15,11 +15,11 @@
         mb-4
         
         md:h-120">
-    <div class="p-5">
+    <div class="p-5 flex flex-col grow">
         <div class="flex justify-between items-center mb-5 md:mb-10">
             <h3 class="
                 font-titan font-bold
-                text-(--color-tierra) text-4xl
+                text-(--color-tierra) text-4xl md:text-fluid-title
                 inline-block
                 ">Playa y montaña
             </h3>
@@ -28,43 +28,45 @@
             text-(--color-trece) 
             mb-4
 
-            md:text-xl
+            md:text-fluid-body
             md:mb-10
             ">Desde la arena de la playa hasta los senderos de montaña. Paisaje doble — mar y cumbre — en una sola ruta.
         </p>
-        <hr class="border-(--color-trece) mb-4 md:mb-10">
-        <div class="flex items-center justify-between mb-5">
-            <div class="flex justify-start">
-                <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                <span class="font-titan font-bold md:text-xl">2 horas</span>
-            </div>
-            <p class="
-                font-titan
-                font-bold text-xl">
-                110€<span class="text-(--color-trece) text-xs text-titan font-bold md:text-lg">/persona</span>
-            </p>
-        </div>
-        <a href="{% url 'contact' %}" class="
-            font-titan
-            font-bold
-            text-white
-            border
-            bg-(--color-luz)
-            rounded-xl
-            p-5
-            block
-            w-fit
-            mx-auto
-            transition
-            delay-100 
-            duration-200 
-            ease-in-out 
-            hover:-translate-y-1 
-            hover:scale-105
+        <div class="footer-article mt-auto">
+            <hr class="border-(--color-trece) mb-4 md:mb-10">
+            <div class="flex items-center justify-between mb-5 md:mb-10">
+                <div class="flex justify-start">
+                    <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
+                        <span class="font-titan font-bold md:text-fluid-body">2 horas</span>
+                    </div>
+                    <p class="
+                        font-titan
+                        font-bold text-xl md:text-fluid-body">
+                        110€<span class="text-(--color-trece) text-xs text-titan font-bold md:text-fluid-body">/persona</span>
+                    </p>
+                </div>
+                <a href="{% url 'contact' %}" class="
+                    font-titan
+                    font-bold
+                    text-white
+                    border
+                    bg-(--color-luz)
+                    rounded-xl
+                    p-5
+                    block
+                    w-fit
+                    mx-auto
+                    transition
+                    delay-100 
+                    duration-200 
+                    ease-in-out 
+                    hover:-translate-y-1 
+                    hover:scale-105
 
-            md:text-xl
-            ">RESERVAR EXPERIENCIA
-        </a>
-    </div>
+                    md:text-fluid-body
+                    ">RESERVAR EXPERIENCIA
+                </a>
+            </div>
+        </div>
 </article>
 

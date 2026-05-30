@@ -4,81 +4,86 @@
     rounded-xl
     overflow-hidden
     bg-white
-    mb-5                  
+    h-full flex flex-col
     ">
-    <img src="{% static 'main/images/pony.png' %}" 
-        alt="Niña con protecciones de seguridad a lomos de un pony" 
-        class="
-        h-80
-        object-cover 
-        w-full
-        mb-4
+    <div class="relative">
+        <img src="{% static 'main/images/pony.png' %}" 
+            alt="Niña con protecciones de seguridad a lomos de un pony" 
+            class="
+            h-80
+            object-cover 
+            w-full
+            mb-4
         
-        md:h-120">
-    <div class="p-5">
-        <div class="flex justify-between items-center
+            md:h-120">
+        <span class="
+            absolute
+            top-0
+            p-2
+            border border-(--color-poniente)
+            bg-(--color-poniente)
+            text-xs text-(--color-cal)
+            inline-block
+            font-titan
+            font-bold
+                    
+            md:text-fluid-body">NIÑOS
+        </span>
+    </div>
+    
+    <div class="p-5 flex flex-col grow">
+        <h3 class="
+            font-titan font-bold
+            text-(--color-tierra) text-4xl md:text-fluid-title
+            inline-block
             mb-5
         
             md:mb-10
-        ">
-            <h3 class="
-                font-titan font-bold
-                text-(--color-tierra) text-4xl
-                inline-block
-                ">Paseo en pony
-            </h3>
-            <span class="
-                p-2
-                border border-(--color-poniente)
-                bg-(--color-poniente)
-                text-xs text-(--color-cal)
-                inline-block
-                font-titan
-                font-bold
-                    
-                md:text-lg">NIÑOS
-            </span>
-        </div>
+            ">
+            Paseo en pony
+        </h3>
         <p class="
             text-(--color-trece) 
             mb-4
 
-            md:text-xl
+            md:text-fluid-body
             md:mb-10
             ">Dirigido a los más pequeños. Un primer encuentro mágico con el caballo por el pinar en un paseo tranquilo, seguro y lleno de ilusión.
         </p>
-        <hr class="border-(--color-trece) mb-4 md:mb-10">
-        <div class="flex items-center justify-between mb-5 md:mb-10">
-            <div class="flex justify-start">
-                <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                <span class="font-titan font-bold md:text-xl">30 min</span>
-            </div>
-            <p class="
-                font-titan
-                font-bold text-xl">
-                35€<span class="text-(--color-trece) text-xs font-titan font-bold md:text-lg">/niño</span>
-            </p>
-        </div>
-        <a href="{% url 'contact' %}" class="
-            font-titan
-            font-bold
-            text-white
-            border
-            bg-(--color-luz)
-            rounded-xl
-            p-5
-            block
-            w-fit
-            mx-auto
-            transition
-            delay-100 
-            duration-200 
-            ease-in-out 
-            hover:-translate-y-1 
-            hover:scale-105
+        <div class="article-footer mt-auto">
+            <hr class="border-(--color-trece) mb-4 md:mb-10">
+            <div class="flex items-center justify-between mb-5 md:mb-10">
+                <div class="flex justify-start">
+                    <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
+                        <span class="font-titan font-bold md:text-fluid-body">30 min</span>
+                    </div>
+                    <p class="
+                        font-titan
+                        font-bold text-xl md:text-fluid-body">
+                        35€<span class="text-(--color-trece) text-xs font-titan font-bold md:text-fluid-body">/niño</span>
+                    </p>
+                </div>
+                <a href="{% url 'contact' %}" class="
+                    font-titan
+                    font-bold
+                    text-white
+                    border
+                    bg-(--color-luz)
+                    rounded-xl
+                    p-5
+                    block
+                    w-fit
+                    mx-auto
+                    transition
+                    delay-100 
+                    duration-200 
+                    ease-in-out 
+                    hover:-translate-y-1 
+                    hover:scale-105
 
-            md:text-xl
-        "   >RESERVAR EXPERIENCIA
-        </a>
-    </div>
+                    md:text-fluid-body
+                "   >RESERVAR EXPERIENCIA
+                </a>
+            </div>
+        </div>
 </article>
