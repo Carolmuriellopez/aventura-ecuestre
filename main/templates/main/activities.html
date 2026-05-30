@@ -11,7 +11,7 @@
             text-(--color-oceano)
             mb-4
             
-            md:text-3xl
+            md:text-fluid-heading
             md:mb-10">
             INICIO  >  ACTIVIDADES
         </nav>
@@ -21,7 +21,7 @@
             mb-4
 
             md:mb-15
-            md:text-7xl">
+            md:text-fluid-hero">
             Elige tu <span class="
                 font-cormorantgaramond font-normal italic
                 text-(--color-luz)
@@ -33,7 +33,7 @@
                 text-(--color-cal)
                 mb-5
 
-                md:text-xl
+                md:text-fluid-body
                 md:mb-10">
                 Hemos diseñado diferentes rutas para adaptarnos a tus deseos y nivel de experiencia. Todos nuestros servicios incluyen guía experta, equipo de seguridad y un caballo asignado específicamente para ti.
             </p>
@@ -45,72 +45,91 @@
                 rounded-tl-3xl
                 rounded-br-3xl
 
-                md:text-xl
-                md:grid
-                md:grid-cols-2
-                md:w-[80%]
-                md:mx-auto
-                gap-5
+               
                 ">
-                <div class="
-                    text-center 
+                <div class=" 
+                    md:text-fluid-body
+                    md:grid
+                    md:grid-cols-2
+                    md:w-[80%]
+                    md:mx-auto
+                    gap-5">
+                    <div class="
+                        text-center 
+                        mb-5">
+                        <h4 class="
+                            text-(--color-cal) 
+                            text-sg 
+                            mb-1
+                            ">
+                            Incluido
+                        </h4>
+                        <p class="
+                            text-(--color-cal) 
+                            text-lg     
+                            font-bold
+                            ">
+                            Guía · Casco
+                        </p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <h4 class="
+                            text-(--color-cal) 
+                            text-sg 
+                            mb-1
+                            ">
+                            Idiomas
+                        </h4>
+                        <p class="
+                            text-(--color-cal) 
+                            text-lg     
+                            font-bold
+                            ">Español · English
+                        </p>
+                    </div>
+                    <div class="text-center mb-5">
+                        <h4 class="
+                            text-(--color-cal) 
+                            text-sg 
+                            mb-1
+                            ">Grupos
+                        </h4>
+                        <p class="
+                            text-(--color-cal) 
+                            text-lg     
+                            font-bold">Máximo 8 personas
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <h4 class="
+                            text-(--color-cal) 
+                            text-sg 
+                            mb-1">
+                            Cancelación
+                        </h4>
+                        <p class="
+                            text-(--color-cal) 
+                            text-lg     
+                            font-bold">
+                            Gratuita 24h antes
+                        </p>
+                    </div>
+                </div>
+                <hr class="
+                    text-(--color-cal)
+                    w-[95%]
+                    mx-auto
                     mb-5">
-                    <h4 class="
-                        text-(--color-cal) 
-                        text-sg 
-                        mb-1
-                        ">
-                        Incluido
-                    </h4>
-                    <p class="
-                        text-(--color-cal) 
-                        text-lg     
-                        font-bold
-                        ">
-                        Guía · Casco
-                    </p>
-                </div>
-                <div class="text-center mb-5">
-                    <h4 class="
-                        text-(--color-cal) 
-                        text-sg 
-                        mb-1
-                        ">
-                        Idiomas
-                    </h4>
-                    <p class="
-                        text-(--color-cal) 
-                        text-lg     
-                        font-bold
-                        ">Español · English
-                    </p>
-                </div>
-                <div class="text-center mb-5">
-                    <h4 class="
-                        text-(--color-cal) 
-                        text-sg 
-                        mb-1
-                        ">Grupos</h4>
-                    <p class="
-                        text-(--color-cal) 
-                        text-lg     
-                        font-bold">Máximo 8 personas
-                    </p>
-                </div>
-                <div class="text-center">
-                    <h4 class="
-                        text-(--color-cal) 
-                        text-sg 
-                        mb-1">
-                        Cancelación
-                    </h4>
-                    <p class="
-                        text-(--color-cal) 
-                        text-lg     
-                        font-bold">
-                        Gratuita 24h antes
-                    </p>
-                </div>
+                <p class="
+                    text-(--color-cal)
+                    text-center
+                    mx-auto
+
+                    md:w-[80%]
+                    md:text-fluid-mini
+                    ">
+                    Cabalgar no es un juego — requiere cierta predisposición, equilibrio y capacidad de reacción. Por eso, los jinetes que se declaren principiantes o sin experiencia previa serán valorados personalmente por Carol antes de la salida. Tu seguridad y la de los animales siempre van primero.
+                </p>    
             </div>
         </div>
     </header>
@@ -126,7 +145,7 @@
                     text-cormorantgaramond
                     text-6xl
                     
-                    md:text-7xl">01
+                    md:text-fluid-hero">01
                 </span>
                 <h2 class="
                     text-(--color-tierra)
@@ -134,13 +153,13 @@
                     text-xl
                     mb-4
                     
-                    md:text-3xl">RUTAS ECUESTRES</h2>
+                    md:text-fluid-heading">RUTAS ECUESTRES</h2>
                 </h2>
             </div>
 
             <p class="mb-5
             
-                md:text-xl">
+                md:text-fluid-body">
                 Desde la emoción de la costa atlántica hasta la serenidad del bosque mediterráneo — tenemos la aventura perfecta esperándote.
             </p>
         </div>
@@ -178,7 +197,7 @@
                     text-cormorantgaramond
                     text-6xl
                     
-                    md:text-7xl">02
+                    md:text-fluid-hero">02
                 </span>
                 <h2 class="
                     text-(--color-tierra)
@@ -186,12 +205,12 @@
                     text-xl
                     mb-4
                     
-                    md:text-3xl">PACKS VACACIONALES
+                    md:text-fluid-heading">PACKS VACACIONALES
                 </h2>
             </div>
             <p class="mb-5
             
-                md:text-xl">
+                md:text-fluid-body">
                 Para jinetes que quieren vivir Tarifa a caballo durante varios días. Elige tu ritmo.
             </p>
         </div>
@@ -219,7 +238,7 @@
                 text-cormorantgaramond
                 text-6xl
                 
-                md:text-7xl">03
+                md:text-fluid-hero">03
             </span>
             <h2 class="
                 text-(--color-tierra)
@@ -227,7 +246,7 @@
                 text-xl
                 mb-4
                 
-                md:text-3xl">SERVICIO ESPECIALIZADO</strong>
+                md:text-fluid-heading">SERVICIO ESPECIALIZADO</strong>
             </h2>
         </div>
         <article class="
@@ -242,6 +261,7 @@
             <img src="{% static 'main/images/paddock.jpg' %}" alt="Caballo pastando" class="
                 h-80
                 object-cover w-full
+                object-bottom
                 mb-4
                 
                 md:h-120
@@ -260,28 +280,25 @@
                     text-(--color-trece)
                     mb-4
                     
-                    md:text-xl">El lugar ideal para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
+                    md:text-fluid-body">El lugar ideal para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
                 </p>
                 <ul class="mb-5
-                
-                    md:text-xl">
-                    <li class="mb-2">
-                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline">
-                            Alquiler del espacio individual
-                        </p>
+                    md:text-fluid-body">
+                    <li class="mb-2 flex items-start">
+                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
+                        <p>Alquiler del espacio individual</p>
                     </li>
-                    <li class="mb-2">
-                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline">Limpieza diaria y agua continua</p>
+                    <li class="mb-2 flex items-start">
+                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
+                        <p>Limpieza diaria y agua continua</p>
                     </li>
-                    <li class="mb-2">
-                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline">Dos pistas de entrenamiento — circular y de grandes dimensiones</p>
+                    <li class="mb-2 flex items-start">
+                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
+                        <p>Dos pistas de entrenamiento — circular y de grandes dimensiones</p>
                     </li>
-                    <li class="mb-2">
-                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-[0.5rem] mr-2 inline-block"></div>
-                        <p class="inline">Alquiler del espacio individual</p>
+                    <li class="mb-2 flex items-start">
+                        <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
+                        <p>Alquiler del espacio individual</p>
                     </li>
                 </ul>
                 <p class="
@@ -289,7 +306,7 @@
                     italic 
                     mb-5
                     
-                    md:text-xl
+                    md:text-fluid-body
                     md:mb-10">
                     Pregúntanos sin compromiso — adaptamos el servicio a tus necesidades.
                 </p>
@@ -312,7 +329,7 @@
                     hover:-translate-y-1 
                     hover:scale-105
                     
-                    md:text-xl">
+                    md:text-fluid-body">
                     CONSULTAR DISPONIBILIDAD
                 </a>
             </div>

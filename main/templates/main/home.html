@@ -67,13 +67,13 @@
 
                 md:text-[5vw]/[4vw]
                 md:text-left
-                ">Cabalga libre </span><span class="md:text-[5vw]">en la <strong class="text-(--color-arena) md:text-[5vw]">Costa de la Luz</strong></span>
+                ">Cabalga libre </span><span class="md:text-[5vw]">en la <strong class="text-(--color-arena) md:text-[5vw] md:text-(--color-tierra)">Costa de la Luz</strong></span>
             </h2>
             <p class="
                 py-5
                 text-center text-(--color-tierra)
 
-                md:text-xl
+                md:text-fluid-body
                 md:text-left
                 ">Paseos a caballo por las playas más salvajes de Andalucía,<br>con vistas al continente africano.</p>
             <div id="hero_buttons" class="
@@ -100,7 +100,7 @@
                     hover:-translate-y-1 
                     hover:scale-105
                     
-                    md:text-xl">RESERVAR EXPERIENCIA</a>
+                    md:text-fluid-body">RESERVAR EXPERIENCIA</a>
                 <a href="{% url 'activities' %}" class="
                     font-titan
                     font-bold
@@ -116,7 +116,7 @@
                     hover:-translate-y-1 
                     hover:scale-105
                     
-                    md:text-xl"
+                    md:text-fluid-body"
                     >VER ACTIVIDADES</a>
             </div>
         </div>
@@ -180,13 +180,13 @@
             text-2xl text-(--color-mar)
             mb-5
             
-            md:text-3xl
+            md:text-fluid-heading
             md:mb-10"
             >NUESTRAS RUTAS</h2>
         <h3 class="
             mb-5
             
-            md:text-xl
+            md:text-fluid-body
             md:mb-10">
             Elige tu aventura:
         </h3>
@@ -197,48 +197,46 @@
                 overflow-hidden
                 mb-5
                 bg-white
+                flex flex-col
                 ">
-                <img src="{% static 'main/images/rutasEcuestres.jpg' %}" alt="Caballos paseando por la playa" class="
+                <div class="relative">
+                    <img src="{% static 'main/images/rutasEcuestres.jpg' %}" alt="Caballos paseando por la playa" class="
                     h-60
                     w-full
                     object-cover
 
                     md:h-100">
-                <div class="p-5">
-                    <div class="
-                        flex
-                        items-center
-                        justify-between
-                        mb-5">
-                        <h4 class="
-                            text-lg
-                            
-                            md:text-2xl">
-                            Rutas ecuestres
-                        </h4>
-                        <span class="
-                            p-2
-                            border border-(--color-poniente)
-                            bg-(--color-poniente)
-                            text-xs text-white
-                            inline-block
-                            text-titan
-                            font-bold
+                    <span class="
+                        absolute
+                        top-0
+                        p-2
+                        border border-(--color-poniente)
+                        bg-(--color-poniente)
+                        text-xs text-white
+                        inline-block
+                        text-titan
+                        font-bold
                     
-                            md:text-lg">
-                            MÁS POPULAR
-                        </span>
-                    </div>
-                    
+                        md:text-fluid-body">
+                        MÁS POPULAR
+                    </span>
+                </div>
+                <div class="p-5 flex flex-col grow">
+                    <h4 class="
+                        text-lg
+
+                        md:text-fluid-heading">
+                        Rutas ecuestres
+                    </h4>
                     <p class="
                         mb-4
                         text-(--color-tierra)
 
-                        md:text-xl
+                        md:text-fluid-body
                         ">
-                        Diseñadas para todos las edades y niveles.<br>La experiencia más demandada. 
+                        Diseñadas para todos las edades y niveles.<br>La experiencia más demandada.
                     </p>
-                    <a href="{% url 'activities' %}#rutas" class="md:text-lg">
+                    <a href="{% url 'activities' %}#rutas" class="mt-auto hover:text-mar md:text-fluid-body">
                         [Ver más]
                     </a>
                 </div>
@@ -248,47 +246,47 @@
                 overflow-hidden
                 mb-5
                 bg-white
+                flex flex-col
                 ">
-                <img src="{% static 'main/images/atardecer.jpg' %}" alt="Caballos paseando por el pinar" class="
+                <div class="relative">
+                    <img src="{% static 'main/images/atardecer.jpg' %}" alt="Caballos paseando por el pinar" class="
                         h-60
                         w-full
                         object-cover
 
                         md:h-100">
-                <div class="p-5">
-                    <div class="
-                    flex 
-                    items-center 
-                    justify-between
-                    mb-5">
-                        <h4 class="
-                            text-lg
-                            
-                            md:text-2xl">
-                            Packs Vacacionales
-                        </h4>
-                        <span class="p-2
-                            border border-(--color-poniente)
-                            bg-(--color-poniente)
-                            text-xs text-white
-                            inline-block
-                            text-titan
-                            font-bold
+                    <span class="
+                        absolute
+                        top-0
+                        p-2
+                        border border-(--color-poniente)
+                        bg-(--color-poniente)
+                        text-xs text-white
+                        inline-block
+                        text-titan
+                        font-bold
                     
-                            md:text-lg
+                        md:text-fluid-body
                         ">NATURALEZA
-                        </span>
-                    </div>
-                    
+                    </span>
+                </div>
+                
+                <div class="p-5 flex flex-col grow">
+                    <h4 class="
+                        text-lg
+
+                        md:text-fluid-heading">
+                        Packs Vacacionales
+                    </h4>
                     <p class="
                         mb-4
                         text-(--color-tierra)
 
-                        md:text-xl
+                        md:text-fluid-body
                         ">
-                        Senderos sombreados por el Parque Natural del Estrecho. 
+                        Senderos sombreados por el Parque Natural del Estrecho.
                     </p>
-                    <a href="{% url 'activities' %}#packs" class="md:text-lg">
+                    <a href="{% url 'activities' %}#packs" class="mt-auto hover:text-mar md:text-fluid-body">
                         [Ver más]
                     </a>
                 </div>
@@ -299,50 +297,50 @@
                 overflow-hidden
                 bg-white
                 mb-2 pb-3
+                flex flex-col
                 ">
-                <img src="{% static 'main/images/pupilaje.png' %}" alt="" class="
-                    h-60
-                    w-full
-                    object-cover
+                <div class="relative">
+                    <img src="{% static 'main/images/paddock.png' %}" alt="" class="
+                        h-60
+                        w-full
+                        object-cover
+                        object-left
 
-                md:h-100">
-                <div class="p-5">
-                    <div class="
-                    flex
-                    items-center
-                    justify-between
-                    mb-5">
-                        <h4 class="
-                            text-lg
-                            
-                            md:text-2xl">
-                            Pupilaje
-                        </h4>
-                        <span class="
-                            p-2
-                            border border-(--color-poniente)
-                            bg-(--color-poniente)
-                            text-xs text-white
-                            inline-block
-                            text-titan
-                            font-bold
+                        md:h-100">
+                    <span class="
+                        absolute
+                        top-0
+                        p-2
+                        border border-(--color-poniente)
+                        bg-(--color-poniente)
+                        text-xs text-white
+                        inline-block
+                        text-titan
+                        font-bold
                     
-                            md:text-lg">
+                        md:text-fluid-body">
                         EXCLUSIVO
-                        </span>
-                    </div>
-                    
+                    </span>
+                </div>
+                
+                <div class="p-5 flex flex-col grow">
+                    <h4 class="
+                        text-lg
+
+                        md:text-fluid-heading">
+                        Pupilaje
+                    </h4>
                     <p class="
                         mb-4
                         text-(--color-tierra)
 
-                        md:text-xl
+                        md:text-fluid-body
                         ">
-                        El lugar perfecto para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse. 
+                        El lugar perfecto para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
                     </p>
-                    <a href="{% url 'activities' %}#pupilaje" class="md:text-lg">
+                    <a href="{% url 'activities' %}#pupilaje" class="mt-auto hover:text-mar md:text-fluid-body">
                         [Ver más]
-                        </a>
+                    </a>
                 </div>
             </article>
         </div>
@@ -360,7 +358,7 @@
             text-(--color-tierra)
             mb-4
 
-            md:text-3xl md:text-center
+            md:text-fluid-heading md:text-center
             ">
             "Nuestros caballos viven libres en el campo. Creemos en el vínculo real, no en la doma forzada."</p>
         <p class="

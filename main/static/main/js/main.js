@@ -31,6 +31,13 @@ if (menu && toggle) {
     });
 }
 
+function equalizeSlideHeights(swiper) {
+    const slides = Array.from(swiper.slides);
+    slides.forEach(s => s.style.height = 'auto');
+    const maxH = Math.max(...slides.map(s => s.offsetHeight));
+    slides.forEach(s => s.style.height = maxH + 'px');
+}
+
 const rutasCarousel = new Swiper('#rutas-carousel', {
     loop: false,
     loopedSlides: 5,
@@ -42,8 +49,21 @@ const rutasCarousel = new Swiper('#rutas-carousel', {
     },
     breakpoints: {
         768: { slidesPerView: 2 },
-    }
+    },
+    on: {
+        afterInit(swiper) {
+            requestAnimationFrame(() => equalizeSlideHeights(swiper));
+        },
+        resize(swiper) {
+            requestAnimationFrame(() => equalizeSlideHeights(swiper));
+        },
+    },
 })
+
+document.fonts.ready.then(() => {
+    equalizeSlideHeights(rutasCarousel);
+    equalizeSlideHeights(packsCarousel);
+});
 
 const packsCarousel = new Swiper('#packs-carousel', {
     loop: false,
@@ -56,5 +76,14 @@ const packsCarousel = new Swiper('#packs-carousel', {
     },
     breakpoints: {
         768: { slidesPerView: 2 },
-    }
+    },
+    on: {
+        afterInit(swiper) {
+            requestAnimationFrame(() => equalizeSlideHeights(swiper));
+        },
+        resize(swiper) {
+            requestAnimationFrame(() => equalizeSlideHeights(swiper));
+        },
+    },
 })
+
