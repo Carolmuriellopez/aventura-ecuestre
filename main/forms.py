@@ -1,4 +1,6 @@
 from django import forms
+from django.core.validators import RegexValidator
+from django.utils import timezone
 
 class ContactForm(forms.Form):
     name = forms.CharField(
@@ -12,6 +14,12 @@ class ContactForm(forms.Form):
         max_length=20, 
         required=False, 
         widget=forms.TextInput(attrs={'placeholder': '+34 600 000 000'}),
+        validators=[
+            RegexValidator(
+                regex=r'^\+?[\d\s\-]{7,20}$',
+                message="Introduce un número de teléfono válido."
+            )
+        ]
     )
     language = forms.ChoiceField(
         choices=[
@@ -38,7 +46,12 @@ class ContactForm(forms.Form):
     ) 
     date = forms.DateField(
         required=False, 
-        widget=forms.TextInput(attrs={'placeholder': 'dd/mm/aaaa'}),
+        widget=forms.DateInput(
+            attrs={
+                'placeholder': 'dd/mm/aaaa',
+                'type': 'date',
+                'min': timezone.now().date().isoformat(),
+            }),
     )
     people = forms.ChoiceField(
         choices=[
@@ -57,3 +70,9 @@ class ContactForm(forms.Form):
     message = forms.CharField(
         widget=forms.Textarea(attrs={'placeholder': 'Cuéntanos algo sobre vuestra experiencia, nivel de los jinetes, si hay niños...'}), 
     )
+
+    def clean_date(self):
+        date = self.cleaned_data.get('date')
+        if date and date < timezone.now().date():
+            raise forms.ValidationError("La fecha no puede ser anterior a hoy.")
+        return date

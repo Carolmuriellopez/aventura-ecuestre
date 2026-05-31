@@ -80,6 +80,11 @@
                         TELÉFONO
                     </p>
                     {{ form.phone|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
+                    {% if form.phone.errors %}
+                        {% for error in form.phone.errors %}
+                            <p class="text-red-500 text-sm mt-1">{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
                 </div>
                 <div class="mb-4">
                     <p class="
@@ -103,7 +108,12 @@
                         mb-2">
                         FECHA PREFERIDA
                     </p>
-                    {{ form.date|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
+                    {{ form.date|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white"|attr:"min:today" }}
+                    {% if form.date.errors %}
+                        {% for error in form.date.errors %}
+                            <p class="text-red-500 text-sm mt-1">{{ error }}</p>
+                        {% endfor %}
+                    {% endif %}
                 </div>
                 <div class="mb-4">
                     <p class="

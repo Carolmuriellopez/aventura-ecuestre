@@ -1,0 +1,68 @@
+{% extends 'main/layout.html' %}
+
+{% block title %}Mensaje enviado - Aventura Ecuestre{% endblock %}
+
+{% block content %}
+<section class="
+    min-h-[100vh]
+    flex
+    items-center
+    justify-center
+    px-5
+    py-25">
+    <div class="text-center max-w-xl">
+        <div class="
+            w-18
+            h-18
+            rounded-full
+            bg-(--color-mar)
+            flex
+            items-center justify-center
+            mx-auto mb-10">
+            <svg class="w-9 h-9 fill-white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+        </div>
+        <h1 class="
+            font-serif
+            text-5xl
+            font-normal
+            text-(--color-tierra)
+            mb-4">
+            ¡Mensaje enviado!
+        </h1>
+        <p class="
+            text-(--color-tierra) 
+            opacity-80 
+            text-lg 
+            leading-relaxed 
+            mb-20">
+            Gracias por ponerte en contacto con nosotros. Carol revisará tu consulta y te responderá en breve.
+        </p>
+        <a href="{% url 'home' %}"
+            class="
+            font-titan
+            font-bold
+            text-white
+            border
+            bg-(--color-poniente)
+            rounded-xl
+            p-5
+            block
+            w-fit
+            mx-auto
+            transition
+            delay-100 
+            duration-200 
+            ease-in-out 
+            hover:-translate-y-1 
+            hover:scale-105
+
+            md:text-xl
+            ">
+            VOLVER AL INICIO
+        </a>
+    </div>
+</section>
+{% endblock %}
+

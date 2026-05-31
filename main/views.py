@@ -1,3 +1,4 @@
+from decouple import config
 from django.core.mail import send_mail
 from django.shortcuts import render, redirect
 from .forms import ContactForm
@@ -16,7 +17,7 @@ def contact(request):
         form = ContactForm(request.POST)
         if form.is_valid():
             send_mail(
-                subject=f"Consulta web - {form.cleaned_data['nombre']}",
+                subject=f"Consulta web - {form.cleaned_data['name']}",
                 message=f"""
                     Nombre: {form.cleaned_data['name']}
                     Email: {form.cleaned_data['email']}
@@ -27,7 +28,7 @@ def contact(request):
                     Personas: {form.cleaned_data['people']}
                     Mensaje: {form.cleaned_data['message']}
                 """,
-                from_email='noreply@aventuraecuestre.com',
+                from_email=config('EMAIL_HOST_USER'),
                 recipient_list=['mendozagonzalez.irene@gmail.com'],
             )
             return redirect('contacto_gracias')
@@ -43,3 +44,7 @@ def cookies(request):
 
 def privacidad(request):
     return render(request, 'main/privacidad.html')
+
+def contacto_gracias(request):
+    return render(request, 'main/contacto_gracias.html')
+
