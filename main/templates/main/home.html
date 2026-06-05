@@ -5,59 +5,69 @@
 
 {% block content %}
     <section class="
-    relative 
     w-full
     h-full
     h-min-950
     flex flex-col justify-bottom
     overflow-y-hidden
     
+    md:flex-row
     ">
         <!-- Imagen de fondo -->
         <img id="hero-image"
-            src="{% static 'main/images/aventura_ecuestre_hero_about.jpg' %}" 
-            alt="" 
+            src="{% static 'main/images/homeHero.jpg' %}" 
+            alt="Carolina con sus caballos Trece y Levante" 
             class=" 
                 inset-0 
                 w-full 
                 h-full 
-                object-cover 
+                object-contain 
                 object-[80%_center]
                               
                 md:object-content
-                md:object-[50% center]"
+                md:object-[50% center]
+                md:w-[60%]"
         >
-        
-        <!-- Texto sobre la imagen -->
+        <div class="
+            bg-mar
+            md:flex
+            md:flex-col
+            md:justify-around
+            md:overflow-x-hidden
+            md:align-center
+            ">
+            <!-- Texto sobre la imagen -->
         <h1 class="
-            font-titan font-bold text-[11vw]
-            inline-block
-            w-[0.5vw]
+            font-titan font-bold text-[15vw]/14
+            text-center
+            w-full
             text-(--color-luz)
             z-10
             p-5
-            absolute
 
-            md:text-[10.5vw]/[9vw]
+            md:text-[7vw]/[8vw]
+            md:text-center
+
             ">AVENTURA ECUESTRE
         </h1>
         <div id="content_hero" class="
             z-10 p-5      
             bg-white/50
-            
-            
-            md:mx-5
+            rounded-xl
+            mx-5
+            mb-5
+
             md:h-fit
             md:p-[2vw] 
-            md:self-start
-            md:absolute
-            md:bottom-5
-            md:rounded-xl">
+            md:mb-0
+            
+            ">
             
             <h2 class="
                 text-center
                 text-(--color-tierra) text-5xl font-cormorantgaramond font-bold
 
+                md:text-[4vw]/[3vw]
                 md:inline
                 md:leading-tight
                 "
@@ -65,9 +75,9 @@
                 <span class="
                 block
 
-                md:text-[5vw]/[4vw]
+                
                 md:text-left
-                ">Cabalga libre </span><span class="md:text-[5vw]">en la <strong class="text-(--color-arena) md:text-[5vw] md:text-(--color-tierra)">Costa de la Luz</strong></span>
+                ">Cabalga libre </span><span>en la <strong class="text-(--color-arena)">Costa de la Luz</strong></span>
             </h2>
             <p class="
                 py-5
@@ -100,7 +110,8 @@
                     hover:-translate-y-1 
                     hover:scale-105
                     
-                    md:text-fluid-body">RESERVAR EXPERIENCIA</a>
+                    md:text-fluid-body
+                    md:text-center">RESERVAR EXPERIENCIA</a>
                 <a href="{% url 'activities' %}" class="
                     font-titan
                     font-bold
@@ -116,10 +127,13 @@
                     hover:-translate-y-1 
                     hover:scale-105
                     
-                    md:text-fluid-body"
+                    md:text-fluid-body
+                    md:text-center"
                     >VER ACTIVIDADES</a>
             </div>
         </div>
+        </div>
+        
     </section>
     <section class="
         mb-10
@@ -200,7 +214,7 @@
                 flex flex-col
                 ">
                 <div class="relative">
-                    <img src="{% static 'main/images/rutasEcuestres.jpg' %}" alt="Caballos paseando por la playa" class="
+                    <img src="{% static 'main/images/rutasEcuestres.jpg' %}" alt="Jinete y caballo paseando por la playa durante el atardecer" class="
                     h-60
                     w-full
                     object-cover
@@ -249,7 +263,7 @@
                 flex flex-col
                 ">
                 <div class="relative">
-                    <img src="{% static 'main/images/atardecer.jpg' %}" alt="Caballos paseando por el pinar" class="
+                    <img src="{% static 'main/images/atardecer.jpg' %}" alt="Jinete abrazada al caballo observando el atardecer" class="
                         h-60
                         w-full
                         object-cover
@@ -296,11 +310,11 @@
                 rounded-xl
                 overflow-hidden
                 bg-white
-                mb-2 pb-3
+                mb-5
                 flex flex-col
                 ">
                 <div class="relative">
-                    <img src="{% static 'main/images/paddock.png' %}" alt="" class="
+                    <img src="{% static 'main/images/paddock.jpg' %}" alt="Caballo tumbado en el prado" class="
                         h-60
                         w-full
                         object-cover
