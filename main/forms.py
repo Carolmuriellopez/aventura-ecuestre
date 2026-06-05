@@ -68,7 +68,7 @@ class ContactForm(forms.Form):
         required=False,
     )
     message = forms.CharField(
-        widget=forms.Textarea(attrs={'placeholder': 'Cuéntanos algo sobre vuestra experiencia, nivel de los jinetes, si hay niños...'}), 
+        widget=forms.Textarea(attrs={'placeholder': 'Para ir organizando la salida, cuéntanos algo sobre vuestra experiencia, nivel de los jinetes, si hay niños, peso y altura. Buscaremos los caballos que mejor se adapten a cada jinete.'}), 
     )
 
     def clean_date(self):
