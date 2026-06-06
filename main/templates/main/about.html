@@ -6,14 +6,17 @@
 {% block content %}
     <section class="
         md:flex md:flex-row-reverse">
-        <img src="{% static 'main/images/aventura_ecuestre_beach.jpg' %}" alt="Jinetes y caballos paseando por la orilla de la playa" class="md:w-[60%]">
+        <img src="{% static 'main/images/aventura_ecuestre_beach.jpg' %}" alt="Jinetes y caballos paseando por la orilla de la playa" class="md:object-content md:w-[50%]">
         <div class="
             bg-(--color-mar)
             p-10
 
-            md:w-[40%]
+            md:w-[50%]
             md:flex md:flex-col
-            md:justify-center"
+            md:justify-center
+           "
+
+        
             
             >
             <nav class="
@@ -27,17 +30,17 @@
             <h1 class="
                 font-cormorantgaramond
                 text-(--color-cal)
-                text-5xl
-                mb-4
+                text-[12vw]/[13vw]
+                mb-7
 
-                md:mb-15
-                md:text-fluid-hero">
+                md:mb-5
+                md:text-[6vw]/[7vw]">
                 Detrás de cada ruta hay una 
-                <strong class="
-                    font-cormorantgaramond font-normal italic
-                    text-(--color-luz)">
+                <i><b class="
+                    text-(--color-luz)
+                    ">
                     historia real
-                </strong>
+                </b></i>
             </h1>
             <p class="
             text-(--color-cal)
@@ -46,15 +49,80 @@
         </div>
     </section>
     <section class="
-        md:flex md:flex-row-reverse
+        md:flex md:flex-row md:items-stretch
         ">
+        <div class="
+            relative
+            mb-5
+
+            md:w-[60%]
+            md:static
+            md:mb-0
+            md:flex
+            md:flex-col
+            md:rounded-3xl
+            md:overflow-hidden
+
+            lg:rounded-none
+            lg:h-full
+            lg:relative
+            ">
+            <img src="{% static 'main/images/about.jpg' %}" alt="Carolina en la playa con sus caballos" class="
+                relative
+                
+                md:static
+                md:w-full md:object-contain
+                
+                
+                lg:relative">
+            <div class="
+                absolute
+                inline-block
+                bottom-1
+                right-1
+                bg-(--color-mar)
+                p-3
+                rounded
+                text-center
+
+                md:w-full
+                md:bottom-0
+                md:right-0
+                md:static
+                md:p-5
+                md:rounded-none
+                
+                lg-absolute">
+                <p class="
+                    font-titan font-bold
+                    text-(--color-cal) text-2xl
+
+                    md:text-fluid-title
+                    md:mb-5
+                    ">Carol
+                </p>
+                <p class="
+                    text-(--color-oceano) text-xs
+                    
+                    md:text-base">
+                    GUÍA CERTIFICADA  ·  PROPIETARIA
+                </p>
+                <p class="
+                    text-xs text-(--color-oceano) text-center
+
+                    md:text-base
+                    ">Técnico deportivo de equitación - Nivel 1
+                </p>
+            </div>
+        </div>
         <div class="
             bg-(--color-cal)
             p-10
 
-            md:w-[35%]
             md:flex md:flex-col
-            md:justify-center
+            md:w-[40%]
+            
+            lg:justify-center
             "
             >
             <h3 class="
@@ -69,10 +137,11 @@
                 font-cormorantgaramond
                 text-(--color-tierra)
                 text-4xl
-                mb-4
+                mb-5
 
                 md:text-fluid-title
-                md:mb-15">
+                md:mb-10
+                lg:mb-15">
                 Carolina: guía, propietaria y alma de Aventura Ecuestre
             </h2>
             <p class="
@@ -90,55 +159,17 @@
             </p>
         </div>
         
-        <div class="
-            relative
-            mb-5
-            md:w-[65%]">
-            <img src="{% static 'main/images/about.jpg' %}" alt="Carolina en la playa con sus caballos" class="
-                relative
-                
-                md:w-full md:h-full md:object-cover">
-            <div class="
-                absolute
-                inline-block
-                bottom-1
-                right-1
-                bg-(--color-mar)
-                p-3
-                rounded
-                text-center
-
-                md:p-5
-                md:bottom-5
-                md:right-5">
-                <p class="
-                    font-titan font-bold
-                    text-(--color-cal) text-2xl
-
-                    md:text-fluid-title
-                    md:mb-5
-                    ">Carol
-                </p>
-                <p class="
-                    text-(--color-oceano) text-xs
-                    
-                    md:text-base">
-                    GUÍA CERTIFICADA  ·  PROPIETARIA
-                </p>
-                <p class="
-            text-xs text-(--color-oceano) text-center
-
-            md:text-base
-            ">Técnico deportivo de equitación - Nivel 1
-        </p>
-            </div>
-        </div>
+        
         
     </section>
     
-    <div class="bg-(--color-mar)
+        <div class="bg-(--color-mar)
         rounded-xl
-        m-5 p-5">
+        mx-5 p-5
+
+        md:my-5
+
+        ">
         <p class="
             font-cormorantgaramond font-italic
             text-xl
@@ -146,7 +177,8 @@
             text-(--color-cal)
             mb-4
 
-            md:text-fluid-heading md:text-center md:mb-5"
+            md:text-fluid-heading md:text-center 
+            md:mb-5"
             >
             "Siempre supe que quería dedicarme a esto por completo. Tener mi propia manada, conocer a cada caballo por su nombre y su carácter, y llevar a la gente a descubrir Tarifa desde su lomo — eso es todo lo que necesito."
         </p>
@@ -158,8 +190,10 @@
         </p>
         
     </div>
+    
     <section class="
         bg-(--color-cal)
+        mb-5
         
         md:grid grid-cols-3
         ">
@@ -170,13 +204,12 @@
             md:border-r md:border-(--color-oceano)">
             <p class="
                 font-cormorantgaramond
-                text-4xl
+                text-fluid-hero
                 text-oceano
                 text-center
                 mb-2
                 
-                md:text-left
-                md:text-fluid-hero">01</p>
+                md:text-left">01</p>
             <h5 class="
                 font-cormorantgaramond font-bold
                 text-2xl
@@ -194,13 +227,13 @@
             md:border-r md:border-(--color-oceano)">
             <p class="
                 font-cormorantgaramond
-                text-4xl
+                text-fluid-hero
                 text-oceano
                 text-center
                 mb-2
                 
                 md:text-left
-                md:text-fluid-hero">02</p>
+                ">02</p>
             <h5 class="
                 font-cormorantgaramond font-bold
                 text-2xl
@@ -216,13 +249,13 @@
             bg-(--color-cal)">
             <p class="
                 font-cormorantgaramond
-                text-4xl
+                text-fluid-hero
                 text-oceano
                 text-center
                 mb-2
                 
                 md:text-left
-                md:text-fluid-hero">03</p>
+                ">03</p>
             <h5 class="
                 font-cormorantgaramond font-bold
                 text-2xl
@@ -258,16 +291,18 @@
                 mb-4
 
                 md:text-fluid-title
-                md:mb-15">Caballos cuidados con amor, cada uno con su historia</h2>
+                md:mb-5">Caballos cuidados con amor, cada uno con su historia</h2>
             <p class="
                 text-(--color-tierra)
                 mb-5
 
-                md:text-fluid-body">
+                md:text-fluid-body
+                md:mb-10">
                 Carol conoce a cada uno de sus caballos por su nombre, su historia y sus manías. Cuando llega un jinete, sabe qué caballo va a conectar mejor con él. Porque su manada no es el medio para trabajar — es la razón por la que trabaja.</p>
             <div class="
                 flex
                 flex-wrap 
+                justify-around
                 gap-x-4 
                 gap-y-2
                 ">

@@ -21,12 +21,13 @@
                 inset-0 
                 w-full 
                 h-full 
-                object-contain 
+                object-cover 
                 object-[80%_center]
                               
-                md:object-content
-                md:object-[50% center]
-                md:w-[60%]"
+                md:object-cover
+                md:object-[50%_center]
+                md:w-[60%]
+                md:h-auto"
         >
         <div class="
             bg-mar
@@ -38,15 +39,14 @@
             ">
             <!-- Texto sobre la imagen -->
         <h1 class="
-            font-titan font-bold text-[15vw]/14
+            font-titan font-bold text-[15vw]/[16vw]
             text-center
             w-full
             text-(--color-luz)
             z-10
             p-5
 
-            md:text-[7vw]/[8vw]
-            md:text-center
+            md:text-[6.5vw]/[7vw]
 
             ">AVENTURA ECUESTRE
         </h1>
@@ -59,25 +59,26 @@
 
             md:h-fit
             md:p-[2vw] 
-            md:mb-0
-            
+            md:mb-5
+            md:overflow-hidden
             ">
             
             <h2 class="
                 text-center
-                text-(--color-tierra) text-5xl font-cormorantgaramond font-bold
+                text-(--color-tierra) text-[9vw]/[10vw] font-cormorantgaramond font-bold
 
-                md:text-[4vw]/[3vw]
-                md:inline
+                md:text-[3.5vw]/[4vw]
                 md:leading-tight
+                md:text-left
+
+                lg:text-[3.5vw]/[4vw]
                 "
                 >
                 <span class="
                 block
 
-                
-                md:text-left
-                ">Cabalga libre </span><span>en la <strong class="text-(--color-arena)">Costa de la Luz</strong></span>
+            
+                ">Cabalga libre </span><span>en la <b class="text-(--color-arena) text-center">Costa de la Luz</b></span>
             </h2>
             <p class="
                 py-5
@@ -85,7 +86,7 @@
 
                 md:text-fluid-body
                 md:text-left
-                ">Paseos a caballo por las playas más salvajes de Andalucía,<br>con vistas al continente africano.</p>
+                ">Paseos a caballo por las playas más salvajes de Andalucía, con vistas al continente africano.</p>
             <div id="hero_buttons" class="
                 text-center
                 flex
@@ -93,7 +94,8 @@
                 gap-2
 
                 md:text-left
-                md:flex-row md:items-center md:gap-7
+                md:gap-3
+                lg:flex-row lg:items-center lg:gap-7
                 ">
                 <a href="{% url 'contact' %}" class="
                     font-titan
@@ -197,13 +199,7 @@
             md:text-fluid-heading
             md:mb-10"
             >NUESTRAS RUTAS</h2>
-        <h3 class="
-            mb-5
-            
-            md:text-fluid-body
-            md:mb-10">
-            Elige tu aventura:
-        </h3>
+        
         <div class="
             md:grid md:grid-cols-3 md:gap-4">
             <article class="
@@ -237,6 +233,7 @@
                 </div>
                 <div class="p-5 flex flex-col grow">
                     <h4 class="
+                        mb-5
                         text-lg
 
                         md:text-fluid-heading">
@@ -248,10 +245,10 @@
 
                         md:text-fluid-body
                         ">
-                        Diseñadas para todos las edades y niveles.<br>La experiencia más demandada.
+                        Diseñadas para todos las edades y niveles. La experiencia más demandada.
                     </p>
-                    <a href="{% url 'activities' %}#rutas" class="mt-auto hover:text-mar md:text-fluid-body">
-                        [Ver más]
+                    <a href="{% url 'activities' %}#rutas" class="ml-auto mt-auto text-fluid-mini hover:text-mar">
+                        <i>Ver más</i>
                     </a>
                 </div>
             </article>
@@ -288,6 +285,7 @@
                 <div class="p-5 flex flex-col grow">
                     <h4 class="
                         text-lg
+                        mb-5
 
                         md:text-fluid-heading">
                         Packs Vacacionales
@@ -300,8 +298,8 @@
                         ">
                         Senderos sombreados por el Parque Natural del Estrecho.
                     </p>
-                    <a href="{% url 'activities' %}#packs" class="mt-auto hover:text-mar md:text-fluid-body">
-                        [Ver más]
+                    <a href="{% url 'activities' %}#packs" class="ml-auto mt-auto text-fluid-mini hover:text-mar">
+                        <i>Ver más</i>
                     </a>
                 </div>
                 
@@ -340,6 +338,7 @@
                 <div class="p-5 flex flex-col grow">
                     <h4 class="
                         text-lg
+                        mb-5
 
                         md:text-fluid-heading">
                         Pupilaje
@@ -352,8 +351,8 @@
                         ">
                         El lugar perfecto para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
                     </p>
-                    <a href="{% url 'activities' %}#pupilaje" class="mt-auto hover:text-mar md:text-fluid-body">
-                        [Ver más]
+                    <a href="{% url 'activities' %}#pupilaje" class="ml-auto mt-auto text-fluid-mini hover:text-mar">
+                        <i>Ver más</i>
                     </a>
                 </div>
             </article>
