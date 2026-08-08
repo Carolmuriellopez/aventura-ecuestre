@@ -6,14 +6,14 @@
     bg-white
     h-full flex flex-col
     ">
-    <img data-src="{% static 'main/images/picnic.jpg' %}" 
+    <img src="{% static 'main/images/picnic.jpg' %}" 
         alt="Caballos pastando" 
+        loading="lazy"
         class="
         h-80
         object-cover 
         w-full
         mb-4
-        swiper-lazy
         
         md:h-120">
     <div class="p-5 flex flex-col grow">
