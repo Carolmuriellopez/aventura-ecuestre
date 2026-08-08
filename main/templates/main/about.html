@@ -67,7 +67,9 @@
             lg:h-full
             lg:relative
             ">
-            <img src="{% static 'main/images/about.jpg' %}" alt="Carolina en la playa con sus caballos" class="
+            <img src="{% static 'main/images/about.jpg' %}" 
+                loading="lazy"
+                alt="Carolina en la playa con sus caballos" class="
                 relative
                 
                 md:static
@@ -270,7 +272,11 @@
     <section class="
         md:flex md:flex-row-reverse
         ">
-        <img src="{% static 'main/images/manada.jpg' %}" alt="Caballos en el prado" class="md:w-[50%]">
+        <img src="{% static 'main/images/manada.jpg' %}" 
+            loading="lazy"
+            alt="Caballos en el prado" 
+            class="md:w-[50%]"
+        >
         <div class="
             p-10
             bg-(--color-arena)

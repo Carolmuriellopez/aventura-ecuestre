@@ -40,6 +40,7 @@ function equalizeSlideHeights(swiper) {
 
 const rutasCarousel = new Swiper('#rutas-carousel', {
     loop: false,
+    lazy: true,
     loopedSlides: 5,
     slidesPerView: 1,
     spaceBetween: 16,
@@ -67,6 +68,7 @@ document.fonts.ready.then(() => {
 
 const packsCarousel = new Swiper('#packs-carousel', {
     loop: false,
+    lazy: true,
     loopedSlides: 2,
     slidesPerView: 1,
     spaceBetween: 16,
