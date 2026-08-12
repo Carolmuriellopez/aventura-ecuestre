@@ -87,7 +87,7 @@
 
   --text-fluid-mini:    clamp(0.8rem, 1.3vw, 1.1rem);
   --text-fluid-body:    clamp(1rem, 1.5vw, 1.25rem);
-  --text-fluid-heading: clamp(1.5rem, 2.5vw, 2.25rem);
+  --text-fluid-heading: clamp(1.5rem, 2.25vw, 2rem);
   --text-fluid-title:   clamp(2rem, 4vw, 3.75rem);
   --text-fluid-hero:    clamp(2.5rem, 5vw, 4.5rem);
 
