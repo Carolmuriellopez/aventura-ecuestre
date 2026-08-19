@@ -1,9 +1,15 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 
-{% block title %}Aventura Ecuestre - Política de privacidad{% endblock %}
+{% block title %}Rutas a caballo en Tarifa | Aventura Ecuestre | Política de Privacidad{% endblock %}
+{% block meta_description %}Política de privacidad de Aventura Ecuestre: qué datos recogemos en el formulario de contacto, con qué finalidad los tratamos y cómo ejercer tus derechos RGPD.{% endblock %}
 
 {% block main_class %}bg-white{% endblock %}
+{% block og_title %}Aventura Ecuestre - Política de privacidad{% endblock %}
+{% block og_description %}Política de privacidad{% endblock %}
+{% block og_url %}https://aventuraecuestre.com/politica-de-privacidad/{% endblock %}
+
+{% block canonical %}https://aventuraecuestre.com/politica-de-privacidad/{% endblock %}
 
 {% block content %}
 <div class="bg-white">
@@ -139,13 +145,13 @@
             <h3 class="
                 font-bold
                 mb-5">
-                2.1 Formulario de contacto
+                2.2 Google Analytics
             </h3>
             <p class="mb-5">
                 Si el usuario acepta las cookies analíticas, Google Analytics recopila datos de navegación de forma anonimizada (páginas visitadas, tiempo de permanencia, dispositivo utilizado, ubicación aproximada, etc.) con la finalidad de elaborar estadísticas internas que permitan mejorar el sitio web.
             </p>
             <p>
-                La base legal es el consentimiento del usuario, conforme al artículo 6.1.a) del RGPD. Para más información, consulta nuestra <a href="{% url 'privacidad' %}" class="underline text-link visited:text-link-visited">Política de Cookies</a>.
+                La base legal es el consentimiento del usuario, conforme al artículo 6.1.a) del RGPD. Para más información, consulta nuestra <a href="{% url 'cookies' %}" class="underline text-link visited:text-link-visited">Política de Cookies</a>.
             </p>
         </div>
         <div class="mb-5

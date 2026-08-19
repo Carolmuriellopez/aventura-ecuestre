@@ -1,14 +1,48 @@
 {% load static %}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="{% static 'main/images/trecefavicon2.png' %}">
-    <title>{% block title %}Aventura Ecuestre - Layout{% endblock %}</title>
-    
+    <title>{% block title %}Aventura Ecuestre - Rutas a caballo en Tarifa{% endblock %}</title>
+    <meta name="description" content="{% block meta_description %}Excursiones y rutas a caballo en Tarifa, Cádiz. Paseos ecuestres por playa y montaña con guías profesionales.{% endblock %}">
+
     <link rel="stylesheet" href="{% static 'main/css/output.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <meta property="og:title" content="{% block og_title %}Aventura Ecuestre - Rutas a Caballo en Tarifa{% endblock %}">
+    <meta property="og:description" content="{% block og_description %}Excursiones a caballo por Tarifa, Cádiz{% endblock %}">
+    <meta property="og:image" content="{% block og_image %}https://aventuraecuestre.com{% static 'main/images/atardecer.jpg' %}{% endblock %}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{% block og_url %}https://aventuraecuestre.com{% endblock %}">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "TouristAttraction",
+            "name": "Aventura Ecuestre",
+            "description": "Excursiones y rutas a caballo en Tarifa, Cádiz",
+            "image": "https://aventuraecuestre.com{% static 'main/images/hero-image.jpg' %}",
+            "url": "https://aventuraecuestre.com",
+            "telephone": "+34626480019",
+            "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Carretera N-340 km 78 Frente al Camping Tarifa",
+            "addressLocality": "Tarifa",
+            "addressRegion": "Cádiz",
+            "postalCode": "11380",
+            "addressCountry": "ES"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "36.056233",
+            "longitude": "-5.647469"
+        },
+        "openingHours": "Mo-Su 09:00-18:00"
+        }
+    </script>
+    <link rel="canonical" href="{% block canonical %}https://aventuraecuestre.com{% endblock %}">
 </head>
 <body class="bg-(--color-dark)">
     <!-- Header -->
