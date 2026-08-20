@@ -1,6 +1,8 @@
 from django.urls import path
+from django.views.generic import TemplateView
 from django.contrib.sitemaps.views import sitemap
 from . import views
+
 from main.sitemaps import StaticViewSitemap
 
 sitemaps = {
@@ -16,4 +18,8 @@ urlpatterns = [
     path('politica-de-privacidad/', views.privacidad, name='privacidad'),
     path('contacto/gracias/', views.contacto_gracias, name='contacto_gracias'),
     path('sitemap.xml', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    path('robots.txt', TemplateView.as_view(
+        template_name='robots.txt',
+        content_type='text/plain'
+    ))
 ]
