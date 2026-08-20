@@ -1,6 +1,7 @@
 from decouple import config
 from django.core.mail import send_mail
 from django.conf import settings
+from django.contrib.sitemaps.views import sitemap as django_sitemap
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 
@@ -48,4 +49,9 @@ def privacidad(request):
 
 def contacto_gracias(request):
     return render(request, 'main/contacto_gracias.html')
+
+def sitemap_view(request, sitemaps):
+    response = django_sitemap(request, sitemaps)
+    del response['X-Robots-Tag']
+    return response
 
