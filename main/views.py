@@ -1,5 +1,6 @@
 from decouple import config
 from django.core.mail import send_mail
+from django.conf import settings
 from django.shortcuts import render, redirect
 from .forms import ContactForm
 
@@ -29,7 +30,7 @@ def contact(request):
                     Mensaje: {form.cleaned_data['message']}
                 """,
                 from_email=config('EMAIL_HOST_USER'),
-                recipient_list=['mendozagonzalez.irene@gmail.com'],
+                recipient_list=[settings.CONTACT_EMAIL_RECIPIENT],
             )
             return redirect('contacto_gracias')
     else:
