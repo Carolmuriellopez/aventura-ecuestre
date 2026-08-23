@@ -4,11 +4,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Consentimiento de cookies / Consent Mode v2 -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){ dataLayer.push(arguments); }
+
+        function getStoredConsent() {
+            const match = document.cookie.match(/(?:^|; )cookie_consent=([^;]*)/);
+            return match ? decodeURIComponent(match[1]) : null;
+        }
+        const storedConsent = getStoredConsent();
+        const analyticsGranted = storedConsent === 'all' || storedConsent === 'custom_yes';
+
+        gtag('consent', 'default', {
+            'analytics_storage': analyticsGranted ? 'granted' : 'denied',
+            'ad_storage': 'denied',
+            'ad_user_data': 'denied',
+            'ad_personalization': 'denied',
+            'wait_for_update': 500
+        });
+
+        window.GA4_MEASUREMENT_ID = "{{ GA4_MEASUREMENT_ID }}";
+
+        if (analyticsGranted && window.GA4_MEASUREMENT_ID) {
+            var s = document.createElement('script');
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=' + window.GA4_MEASUREMENT_ID;
+            s.async = true;
+            document.head.appendChild(s);
+            gtag('js', new Date());
+            gtag('config', window.GA4_MEASUREMENT_ID, { anonymize_ip: true });
+            window.__ga4Loaded = true;
+        }
+    </script>
+
     <link rel="icon" type="image/png" href="{% static 'main/images/trecefavicon2.png' %}">
     <title>{% block title %}Aventura Ecuestre - Rutas a caballo en Tarifa{% endblock %}</title>
     <meta name="description" content="{% block meta_description %}Excursiones y rutas a caballo en Tarifa, Cádiz. Paseos ecuestres por playa y montaña con guías profesionales.{% endblock %}">
 
     <link rel="stylesheet" href="{% static 'main/css/output.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/cookie-banner.css' %}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     <meta property="og:title" content="{% block og_title %}Aventura Ecuestre - Rutas a Caballo en Tarifa{% endblock %}">
@@ -63,9 +98,13 @@
     <footer class="text-center">
         {% include 'main/partials/footer.html' %}
     </footer>
+
+    <!-- Banner de consentimiento de cookies -->
+    {% include 'main/partials/cookie_banner.html' %}
     
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="{% static 'main/js/main.js' %}"></script>
+    <script src="{% static 'main/js/cookie-consent.js' %}" defer></script>
     
     <!-- WhatsApp Float Button -->
 
@@ -73,7 +112,7 @@
         href="https://wa.me/34626480019"
         target="_blank"
         rel="noopener noreferrer"
-        class="fixed bottom-6 right-6 z-50 flex items-center justify-center w-14 h-14 lg:w-30 lg:h-30 rounded-full shadow-lg bg-[#25D366] hover:bg-[#1ebe5d] transition-colors duration-200"
+        class="fixed bottom-6 right-6 z-25 flex items-center justify-center w-14 h-14 lg:w-30 lg:h-30 rounded-full shadow-lg bg-[#25D366] hover:bg-[#1ebe5d] transition-colors duration-200"
         aria-label="Contactar por WhatsApp"
     >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-7 h-7 lg:w-20 lg:h-20">
