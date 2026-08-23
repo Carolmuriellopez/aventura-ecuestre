@@ -288,15 +288,6 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
-  .mr-8 {
-    margin-right: calc(var(--spacing) * 8);
-  }
-  .mr-20 {
-    margin-right: calc(var(--spacing) * 20);
-  }
-  .mr-\[2vw\] {
-    margin-right: 2vw;
-  }
   .mr-\[3vw\] {
     margin-right: 3vw;
   }
@@ -908,11 +899,6 @@
       margin-block: calc(var(--spacing) * 5);
     }
   }
-  .md\:mt-0 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 0);
-    }
-  }
   .md\:mb-0 {
     @media (width >= 48rem) {
       margin-bottom: calc(var(--spacing) * 0);
@@ -1224,18 +1210,6 @@
       line-height: 7vw;
     }
   }
-  .md\:text-\[6vw\]\/\[6\.5vw\] {
-    @media (width >= 48rem) {
-      font-size: 6vw;
-      line-height: 6.5vw;
-    }
-  }
-  .md\:text-\[6vw\]\/\[7vw\] {
-    @media (width >= 48rem) {
-      font-size: 6vw;
-      line-height: 7vw;
-    }
-  }
   .md\:text-base {
     @media (width >= 48rem) {
       font-size: var(--text-base);
@@ -1314,14 +1288,49 @@
       display: flex;
     }
   }
-  .lg\:h-120 {
+  .lg\:h-12 {
     @media (width >= 64rem) {
-      height: calc(var(--spacing) * 120);
+      height: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:h-20 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:h-25 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 25);
+    }
+  }
+  .lg\:h-30 {
+    @media (width >= 64rem) {
+      height: calc(var(--spacing) * 30);
     }
   }
   .lg\:h-full {
     @media (width >= 64rem) {
       height: 100%;
+    }
+  }
+  .lg\:w-12 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 12);
+    }
+  }
+  .lg\:w-20 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 20);
+    }
+  }
+  .lg\:w-25 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 25);
+    }
+  }
+  .lg\:w-30 {
+    @media (width >= 64rem) {
+      width: calc(var(--spacing) * 30);
     }
   }
   .lg\:flex-row {
@@ -1358,6 +1367,31 @@
     @media (width >= 64rem) {
       font-size: 3.5vw;
       line-height: 4vw;
+    }
+  }
+  .lg\:text-\[1\.2vw\] {
+    @media (width >= 64rem) {
+      font-size: 1.2vw;
+    }
+  }
+  .lg\:text-\[1vw\] {
+    @media (width >= 64rem) {
+      font-size: 1vw;
+    }
+  }
+  .lg\:text-\[2\.5vw\] {
+    @media (width >= 64rem) {
+      font-size: 2.5vw;
+    }
+  }
+  .lg\:text-\[2vw\] {
+    @media (width >= 64rem) {
+      font-size: 2vw;
+    }
+  }
+  .lg\:text-\[3vw\] {
+    @media (width >= 64rem) {
+      font-size: 3vw;
     }
   }
 }
