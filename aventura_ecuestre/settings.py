@@ -69,6 +69,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'main.context_processors.ga4',
             ],
         },
     },
@@ -138,3 +139,5 @@ EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
 CONTACT_EMAIL_RECIPIENT = config('CONTACT_EMAIL_RECIPIENT')
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
+GA4_MEASUREMENT_ID = config('GA4_MEASUREMENT_ID', default='')
