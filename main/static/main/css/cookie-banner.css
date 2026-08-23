@@ -1,0 +1,229 @@
+/* Banner de consentimiento de cookies — Tarifa v3 */
+
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 30;
+  width: 100%;
+  background: #F8F4EE;
+  border-top: 3px solid #E8835A;
+  box-shadow: 0 -8px 30px rgba(61, 46, 30, 0.18);
+  padding: 5px;
+  font-family: 'Jost', sans-serif;
+  color: #3D2E1E;
+}
+
+.cookie-banner[hidden] {
+  display: none;
+}
+
+.cookie-inner {
+  max-width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 10px;
+  align-items: start;
+  padding: 10px 0;
+}
+
+.cookie-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #E8C87A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cookie-icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.cookie-title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  font-size: 22px;
+  color: #2A5C8A;
+  margin: 0 0 6px;
+}
+
+.cookie-text {
+  font-size: 14.5px;
+  line-height: 1.55;
+  margin: 0 0 6px;
+}
+.cookie-text a {
+  color: #4A90C4;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.cookie-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.btn {
+  font-family: 'Jost', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 11px 22px;
+  border-radius: 999px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+.btn:active {
+  transform: translateY(0);
+}
+.btn:focus-visible {
+  outline: 3px solid #7EC8E3;
+  outline-offset: 2px;
+}
+
+.btn-accept {
+  background: #E8835A;
+  color: #fff;
+  box-shadow: 0 4px 14px rgba(232, 131, 90, 0.35);
+}
+
+.btn-reject {
+  background: transparent;
+  color: #2A5C8A;
+  border-color: #2A5C8A;
+}
+
+.btn-config {
+  background: transparent;
+  color: #3D2E1E;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  border: none;
+  padding: 11px 6px;
+}
+
+.spacer {
+  flex: 1 1 auto;
+}
+
+/* Panel de configuración */
+.config-panel {
+  display: none;
+  grid-column: 1 / -1;
+  border-top: 1px solid rgba(61, 46, 30, 0.15);
+  margin-top: 18px;
+  padding-top: 18px;
+}
+.config-panel.open {
+  display: block;
+}
+
+.config-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(61, 46, 30, 0.08);
+}
+.config-row:last-child {
+  border-bottom: none;
+}
+.config-row-title {
+  font-weight: 600;
+  font-size: 14.5px;
+  color: #2A5C8A;
+  margin: 0 0 2px;
+}
+.config-row-desc {
+  font-size: 13px;
+  color: #3D2E1E;
+  opacity: 0.8;
+  margin: 0;
+}
+
+/* Toggle switch */
+.switch {
+  position: relative;
+  width: 44px;
+  height: 24px;
+  flex-shrink: 0;
+}
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.switch-track {
+  position: absolute;
+  inset: 0;
+  background: #c9c2b4;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.switch-track::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: #fff;
+  border-radius: 50%;
+  transition: transform 0.2s;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25);
+}
+.switch input:checked + .switch-track {
+  background: #4A90C4;
+}
+.switch input:checked + .switch-track::before {
+  transform: translateX(20px);
+}
+.switch input:disabled + .switch-track {
+  background: #E8C87A;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+.switch input:focus-visible + .switch-track {
+  outline: 2px solid #7EC8E3;
+  outline-offset: 2px;
+}
+
+.config-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+@media (max-width: 560px) {
+  .cookie-inner {
+    grid-template-columns: 1fr;
+  }
+  .cookie-icon {
+    margin-bottom: 4px;
+  }
+  .cookie-actions {
+    flex-direction: column;
+  }
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+  .btn-config {
+    width: auto;
+    align-self: flex-start;
+  }
+}
