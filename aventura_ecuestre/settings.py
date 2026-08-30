@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     'widget_tweaks',
 
     'main',
+
+    'anymail'
 ]
 
 MIDDLEWARE = [
@@ -130,15 +132,14 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_USE_TLS = True
-EMAIL_HOST_USER = config('EMAIL_HOST_USER')
-EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD')
+EMAIL_BACKEND = 'anymail.backends.resend.EmailBackend'
 EMAIL_TIMEOUT = 10
 CONTACT_EMAIL_RECIPIENT = config('CONTACT_EMAIL_RECIPIENT')
 
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 GA4_MEASUREMENT_ID = config('GA4_MEASUREMENT_ID', default='')
+
+ANYMAIL = {
+    'RESEND_API_KEY': config('RESEND_API_KEY'),
+}
