@@ -165,6 +165,12 @@
                 
                 {{ form.name.errors }}
             </form>
+            {% if email_error %}
+                <div class="bg-red-50 border border-red-300 text-red-800 px-4 py-3 rounded mb-4">
+                    No hemos podido enviar tu mensaje en este momento. Por favor, escríbenos directamente a
+                    <a href="mailto:carol@aventuraecuestre.com" class="underline">aventureros@aventuraecuestre.com</a>.
+                </div>
+            {% endif %}
         </div>
     </section>
     
