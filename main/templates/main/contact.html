@@ -165,11 +165,36 @@
                 
                 {{ form.name.errors }}
             </form>
-            {% if email_error %}
-                <div class="bg-red-50 border border-red-300 text-red-800 px-4 py-3 rounded mb-4">
-                    No hemos podido enviar tu mensaje en este momento. Por favor, escríbenos directamente a
-                    <a href="mailto:carol@aventuraecuestre.com" class="underline">aventureros@aventuraecuestre.com</a>.
+            {% if email_error %}        
+                <div id="email-error-modal" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-5"
+                    onclick="document.getElementById('email-error-modal').remove()">
+                    <div class="bg-white rounded-xl p-8 max-w-md w-full text-center shadow-2xl"
+                        onclick="event.stopPropagation()">
+                        <div class="w-14 h-14 rounded-full bg-(--color-poniente) mx-auto mb-5 flex items-center justify-center">
+                            <span class="text-white text-2xl font-bold">!</span>
+                        </div>
+                        <h3 class="font-cormorantgaramond text-2xl text-(--color-mar) mb-3">
+                            No hemos podido enviar tu mensaje
+                        </h3>
+                        <p class="text-(--color-trece) mb-6 md:text-fluid-body">
+                            Ha ocurrido un problema al enviar tu consulta. Por favor, escríbenos directamente a
+                            <a href="mailto:aventureros@aventuraecuestre.com" class="text-(--color-cielo) underline">aventureros@aventuraecuestre.com</a>
+                            o llámanos al <a href="tel:+34626480019" class="text-(--color-cielo) underline">+34 626 480 019</a>.
+                        </p>
+                        <button onclick="document.getElementById('email-error-modal').remove()"
+                            class="font-titan font-bold text-white bg-(--color-mar) rounded-xl px-8 py-3 hover:shadow-xl/30">
+                            ENTENDIDO
+                        </button>
+                    </div>
                 </div>
+                <script>
+                    document.addEventListener('keydown', function(e) {
+                    if (e.key === 'Escape') {
+                        const modal = document.getElementById('email-error-modal');
+                        if (modal) modal.remove();
+                    }
+                    });
+                </script>
             {% endif %}
         </div>
     </section>
