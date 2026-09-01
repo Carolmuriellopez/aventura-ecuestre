@@ -281,6 +281,9 @@
   .col-span-2 {
     grid-column: span 2 / span 2;
   }
+  .-m-3 {
+    margin: calc(var(--spacing) * -3);
+  }
   .m-5 {
     margin: calc(var(--spacing) * 5);
   }
@@ -466,6 +469,9 @@
   }
   .transform {
     transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
+  .touch-manipulation {
+    touch-action: manipulation;
   }
   .list-disc {
     list-style-type: disc;

@@ -29,10 +29,10 @@
             {% get_current_language as CURRENT_LANGUAGE %}
             {% get_available_languages as AVAILABLE_LANGUAGES %}
             <button id="lang-toggle" type="button"
-                class="block w-6 h-4.5 transition-opacity duration-200 hover:opacity-80"
+                class="flex items-center justify-center p-3 -m-3 touch-manipulation transition-opacity duration-200 hover:opacity-80"
                 aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
                 {% with flag_file="main/images/flags/"|add:CURRENT_LANGUAGE|add:".svg" %}
-                    <img src="{% static flag_file %}" alt="" class="w-full h-full object-cover rounded-xs shadow">
+                    <img src="{% static flag_file %}" alt="" class="w-6 h-4.5 object-cover rounded-xs shadow">
                 {% endwith %}
                 <span class="sr-only">{% trans "Cambiar idioma" %}</span>
             </button>
