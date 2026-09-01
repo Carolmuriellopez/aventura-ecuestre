@@ -31,6 +31,36 @@ if (menu && toggle) {
     });
 }
 
+const langToggle = document.getElementById('lang-toggle');
+const langMenu = document.getElementById('lang-menu');
+
+if (langToggle && langMenu) {
+    const closeLangMenu = () => {
+        langMenu.hidden = true;
+        langToggle.setAttribute('aria-expanded', 'false');
+    };
+
+    langToggle.addEventListener('click', (e) => {
+        e.stopPropagation();
+        const expanded = langToggle.getAttribute('aria-expanded') === 'true';
+        langToggle.setAttribute('aria-expanded', !expanded);
+        langMenu.hidden = expanded;
+    });
+
+    document.addEventListener('click', (e) => {
+        if (!langMenu.hidden && !langMenu.contains(e.target) && e.target !== langToggle) {
+            closeLangMenu();
+        }
+    });
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && !langMenu.hidden) {
+            closeLangMenu();
+            langToggle.focus();
+        }
+    });
+}
+
 function equalizeSlideHeights(swiper) {
     const slides = Array.from(swiper.slides);
     slides.forEach(s => s.style.height = 'auto');

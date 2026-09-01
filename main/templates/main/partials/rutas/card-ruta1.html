@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <article class="
     border border-transparent
     rounded-xl
@@ -7,16 +8,16 @@
     h-full flex flex-col
     ">
     <div class="relative">
-        <img src="{% static 'main/images/pony.png' %}" 
-            alt="Niña con protecciones de seguridad a lomos de un pony" 
+        <img src="{% static 'main/images/pony.png' %}"
+            alt="{% trans "Niña con protecciones de seguridad a lomos de un pony" %}"
             loading="lazy"
             class="
             h-80
-            object-cover 
+            object-cover
             object-bottom
             w-full
             mb-4
-        
+
             md:h-120
             md:object-center">
         <span class="
@@ -29,41 +30,41 @@
             inline-block
             font-titan
             font-bold
-                    
-            md:text-fluid-body">NIÑOS
+
+            md:text-fluid-body">{% trans "NIÑOS" %}
         </span>
     </div>
-    
+
     <div class="p-5 flex flex-col grow">
         <h3 class="
             font-titan font-bold
             text-(--color-tierra) text-4xl md:text-fluid-title
             inline-block
             mb-5
-        
+
             md:mb-10
             ">
-            Paseo en pony
+            {% trans "Paseo en pony" %}
         </h3>
         <p class="
-            text-(--color-trece) 
+            text-(--color-trece)
             mb-4
 
             md:text-fluid-body
             md:mb-10
-            ">Dirigido a los más pequeños. Un primer encuentro mágico con el caballo por el pinar en un paseo tranquilo, seguro y lleno de ilusión.
+            ">{% trans "Dirigido a los más pequeños. Un primer encuentro mágico con el caballo por el pinar en un paseo tranquilo, seguro y lleno de ilusión." %}
         </p>
         <div class="article-footer mt-auto">
             <hr class="border-(--color-trece) mb-4 md:mb-10">
             <div class="flex items-center justify-between mb-5 md:mb-10">
                 <div class="flex justify-start">
                     <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                        <span class="font-titan font-bold md:text-fluid-body">30 min</span>
+                        <span class="font-titan font-bold md:text-fluid-body">{% trans "30 min" %}</span>
                     </div>
                     <p class="
                         font-titan
                         font-bold text-xl md:text-fluid-body">
-                        35€<span class="text-(--color-trece) text-xs font-titan font-bold md:text-fluid-body">/niño</span>
+                        35€<span class="text-(--color-trece) text-xs font-titan font-bold md:text-fluid-body">{% trans "/niño" %}</span>
                     </p>
                 </div>
                 <a href="{% url 'contact' %}" class="
@@ -78,14 +79,14 @@
                     w-fit
                     mx-auto
                     transition
-                    delay-100 
-                    duration-200 
-                    ease-in-out 
-                    hover:-translate-y-1 
+                    delay-100
+                    duration-200
+                    ease-in-out
+                    hover:-translate-y-1
                     hover:scale-105
 
                     md:text-fluid-body
-                "   >RESERVAR EXPERIENCIA
+                "   >{% trans "RESERVAR EXPERIENCIA" %}
                 </a>
             </div>
         </div>

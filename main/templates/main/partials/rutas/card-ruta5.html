@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <article class="
     border border-transparent
     rounded-xl
@@ -6,15 +7,15 @@
     bg-white
     h-full flex flex-col
     ">
-    <img src="{% static 'main/images/picnic.jpg' %}" 
-        alt="Caballos pastando" 
+    <img src="{% static 'main/images/picnic.jpg' %}"
+        alt="{% trans "Caballos pastando" %}"
         loading="lazy"
         class="
         h-80
-        object-cover 
+        object-cover
         w-full
         mb-4
-        
+
         md:h-120">
     <div class="p-5 flex flex-col grow">
         <div class="flex justify-between items-center mb-5 md:mb-10">
@@ -22,7 +23,7 @@
                 font-titan font-bold
                 text-(--color-tierra) text-4xl md:text-fluid-title
                 inline-block
-                ">Punta Paloma + Picnic
+                ">{% trans "Punta Paloma + Picnic" %}
             </h3>
         </div>
         <p class="
@@ -31,19 +32,19 @@
 
             md:text-fluid-body
             md:mb-10
-            ">Nos adentramos en el interior del bosque de la Duna, paseamos por senderos de costa y hacemos picnic en el pinar.
+            ">{% trans "Nos adentramos en el interior del bosque de la Duna, paseamos por senderos de costa y hacemos picnic en el pinar." %}
         </p>
         <div class="footer-article mt-auto">
             <hr class="border-(--color-trece) mb-4 md:mb-10 mt-auto">
             <div class="flex items-center justify-between mb-5 md:mb-10">
                 <div class="flex justify-start">
                     <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                        <span class="font-titan font-bold md:text-fluid-body">4 horas</span>
+                        <span class="font-titan font-bold md:text-fluid-body">{% trans "4 horas" %}</span>
                     </div>
                 <p class="
                     font-titan
                     font-bold text-xl md:text-fluid-body">
-                    200€<span class="text-(--color-trece) text-xs font-tita font-bold md:text-fluid-body">/persona</span>
+                    200€<span class="text-(--color-trece) text-xs font-tita font-bold md:text-fluid-body">{% trans "/persona" %}</span>
                 </p>
             </div>
             <a href="{% url 'contact' %}" class="
@@ -58,16 +59,15 @@
                 w-fit
                 mx-auto
                 transition
-                delay-100 
-                duration-200 
-                ease-in-out 
-                hover:-translate-y-1 
+                delay-100
+                duration-200
+                ease-in-out
+                hover:-translate-y-1
                 hover:scale-105
 
                 md:text-fluid-body
-                ">RESERVAR EXPERIENCIA
+                ">{% trans "RESERVAR EXPERIENCIA" %}
             </a>
         </div>
     </div>
 </article>
-

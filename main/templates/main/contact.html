@@ -1,11 +1,12 @@
 {% extends 'main/layout.html' %}
 {% load static %}
 {% load widget_tweaks %}
+{% load i18n %}
 
-{% block title %}Rutas a caballo en Tarifa | Contacta con Aventura Ecuestre{% endblock %}
-{% block meta_description %}Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. Excursiones para todos los niveles, guiadas por expertos en doma natural. Contactanos.{% endblock %}
-{% block og_title %}Aventura Ecuestre - Contacta con nosotros{% endblock %}
-{% block og_description %}Déjate sorprender con las mejores rutas que hemos diseñado para ti{% endblock %}
+{% block title %}{% trans "Rutas a caballo en Tarifa | Contacta con Aventura Ecuestre" %}{% endblock %}
+{% block meta_description %}{% trans "Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. Excursiones para todos los niveles, guiadas por expertos en doma natural. Contactanos." %}{% endblock %}
+{% block og_title %}{% trans "Aventura Ecuestre - Contacta con nosotros" %}{% endblock %}
+{% block og_description %}{% trans "Déjate sorprender con las mejores rutas que hemos diseñado para ti" %}{% endblock %}
 {% block og_url %}https://aventuraecuestre.com/contacto/{% endblock %}
 
 {% block canonical %}https://aventuraecuestre.com/contacto/{% endblock %}
@@ -20,8 +21,8 @@
 
             md:text-fluid-heading
             md:mb-10
-            
-            lg:mb-15">INICIO  >  CONTACTO
+
+            lg:mb-15">{% trans "INICIO" %}  &gt;  {% trans "CONTACTO" %}
         </nav>
         <h1 class="font-cormorantgaramond
                 text-(--color-cal)
@@ -30,14 +31,14 @@
 
                 md:mb-5
                 md:text-[5.5vw]/[6vw]
-                
+
                 lg:mb-15">
-            Escríbenos o <i><b class="
+            {% blocktrans %}Escríbenos o <i><b class="
                 text-(--color-luz)">
                 llámanos
-            </b></i>
+            </b></i>{% endblocktrans %}
         </h1>
-        <p class="text-(--color-cal) mb-5 md:text-fluid-body">Respondemos en menos de 24 horas. Para reservas urgentes, escríbenos directamente al WhatsApp — solemos estar en el campo pero siempre contestamos los mensajes.</p>
+        <p class="text-(--color-cal) mb-5 md:text-fluid-body">{% blocktrans %}Respondemos en menos de 24 horas. Para reservas urgentes, escríbenos directamente al WhatsApp — solemos estar en el campo pero siempre contestamos los mensajes.{% endblocktrans %}</p>
     </header>
     <section class="p-5">
         <div class="
@@ -45,50 +46,50 @@
             p-5
             rounded-xl
             bg-white
-            
-            
+
+
             md:w-[80%]
             md:mx-auto">
             <h2 class="
                 text-2xl text-(--color-mar)
                 text-center
                 mb-5
-            
+
                 md:text-fluid-heading
                 md:mb-10">
-                FORMULARIO DE CONTACTO
+                {% trans "FORMULARIO DE CONTACTO" %}
             </h2>
-            <p class="text-center mb-5 md:text-fluid-body">Reserva con al menos 24 horas de antelación.</p>
-            <form 
-                method="post" 
+            <p class="text-center mb-5 md:text-fluid-body">{% trans "Reserva con al menos 24 horas de antelación." %}</p>
+            <form
+                method="post"
                 class="
-                md:grid md:grid-cols-2 
+                md:grid md:grid-cols-2
                 md:gap-4">
-                
+
                 {% csrf_token %}
 
                 <div class=" mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2
                         ">
-                        NOMBRE
+                        {% trans "NOMBRE" %}
                     </p>
                     {{ form.name|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
                 <div class="mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2">
-                        EMAIL
+                        {% trans "EMAIL" %}
                     </p>
                     {{ form.email|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
                 <div class="mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2">
-                        TELÉFONO
+                        {% trans "TELÉFONO" %}
                     </p>
                     {{ form.phone|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                     {% if form.phone.errors %}
@@ -99,25 +100,25 @@
                 </div>
                 <div class="mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2">
-                        IDIOMA
+                        {% trans "IDIOMA" %}
                     </p>
                     {{ form.language|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
                 <div class="col-span-2 mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2">
-                        ACTIVIDAD DE INTERÉS
+                        {% trans "ACTIVIDAD DE INTERÉS" %}
                     </p>
                     {{ form.activity|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
                 <div class="mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2">
-                        FECHA PREFERIDA
+                        {% trans "FECHA PREFERIDA" %}
                     </p>
                     {{ form.date|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white"|attr:"min:today" }}
                     {% if form.date.errors %}
@@ -128,25 +129,25 @@
                 </div>
                 <div class="mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2">
-                        NÚMERO DE PERSONAS
+                        {% trans "NÚMERO DE PERSONAS" %}
                     </p>
                     {{ form.people|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
                 <div class="col-span-2 mb-4">
                     <p class="
-                        text-(--color-trece) 
+                        text-(--color-trece)
                         mb-2">
-                        MENSAJE
+                        {% trans "MENSAJE" %}
                     </p>
                     {{ form.message|add_class:"w-full border border-(--color-trece) rounded px-3 py-2 text-black bg-white" }}
                 </div>
                 <div class="col-span-2 mb-4">
-                    <button 
-                        type="submit" 
+                    <button
+                        type="submit"
                         class="
-                        w-full 
+                        w-full
                         font-titan
                         font-bold
                         text-white
@@ -157,15 +158,15 @@
                         hover:shadow-xl/30
 
                         md:text-fluid-body">
-                        ENVIAR CONSULTA
+                        {% trans "ENVIAR CONSULTA" %}
                     </button>
                     <input type="checkbox" required>
-                    <p class="text-xs text-(--color-trece) inline md:text-base">Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.</p>
+                    <p class="text-xs text-(--color-trece) inline md:text-base">{% blocktrans %}Al enviar aceptas nuestra política de privacidad. No compartimos tus datos con terceros.{% endblocktrans %}</p>
                 </div>
-                
+
                 {{ form.name.errors }}
             </form>
-            {% if email_error %}        
+            {% if email_error %}
                 <div id="email-error-modal" class="fixed inset-0 bg-black/60 flex items-center justify-center z-50 p-5"
                     onclick="document.getElementById('email-error-modal').remove()">
                     <div class="bg-white border-solid border-black border-2 rounded-xl p-20 max-w-md w-full text-center shadow-2xl"
@@ -174,16 +175,16 @@
                             <span class="text-white text-2xl font-bold">!</span>
                         </div>
                         <h3 class="font-cormorantgaramond text-2xl text-(--color-mar) mb-3">
-                            No hemos podido enviar tu mensaje
+                            {% trans "No hemos podido enviar tu mensaje" %}
                         </h3>
                         <p class="text-(--color-trece) mb-15 md:text-fluid-body">
-                            Ha ocurrido un problema al enviar tu consulta. Por favor, escríbenos directamente a
+                            {% blocktrans %}Ha ocurrido un problema al enviar tu consulta. Por favor, escríbenos directamente a{% endblocktrans %}
                             <a href="mailto:aventureros@aventuraecuestre.com" class="text-(--color-cielo) underline">aventureros@aventuraecuestre.com</a>
-                            o llámanos al <a href="tel:+34626480019" class="text-(--color-cielo) underline">+34 626 480 019</a>.
+                            {% blocktrans %}o llámanos al{% endblocktrans %} <a href="tel:+34626480019" class="text-(--color-cielo) underline">+34 626 480 019</a>.
                         </p>
                         <button onclick="document.getElementById('email-error-modal').remove()"
                             class="font-titan font-bold text-white bg-(--color-mar) rounded-xl px-15 py-3 hover:shadow-xl/30">
-                            ENTENDIDO
+                            {% trans "ENTENDIDO" %}
                         </button>
                     </div>
                 </div>
@@ -198,8 +199,8 @@
             {% endif %}
         </div>
     </section>
-    
-    
+
+
     <div class=" md:flex md:items-center md: justify-center">
         <div class="mb-5 mx-5 md:mb-0 md:mx-0 md:p-5 md:w-[70%]">
             <iframe class="w-full h-120" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3225.5320038506475!2d-5.649954070916753!3d36.05612592637158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd0c8bf9de8327f1%3A0xdc4aeb9ce88b7e79!2sAventura%20Ecuestre%20Ride%20on%20de%20Beach!5e0!3m2!1ses!2ses!4v1773571041090!5m2!1ses!2ses" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -208,73 +209,73 @@
             md:flex-col
             md:justify-between">
             <div class="
-                bg-(--color-arena) text-(--color-tierra) 
+                bg-(--color-arena) text-(--color-tierra)
                 mx-5 p-5 my-10
                 rounded-xl
                 text-center
                 h-fit
-                
+
                 md:text-fluid-body
                 md:my-0">
                 <div class="font-titan font-bold mb-4">
-                    <p>SALIDAS DIARIAS</p>
-                    <p>horario según la estación</p>
+                    <p>{% trans "SALIDAS DIARIAS" %}</p>
+                    <p>{% trans "horario según la estación" %}</p>
                 </div>
                 <hr class="mb-4">
                 <div>
-                    <p>RESPUESTA</p>
-                    <p>Menos de 24 horas</p>
+                    <p>{% trans "RESPUESTA" %}</p>
+                    <p>{% trans "Menos de 24 horas" %}</p>
                 </div>
             </div>
             <ul class="
-                mx-5 
+                mx-5
                 my-10
 
-                md:text-fluid-body 
+                md:text-fluid-body
                 md:mb-0
             ">
                 <li class="mb-5 text-center">
                     <div class="flex justify-center">
                         <div class="
-                            w-2 h-2 
-                            rounded-full 
-                            bg-(--color-cielo) 
+                            w-2 h-2
+                            rounded-full
+                            bg-(--color-cielo)
                             mt-[0.5rem] mr-2">
                         </div>
-                        <span class="text-(--color-trece)">DIRECCIÓN</span>
+                        <span class="text-(--color-trece)">{% trans "DIRECCIÓN" %}</span>
                     </div>
-                    <p>Carretera N-340 km 78<br>Frente al Camping Tarifa, 11380 Cádiz</p>  
+                    <p>{% blocktrans %}Carretera N-340 km 78<br>Frente al Camping Tarifa, 11380 Cádiz{% endblocktrans %}</p>
                 </li>
                 <li class="mb-5 text-center">
                     <div class="flex justify-center">
                         <div class="
-                            w-2 h-2 
-                            rounded-full 
-                            bg-(--color-poniente) 
+                            w-2 h-2
+                            rounded-full
+                            bg-(--color-poniente)
                             mt-[0.5rem] mr-2">
                         </div>
-                        <span class="text-(--color-trece) inline-block">TELÉFONO</span>
+                        <span class="text-(--color-trece) inline-block">{% trans "TELÉFONO" %}</span>
                     </div>
                     <a href="tel:+34626480019" class="block text-center mx-auto">+34 626 480 019</a>
                 </li>
                 <li class="mb-5 text-center">
                     <div class="flex justify-center">
                         <div class="
-                            w-2 h-2 
-                            rounded-full 
-                            bg-(--color-luz) 
+                            w-2 h-2
+                            rounded-full
+                            bg-(--color-luz)
                             mt-[0.5rem] mr-2">
                         </div>
-                        <span class="text-(--color-trece)">EMAIL</span>
+                        <span class="text-(--color-trece)">{% trans "EMAIL" %}</span>
                     </div>
-                    
+
                     <div>
-                        
+
                         <a href="mailto:aventureros@aventuraecuestre.com" class="block">aventureros@aventuraecuestre.com</a>
                     </div>
                 </li>
-            </ul>          
+            </ul>
         </div>
     </section>
-    
+
 {% endblock %}

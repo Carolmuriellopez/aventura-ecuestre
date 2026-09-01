@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <article class="
     border border-transparent
     rounded-xl
@@ -6,15 +7,15 @@
     bg-white
     h-full flex flex-col
     ">
-    <img src="{% static 'main/images/atardecer.jpg' %}" 
-        alt="Jinete y caballo al atardecer" 
+    <img src="{% static 'main/images/atardecer.jpg' %}"
+        alt="{% trans "Jinete y caballo al atardecer" %}"
         loading="lazy"
         class="
         h-80
-        object-cover 
+        object-cover
         w-full
         mb-4
-        
+
         md:h-120">
     <div class="p-5 flex flex-col grow">
         <div class="flex justify-between items-center">
@@ -25,16 +26,16 @@
                 inline-block
 
                 md:mb-10
-                ">Relax Holidays
+                ">{% trans "Relax Holidays" %}
             </h3>
         </div>
         <p class="
-            text-(--color-trece) 
+            text-(--color-trece)
             mb-4
 
             md:text-fluid-body
             md:mb-10
-            ">Pack vacacional para jinetes que buscan conocer el paraíso tarifeño a caballo combinándolo con playas, gastronomía y el entorno natural. El ritmo perfecto para desconectar de verdad.
+            ">{% trans "Pack vacacional para jinetes que buscan conocer el paraíso tarifeño a caballo combinándolo con playas, gastronomía y el entorno natural. El ritmo perfecto para desconectar de verdad." %}
         </p>
         <div class="mt-auto">
             <hr class="border-(--color-trece) mb-4 md:mb-10">
@@ -42,25 +43,25 @@
                 <div class="flex justify-start">
                     <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
                         <span class="
-                            font-titan 
+                            font-titan
                             font-bold
-                    
+
                             md:text-fluid-body">
-                            10 horas en 5 días
+                            {% trans "10 horas en 5 días" %}
                         </span>
                     </div>
                     <p class="
                         font-titan
-                        font-bold 
-                
+                        font-bold
+
                         md:text-fluid-body">
                         600€<span class="
-                        text-(--color-trece) 
-                        text-xs 
-                        font-titan 
+                        text-(--color-trece)
+                        text-xs
+                        font-titan
                         font-bold
-                    
-                        md:text-fluid-body">/persona</span>
+
+                        md:text-fluid-body">{% trans "/persona" %}</span>
                     </p>
                 </div>
                 <a href="{% url 'contact' %}" class="
@@ -75,16 +76,15 @@
                     w-fit
                     mx-auto
                     transition
-                    delay-100 
-                    duration-200 
-                    ease-in-out 
-                    hover:-translate-y-1 
+                    delay-100
+                    duration-200
+                    ease-in-out
+                    hover:-translate-y-1
                     hover:scale-105
 
                     md:text-fluid-body
-                    ">RESERVAR EXPERIENCIA
+                    ">{% trans "RESERVAR EXPERIENCIA" %}
                 </a>
             </div>
         </div>
 </article>
-

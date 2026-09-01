@@ -1,28 +1,60 @@
+{% load i18n static %}
 <!-- Menú: oculto en mobile, horizontal en desktop -->
 
     <ul id="menu" class="
         flex-col items-center justify-center gap-10
         fixed inset-0 z-40
         bg-black/70 backdrop-blur-sm
-    
+
 
         md:flex md:static md:h-auto md:w-auto md:flex-row md:items-center md:justify-end
         md:bg-transparent md:backdrop-blur-none
         md:px-4 md:py-0"
-    
+
         style="display: none">
 
         <li>
-            <a href="{% url 'home' %}" class="text-(--color-cal) transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">INICIO</a>
+            <a href="{% url 'home' %}" class="text-(--color-cal) transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">{% trans "INICIO" %}</a>
         </li>
         <li>
-            <a href="{% url 'about' %}" class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">QUIÉNES SOMOS</a>
+            <a href="{% url 'about' %}" class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">{% trans "QUIÉNES SOMOS" %}</a>
         </li>
         <li>
-            <a href="{% url 'activities' %}" class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">ACTIVIDADES</a>
+            <a href="{% url 'activities' %}" class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">{% trans "ACTIVIDADES" %}</a>
         </li>
         <li>
-            <a href="{% url 'contact' %}"  class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">CONTACTO</a>
+            <a href="{% url 'contact' %}"  class="text-(--color-cal)  transition-colors duration-200 font-titan font-bold hover:text-white lg:text-[1.2vw]">{% trans "CONTACTO" %}</a>
+        </li>
+        <li class="relative">
+            {% get_current_language as CURRENT_LANGUAGE %}
+            {% get_available_languages as AVAILABLE_LANGUAGES %}
+            <button id="lang-toggle" type="button"
+                class="block w-6 h-4.5 transition-opacity duration-200 hover:opacity-80"
+                aria-haspopup="true" aria-expanded="false" aria-controls="lang-menu">
+                {% with flag_file="main/images/flags/"|add:CURRENT_LANGUAGE|add:".svg" %}
+                    <img src="{% static flag_file %}" alt="" class="w-full h-full object-cover rounded-xs shadow">
+                {% endwith %}
+                <span class="sr-only">{% trans "Cambiar idioma" %}</span>
+            </button>
+            <ul id="lang-menu" hidden
+                class="absolute right-0 mt-2 min-w-40 bg-white rounded-lg shadow-lg overflow-hidden z-50">
+                {% for code, name in AVAILABLE_LANGUAGES %}
+                <li>
+                    <form action="{% url 'set_language' %}" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="next" value="{{ CANONICAL_PATH }}">
+                        <input type="hidden" name="language" value="{{ code }}">
+                        <button type="submit"
+                            class="w-full flex items-center gap-2 px-4 py-2 text-left text-(--color-trece) hover:bg-(--color-arena) {% if code == CURRENT_LANGUAGE %}font-bold{% endif %}">
+                            {% with flag_file="main/images/flags/"|add:code|add:".svg" %}
+                                <img src="{% static flag_file %}" alt="" class="w-5 h-auto rounded-xs shadow">
+                            {% endwith %}
+                            {{ name }}
+                        </button>
+                    </form>
+                </li>
+                {% endfor %}
+            </ul>
         </li>
     </ul>
 

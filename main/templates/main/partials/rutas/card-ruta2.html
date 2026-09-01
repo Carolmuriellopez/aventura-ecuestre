@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <article class="
     border border-transparent
     rounded-xl
@@ -7,15 +8,15 @@
     h-full flex flex-col
     ">
     <div class="relative">
-        <img src="{% static 'main/images/principiantes.png' %}" 
-            alt="Jinete principiante" 
+        <img src="{% static 'main/images/principiantes.png' %}"
+            alt="{% trans "Jinete principiante" %}"
             loading="lazy"
             class="
             h-80
-            object-cover 
+            object-cover
             w-full
             mb-4
-        
+
             md:h-120">
         <span class="
             absolute
@@ -27,41 +28,41 @@
             inline-block
             font-titan
             font-bold
-                    
+
             md:text-fluid-body">
-        PRINCIPIANTES
+        {% trans "PRINCIPIANTES" %}
         </span>
     </div>
-    
+
     <div class="p-5 flex flex-col grow">
         <h3 class="
             font-titan font-bold
             text-(--color-tierra) text-4xl md:text-fluid-title
             inline-block
-            mb-5 
-                 
-            md:mb-10                
+            mb-5
+
+            md:mb-10
             ">
-            Iniciación a caballo
+            {% trans "Iniciación a caballo" %}
         </h3>
         <p class="
-            text-(--color-trece) 
+            text-(--color-trece)
             mb-4
-            
+
             md:mb-10
-            md:text-fluid-body">El punto de partida perfecto para quien nunca ha montado o lleva tiempo sin hacerlo. Sin prisas, sin presión — solo tú, tu caballo y el entorno natural de Tarifa.
+            md:text-fluid-body">{% trans "El punto de partida perfecto para quien nunca ha montado o lleva tiempo sin hacerlo. Sin prisas, sin presión — solo tú, tu caballo y el entorno natural de Tarifa." %}
         </p>
         <div class="footer-article mt-auto">
             <hr class="border-(--color-trece) mb-4 md:mb-10">
                 <div class="flex items-center justify-between mb-5 md:mb-10">
                     <div class="flex justify-start">
                         <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                        <span class="font-titan font-bold md:text-fluid-body">1 hora</span>
+                        <span class="font-titan font-bold md:text-fluid-body">{% trans "1 hora" %}</span>
                     </div>
                     <p class="
                         font-titan
                         font-bold text-xl md:text-fluid-body">
-                        60€<span class="text-(--color-trece) text-xs font-titan font-bold md:text-fluid-body">/persona</span>
+                        60€<span class="text-(--color-trece) text-xs font-titan font-bold md:text-fluid-body">{% trans "/persona" %}</span>
                     </p>
                 </div>
             <a href="{% url 'contact' %}" class="
@@ -76,16 +77,15 @@
                 w-fit
                 mx-auto
                 transition
-                delay-100 
-                duration-200 
-                ease-in-out 
-                hover:-translate-y-1 
+                delay-100
+                duration-200
+                ease-in-out
+                hover:-translate-y-1
                 hover:scale-105
 
                 md:text-fluid-body
-                ">RESERVAR EXPERIENCIA
+                ">{% trans "RESERVAR EXPERIENCIA" %}
             </a>
         </div>
     </div>
 </article>
-

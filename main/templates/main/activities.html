@@ -1,11 +1,12 @@
 {% extends 'main/layout.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Rutas a caballo en Tarifa | Actividades que encuentras en Aventura Ecuestre{% endblock %}
-{% block meta_description %}Elige entre las distintas rutas a caballo por las playas y montañas de Tarifa. Para todos los niveles, guiadas por expertos en doma natural, tenemos la experiencia perfecta para ti.{% endblock %}
+{% block title %}{% trans "Rutas a caballo en Tarifa | Actividades que encuentras en Aventura Ecuestre" %}{% endblock %}
+{% block meta_description %}{% trans "Elige entre las distintas rutas a caballo por las playas y montañas de Tarifa. Para todos los niveles, guiadas por expertos en doma natural, tenemos la experiencia perfecta para ti." %}{% endblock %}
 {% block canonical %}https://aventuraecuestre.com/actividades/{% endblock %}
-{% block og_title %}Aventura Ecuestre - Las mejores rutas a caballo en Tarifa{% endblock %}
-{% block og_description %}Hemos diseñado las mejores rutas para una experiencia inovidable{% endblock %}
+{% block og_title %}{% trans "Aventura Ecuestre - Las mejores rutas a caballo en Tarifa" %}{% endblock %}
+{% block og_description %}{% trans "Hemos diseñado las mejores rutas para una experiencia inovidable" %}{% endblock %}
 {% block og_url %}https://aventuraecuestre.com/actividades/{% endblock %}
 {% block content %}
     <header class="
@@ -14,12 +15,12 @@
         <nav class="
             text-(--color-oceano)
             mb-4
-            
+
             md:text-fluid-heading
             md:mb-10
-            
+
             lg:mb-15">
-            INICIO  >  ACTIVIDADES
+            {% trans "INICIO" %}  &gt;  {% trans "ACTIVIDADES" %}
         </nav>
         <h1 class="font-cormorantgaramond
             text-(--color-cal)
@@ -28,13 +29,13 @@
 
             md:mb-5
             md:text-[5.5vw]/[6vw]
-            
+
             lg:mb-15">
-            Elige tu <i><b class="
+            {% blocktrans %}Elige tu <i><b class="
                 text-(--color-luz)
-                
+
                 ">aventura a caballo
-            </b></i>
+            </b></i>{% endblocktrans %}
         </h1>
         <div class="">
             <p class="
@@ -43,7 +44,7 @@
 
                 md:text-fluid-body
                 md:mb-10">
-                Hemos diseñado diferentes rutas para adaptarnos a tus deseos y nivel de experiencia. Todos nuestros servicios incluyen guía experta, equipo de seguridad y un caballo asignado específicamente para ti.
+                {% blocktrans %}Hemos diseñado diferentes rutas para adaptarnos a tus deseos y nivel de experiencia. Todos nuestros servicios incluyen guía experta, equipo de seguridad y un caballo asignado específicamente para ti.{% endblocktrans %}
             </p>
             <div class="
                 font-titan
@@ -53,9 +54,9 @@
                 rounded-tl-3xl
                 rounded-br-3xl
 
-               
+
                 ">
-                <div class=" 
+                <div class="
                     mb-5
 
                     md:mb-0
@@ -66,63 +67,63 @@
                     md:mx-auto
                     gap-5">
                     <div class="
-                        text-center 
+                        text-center
                         mb-5">
                         <h4 class="
-                            text-(--color-cal) 
-                            text-sg 
+                            text-(--color-cal)
+                            text-sg
                             mb-1
                             ">
-                            Incluido
+                            {% trans "Incluido" %}
                         </h4>
                         <p class="
-                            text-(--color-cal) 
-                            text-lg     
+                            text-(--color-cal)
+                            text-lg
                             font-bold
                             ">
-                            Guía · Casco
+                            {% trans "Guía · Casco" %}
                         </p>
                     </div>
                     <div class="text-center mb-5">
                         <h4 class="
-                            text-(--color-cal) 
-                            text-sg 
+                            text-(--color-cal)
+                            text-sg
                             mb-1
                             ">
-                            Idiomas
+                            {% trans "Idiomas" %}
                         </h4>
                         <p class="
-                            text-(--color-cal) 
-                            text-lg     
+                            text-(--color-cal)
+                            text-lg
                             font-bold
-                            ">Español · English
+                            ">{% trans "Español · English" %}
                         </p>
                     </div>
                     <div class="text-center mb-5">
                         <h4 class="
-                            text-(--color-cal) 
-                            text-sg 
+                            text-(--color-cal)
+                            text-sg
                             mb-1
-                            ">Grupos
+                            ">{% trans "Grupos" %}
                         </h4>
                         <p class="
-                            text-(--color-cal) 
-                            text-lg     
-                            font-bold">Máximo 8 personas
+                            text-(--color-cal)
+                            text-lg
+                            font-bold">{% trans "Máximo 8 personas" %}
                         </p>
                     </div>
                     <div class="text-center">
                         <h4 class="
-                            text-(--color-cal) 
-                            text-sg 
+                            text-(--color-cal)
+                            text-sg
                             mb-1">
-                            Cancelación
+                            {% trans "Cancelación" %}
                         </h4>
                         <p class="
-                            text-(--color-cal) 
-                            text-lg     
+                            text-(--color-cal)
+                            text-lg
                             font-bold">
-                            Gratuita 24h antes
+                            {% trans "Gratuita 24h antes" %}
                         </p>
                     </div>
                 </div>
@@ -138,15 +139,15 @@
                     md:w-[90%]
                     md:text-fluid-body
                     ">
-                    Cabalgar no es un juego — requiere cierta predisposición, equilibrio y capacidad de reacción. Por eso, los aires más rápidos como <b>trote</b> y <b>galope</b> siempre se harán con seguridad bajo la supervisión y las indicaciones del guía. Tu seguridad y la de los animales siempre van primero.
-                </p>    
+                    {% blocktrans %}Cabalgar no es un juego — requiere cierta predisposición, equilibrio y capacidad de reacción. Por eso, los aires más rápidos como <b>trote</b> y <b>galope</b> siempre se harán con seguridad bajo la supervisión y las indicaciones del guía. Tu seguridad y la de los animales siempre van primero.{% endblocktrans %}
+                </p>
             </div>
         </div>
     </header>
 
     <section class="
         bg-(--color-cal)
-        p-5" 
+        p-5"
         id="rutas">
         <div class="flex flex-col">
             <div class="flex flex-row gap-2 items-center mb-4">
@@ -154,22 +155,22 @@
                     text-(--color-oceano)
                     text-cormorantgaramond
                     text-6xl
-                    
+
                     md:text-fluid-hero">01
                 </span>
                 <h2 class="
                     text-(--color-tierra)
                     text-cormorantgaramond
                     text-xl
-                    
-                    md:text-fluid-heading">RUTAS ECUESTRES
+
+                    md:text-fluid-heading">{% trans "RUTAS ECUESTRES" %}
                 </h2>
             </div>
 
             <p class="mb-5
-            
+
                 md:text-fluid-body">
-                Desde la emoción de la costa atlántica hasta la serenidad del bosque mediterráneo — tenemos la aventura perfecta esperándote.
+                {% blocktrans %}Desde la emoción de la costa atlántica hasta la serenidad del bosque mediterráneo — tenemos la aventura perfecta esperándote.{% endblocktrans %}
             </p>
         </div>
         <div class="swiper" id="rutas-carousel">
@@ -205,7 +206,7 @@
                     text-(--color-oceano)
                     text-cormorantgaramond
                     text-6xl
-                    
+
                     md:text-fluid-hero">02
                 </span>
                 <h2 class="
@@ -213,14 +214,14 @@
                     text-cormorantgaramond
                     text-xl
 
-                    
-                    md:text-fluid-heading">PACKS VACACIONALES
+
+                    md:text-fluid-heading">{% trans "PACKS VACACIONALES" %}
                 </h2>
             </div>
             <p class="mb-5
-            
+
                 md:text-fluid-body">
-                Para jinetes que quieren vivir Tarifa a caballo durante varios días. Elige tu ritmo.
+                {% blocktrans %}Para jinetes que quieren vivir Tarifa a caballo durante varios días. Elige tu ritmo.{% endblocktrans %}
             </p>
         </div>
         <div class="swiper" id="packs-carousel">
@@ -246,15 +247,15 @@
                 text-(--color-oceano)
                 text-cormorantgaramond
                 text-6xl
-                
+
                 md:text-fluid-hero">03
             </span>
             <h2 class="
                 text-(--color-tierra)
                 text-cormorantgaramond
                 text-xl
-                
-                md:text-fluid-heading">SERVICIO ESPECIALIZADO
+
+                md:text-fluid-heading">{% trans "SERVICIO ESPECIALIZADO" %}
             </h2>
         </div>
         <article class="
@@ -263,18 +264,18 @@
             overflow-hidden
             bg-white
             mb-5
-            
+
             lg:flex
             lg:items-center">
-            <img src="{% static 'main/images/pupilaje.jpg' %}" alt="Caballo pastando" class="
+            <img src="{% static 'main/images/pupilaje.jpg' %}" alt="{% trans "Caballo pastando" %}" class="
                 h-80
                 object-cover w-full
                 object-bottom
                 mb-4
-                
+
                 md:h-120
                 md:mb-0
-                
+
                 lg:object-contain">
             <div class="p-5">
                 <h3 class="
@@ -284,41 +285,41 @@
                     inline-block
 
                     md:mb-10
-                    ">SERVICIO DE PUPILAJE
+                    ">{% trans "SERVICIO DE PUPILAJE" %}
                 </h3>
                 <p class="
                     text-(--color-trece)
                     mb-4
-                    
-                    md:text-fluid-body">El lugar ideal para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
+
+                    md:text-fluid-body">{% trans "El lugar ideal para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse." %}
                 </p>
                 <ul class="mb-5
                     md:text-fluid-body">
                     <li class="mb-2 flex items-start">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
-                        <p>Alquiler del espacio individual</p>
+                        <p>{% trans "Alquiler del espacio individual" %}</p>
                     </li>
                     <li class="mb-2 flex items-start">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
-                        <p>Limpieza diaria y agua continua</p>
+                        <p>{% trans "Limpieza diaria y agua continua" %}</p>
                     </li>
                     <li class="mb-2 flex items-start">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
-                        <p>Dos pistas de entrenamiento — circular y de grandes dimensiones</p>
+                        <p>{% trans "Dos pistas de entrenamiento — circular y de grandes dimensiones" %}</p>
                     </li>
                     <li class="mb-2 flex items-start">
                         <div class="w-2 h-2 rounded-full bg-(--color-oceano) mt-2 mr-2 shrink-0"></div>
-                        <p>Hospedamos a tu caballo durante tus vacaciones</p>
+                        <p>{% trans "Hospedamos a tu caballo durante tus vacaciones" %}</p>
                     </li>
                 </ul>
                 <p class="
-                    text-(--color-trece) 
-                    italic 
+                    text-(--color-trece)
+                    italic
                     mb-5
-                    
+
                     md:text-fluid-body
                     md:mb-10">
-                    Pregúntanos sin compromiso — adaptamos el servicio a tus necesidades.
+                    {% trans "Pregúntanos sin compromiso — adaptamos el servicio a tus necesidades." %}
                 </p>
                 <a href="{% url 'contact' %}"
                     class="
@@ -333,14 +334,14 @@
                     w-fit
                     mx-auto
                     transition
-                    delay-100 
-                    duration-200 
-                    ease-in-out 
-                    hover:-translate-y-1 
+                    delay-100
+                    duration-200
+                    ease-in-out
+                    hover:-translate-y-1
                     hover:scale-105
-                    
+
                     md:text-fluid-body">
-                    CONSULTAR DISPONIBILIDAD
+                    {% trans "CONSULTAR DISPONIBILIDAD" %}
                 </a>
             </div>
         </article>
