@@ -16,8 +16,25 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic import TemplateView
+from django.conf.urls.i18n import i18n_patterns
+
+from main.sitemaps import StaticViewSitemap
+from main import views
+
+sitemaps = {'static': StaticViewSitemap}
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('main.urls')),
+    path('i18n/', include('django.conf.urls.i18n')),  # para el selector de idioma
+    path('sitemap.xml', views.sitemap_view, {'sitemaps': sitemaps}, name='sitemap'),
+    path('robots.txt', TemplateView.as_view(
+        template_name='robots.txt',
+        content_type='text/plain'
+    )),
 ]
+
+urlpatterns += i18n_patterns(
+    path('', include('main.urls')),
+    prefix_default_language=False,  # español sin prefijo: /  ·  inglés: /en/
+)

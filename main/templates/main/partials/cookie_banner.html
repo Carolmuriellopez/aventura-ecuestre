@@ -1,4 +1,5 @@
-<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Configuración de cookies" hidden>
+{% load i18n %}
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="{% trans "Configuración de cookies" %}" hidden>
   <div class="cookie-inner">
     <div class="cookie-icon">
       <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -11,25 +12,25 @@
       </svg>
     </div>
     <div>
-      <p class="cookie-title">Tu privacidad, tu decisión</p>
+      <p class="cookie-title">{% trans "Tu privacidad, tu decisión" %}</p>
       <p class="cookie-text">
-        Usamos cookies propias para que la web funcione y, si nos das tu permiso, cookies analíticas para entender cómo la visitas y mejorarla. Más info en nuestra
-        <a href="{% url 'cookies' %}">Política de Cookies</a>.
+        {% blocktrans %}Usamos cookies propias para que la web funcione y, si nos das tu permiso, cookies analíticas para entender cómo la visitas y mejorarla. Más info en nuestra{% endblocktrans %}
+        <a href="{% url 'cookies' %}">{% trans "Política de Cookies" %}</a>.
       </p>
     </div>
 
     <div class="cookie-actions" id="mainActions">
-      <button class="btn btn-config" id="btnOpenConfig" type="button">Personalizar</button>
+      <button class="btn btn-config" id="btnOpenConfig" type="button">{% trans "Personalizar" %}</button>
       <span class="spacer"></span>
-      <button class="btn btn-reject" id="btnReject" type="button">Rechazar</button>
-      <button class="btn btn-accept" id="btnAccept" type="button">Aceptar todas</button>
+      <button class="btn btn-reject" id="btnReject" type="button">{% trans "Rechazar" %}</button>
+      <button class="btn btn-accept" id="btnAccept" type="button">{% trans "Aceptar todas" %}</button>
     </div>
 
     <div class="config-panel" id="configPanel">
       <div class="config-row">
         <div>
-          <p class="config-row-title">Necesarias</p>
-          <p class="config-row-desc">Imprescindibles para que la web funcione. Siempre activas.</p>
+          <p class="config-row-title">{% trans "Necesarias" %}</p>
+          <p class="config-row-desc">{% trans "Imprescindibles para que la web funcione. Siempre activas." %}</p>
         </div>
         <label class="switch">
           <input type="checkbox" checked disabled>
@@ -38,8 +39,8 @@
       </div>
       <div class="config-row">
         <div>
-          <p class="config-row-title">Analíticas</p>
-          <p class="config-row-desc">Nos ayudan a saber qué páginas visitas y cómo mejorar la experiencia (Google Analytics).</p>
+          <p class="config-row-title">{% trans "Analíticas" %}</p>
+          <p class="config-row-desc">{% trans "Nos ayudan a saber qué páginas visitas y cómo mejorar la experiencia (Google Analytics)." %}</p>
         </div>
         <label class="switch">
           <input type="checkbox" id="analyticsToggle">
@@ -48,7 +49,7 @@
       </div>
 
       <div class="config-footer">
-        <button class="btn btn-reject" id="btnSavePrefs" type="button">Guardar preferencias</button>
+        <button class="btn btn-reject" id="btnSavePrefs" type="button">{% trans "Guardar preferencias" %}</button>
       </div>
     </div>
   </div>

@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 <article class="
     border border-transparent
     rounded-xl
@@ -6,8 +7,8 @@
     bg-white
     h-full flex flex-col
     ">
-    <img src="{% static 'main/images/playaMontaña.jpg' %}" 
-        alt="Caballos parando para beber en el pinar" 
+    <img src="{% static 'main/images/playaMontaña.jpg' %}"
+        alt="{% trans "Caballos parando para beber en el pinar" %}"
         loading="lazy"
         class="
         h-80
@@ -15,7 +16,7 @@
         object-center
         w-full
         mb-4
-        
+
         md:h-120">
     <div class="p-5 flex flex-col grow">
         <div class="flex justify-between items-center mb-5 md:mb-10">
@@ -23,28 +24,28 @@
                 font-titan font-bold
                 text-(--color-tierra) text-4xl md:text-fluid-title
                 inline-block
-                ">Playa y montaña
+                ">{% trans "Playa y montaña" %}
             </h3>
         </div>
         <p class="
-            text-(--color-trece) 
+            text-(--color-trece)
             mb-4
 
             md:text-fluid-body
             md:mb-10
-            ">Desde la arena de la playa hasta los senderos de montaña. Paisaje doble — mar y cumbre — en una sola ruta.
+            ">{% trans "Desde la arena de la playa hasta los senderos de montaña. Paisaje doble — mar y cumbre — en una sola ruta." %}
         </p>
         <div class="footer-article mt-auto">
             <hr class="border-(--color-trece) mb-4 md:mb-10">
             <div class="flex items-center justify-between mb-5 md:mb-10">
                 <div class="flex justify-start">
                     <div class="w-2 h-2 rounded-full bg-(--color-poniente) mt-[0.5rem] mr-2"></div>
-                        <span class="font-titan font-bold md:text-fluid-body">2 horas</span>
+                        <span class="font-titan font-bold md:text-fluid-body">{% trans "2 horas" %}</span>
                     </div>
                     <p class="
                         font-titan
                         font-bold text-xl md:text-fluid-body">
-                        110€<span class="text-(--color-trece) text-xs text-titan font-bold md:text-fluid-body">/persona</span>
+                        110€<span class="text-(--color-trece) text-xs text-titan font-bold md:text-fluid-body">{% trans "/persona" %}</span>
                     </p>
                 </div>
                 <a href="{% url 'contact' %}" class="
@@ -59,16 +60,15 @@
                     w-fit
                     mx-auto
                     transition
-                    delay-100 
-                    duration-200 
-                    ease-in-out 
-                    hover:-translate-y-1 
+                    delay-100
+                    duration-200
+                    ease-in-out
+                    hover:-translate-y-1
                     hover:scale-105
 
                     md:text-fluid-body
-                    ">RESERVAR EXPERIENCIA
+                    ">{% trans "RESERVAR EXPERIENCIA" %}
                 </a>
             </div>
         </div>
 </article>
-

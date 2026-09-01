@@ -37,6 +37,8 @@
     --font-weight-bold: 700;
     --leading-tight: 1.25;
     --leading-relaxed: 1.625;
+    --radius-xs: 0.125rem;
+    --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-3xl: 1.5rem;
     --ease-in-out: cubic-bezier(0.4, 0, 0.2, 1);
@@ -217,6 +219,17 @@
   .visible {
     visibility: visible;
   }
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border-width: 0;
+  }
   .absolute {
     position: absolute;
   }
@@ -237,6 +250,9 @@
   }
   .top-0 {
     top: calc(var(--spacing) * 0);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
   }
   .right-1 {
     right: calc(var(--spacing) * 1);
@@ -349,6 +365,9 @@
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
+  .h-4\.5 {
+    height: calc(var(--spacing) * 4.5);
+  }
   .h-7 {
     height: calc(var(--spacing) * 7);
   }
@@ -379,6 +398,9 @@
   .h-120 {
     height: calc(var(--spacing) * 120);
   }
+  .h-auto {
+    height: auto;
+  }
   .h-fit {
     height: fit-content;
   }
@@ -390,6 +412,12 @@
   }
   .w-2 {
     width: calc(var(--spacing) * 2);
+  }
+  .w-5 {
+    width: calc(var(--spacing) * 5);
+  }
+  .w-6 {
+    width: calc(var(--spacing) * 6);
   }
   .w-7 {
     width: calc(var(--spacing) * 7);
@@ -420,6 +448,9 @@
   }
   .max-w-xl {
     max-width: var(--container-xl);
+  }
+  .min-w-40 {
+    min-width: calc(var(--spacing) * 40);
   }
   .shrink-0 {
     flex-shrink: 0;
@@ -502,8 +533,14 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+  .rounded-lg {
+    border-radius: var(--radius-lg);
+  }
   .rounded-xl {
     border-radius: var(--radius-xl);
+  }
+  .rounded-xs {
+    border-radius: var(--radius-xs);
   }
   .rounded-tl-3xl {
     border-top-left-radius: var(--radius-3xl);
@@ -664,6 +701,9 @@
   .text-center {
     text-align: center;
   }
+  .text-left {
+    text-align: left;
+  }
   .text-right {
     text-align: right;
   }
@@ -793,6 +833,10 @@
   .opacity-80 {
     opacity: 80%;
   }
+  .shadow {
+    --tw-shadow: 0 1px 3px 0 var(--tw-shadow-color, rgb(0 0 0 / 0.1)), 0 1px 2px -1px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+  }
   .shadow-2xl {
     --tw-shadow: 0 25px 50px -12px var(--tw-shadow-color, rgb(0 0 0 / 0.25));
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
@@ -813,6 +857,11 @@
   }
   .transition-colors {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .transition-opacity {
+    transition-property: opacity;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
@@ -850,6 +899,13 @@
       }
     }
   }
+  .hover\:bg-\(--color-arena\) {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-arena);
+      }
+    }
+  }
   .hover\:bg-\[\#1ebe5d\] {
     &:hover {
       @media (hover: hover) {
@@ -875,6 +931,13 @@
     &:hover {
       @media (hover: hover) {
         color: var(--color-white);
+      }
+    }
+  }
+  .hover\:opacity-80 {
+    &:hover {
+      @media (hover: hover) {
+        opacity: 80%;
       }
     }
   }

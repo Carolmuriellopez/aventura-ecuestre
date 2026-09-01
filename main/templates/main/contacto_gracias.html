@@ -1,9 +1,10 @@
 {% extends 'main/layout.html' %}
+{% load i18n %}
 
-{% block title %}Rutas a caballo en Tarifa | Respondemos en el menor tiempo posible. Aventura Ecuestre{% endblock %}
-{% block meta_description %}Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. Excursiones para todos los niveles, guiadas por expertos en doma natural.{% endblock %}
-{% block og_title %}Aventura Ecuestre - Confirmación de contacto{% endblock %}
-{% block og_description %}Respondemos en el menor plazo posible{% endblock %}
+{% block title %}{% trans "Rutas a caballo en Tarifa | Respondemos en el menor tiempo posible. Aventura Ecuestre" %}{% endblock %}
+{% block meta_description %}{% trans "Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. Excursiones para todos los niveles, guiadas por expertos en doma natural." %}{% endblock %}
+{% block og_title %}{% trans "Aventura Ecuestre - Confirmación de contacto" %}{% endblock %}
+{% block og_description %}{% trans "Respondemos en el menor plazo posible" %}{% endblock %}
 {% block og_url %}https://aventuraecuestre.com/contacto/gracias/{% endblock %}
 
 
@@ -36,15 +37,15 @@
             font-normal
             text-(--color-tierra)
             mb-4">
-            ¡Mensaje enviado!
+            {% trans "¡Mensaje enviado!" %}
         </h1>
         <p class="
-            text-(--color-tierra) 
-            opacity-80 
-            text-lg 
-            leading-relaxed 
+            text-(--color-tierra)
+            opacity-80
+            text-lg
+            leading-relaxed
             mb-20">
-            Gracias por ponerte en contacto con nosotros. Carol revisará tu consulta y te responderá en breve.
+            {% trans "Gracias por ponerte en contacto con nosotros. Carol revisará tu consulta y te responderá en breve." %}
         </p>
         <a href="{% url 'home' %}"
             class="
@@ -59,17 +60,16 @@
             w-fit
             mx-auto
             transition
-            delay-100 
-            duration-200 
-            ease-in-out 
-            hover:-translate-y-1 
+            delay-100
+            duration-200
+            ease-in-out
+            hover:-translate-y-1
             hover:scale-105
 
             md:text-xl
             ">
-            VOLVER AL INICIO
+            {% trans "VOLVER AL INICIO" %}
         </a>
     </div>
 </section>
 {% endblock %}
-

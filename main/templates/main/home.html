@@ -1,10 +1,11 @@
 {% extends 'main/layout.html' %}
 {% load static %}
+{% load i18n %}
 
-{% block title %}Rutas a caballo en Tarifa | Aventura Ecuestre{% endblock %}
-{% block meta_description %}Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. Excursiones para todos los niveles, guiadas por expertos en doma natural.{% endblock %}
-{% block og_title %}Aventura Ecuestre - Las mejores rutas a caballo en Tarifa{% endblock %}
-{% block og_description %}Déjate enamorar por una experiencia única{% endblock %}
+{% block title %}{% trans "Rutas a caballo en Tarifa | Aventura Ecuestre" %}{% endblock %}
+{% block meta_description %}{% trans "Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. Excursiones para todos los niveles, guiadas por expertos en doma natural." %}{% endblock %}
+{% block og_title %}{% trans "Aventura Ecuestre - Las mejores rutas a caballo en Tarifa" %}{% endblock %}
+{% block og_description %}{% trans "Déjate enamorar por una experiencia única" %}{% endblock %}
 {% block og_url %}https://aventuraecuestre.com/{% endblock %}
 
 {% block content %}
@@ -14,20 +15,20 @@
     h-min-950
     flex flex-col justify-bottom
     overflow-y-hidden
-    
+
     md:flex-row
     ">
         <!-- Imagen de fondo -->
         <img id="hero-image"
-            src="{% static 'main/images/homeHero.jpg' %}" 
-            alt="Carolina con sus caballos Trece y Levante" 
-            class=" 
-                inset-0 
-                w-full 
-                h-full 
-                object-cover 
+            src="{% static 'main/images/homeHero.jpg' %}"
+            alt="{% trans "Carolina con sus caballos Trece y Levante" %}"
+            class="
+                inset-0
+                w-full
+                h-full
+                object-cover
                 object-[80%_center]
-                              
+
                 md:object-cover
                 md:object-[50%_center]
                 md:w-[60%]
@@ -56,26 +57,26 @@
                 ">AVENTURA ECUESTRE
                 </h1>
                 <p class="
-                    text-right
-                    mr-[3vw]
-                    text-(--color-cal)
-                
-                    lg:text-[2.5vw]">··· Tarifa ···
+                text-right
+                mr-[3vw]
+                text-(--color-cal)
+
+                lg:text-[2.5vw]">··· {% trans "Tarifa" %} ···
                 </p>
             </div>
         <div id="content_hero" class="
-            z-10 p-5      
+            z-10 p-5
             bg-white/50
             rounded-xl
             mx-5
             mb-5
 
             md:h-fit
-            md:p-[2vw] 
+            md:p-[2vw]
             md:mb-5
             md:overflow-hidden
             ">
-            
+
             <h2 class="
                 text-center
                 text-(--color-tierra) text-[9vw]/[10vw] font-cormorantgaramond font-bold
@@ -87,11 +88,11 @@
                 lg:text-[3.5vw]/[4vw]
                 "
                 >
-                <span class="
+                {% blocktrans %}<span class="
                 block
 
-            
-                ">Cabalga libre </span><span>en la <b class="text-(--color-arena) text-center">Costa de la Luz</b></span>
+
+                ">Cabalga libre </span><span>en la <b class="text-(--color-arena) text-center">Costa de la Luz</b></span>{% endblocktrans %}
             </h2>
             <p class="
                 py-5
@@ -99,7 +100,7 @@
 
                 md:text-fluid-body
                 md:text-left
-                ">Paseos a caballo por las playas más salvajes de Andalucía, con vistas al continente africano.</p>
+                ">{% trans "Paseos a caballo por las playas más salvajes de Andalucía, con vistas al continente africano." %}</p>
             <div id="hero_buttons" class="
                 text-center
                 flex
@@ -119,14 +120,14 @@
                     rounded-xl
                     p-5
                     transition
-                    delay-100 
-                    duration-200 
-                    ease-in-out 
-                    hover:-translate-y-1 
+                    delay-100
+                    duration-200
+                    ease-in-out
+                    hover:-translate-y-1
                     hover:scale-105
-                    
+
                     md:text-fluid-body
-                    md:text-center">RESERVAR EXPERIENCIA</a>
+                    md:text-center">{% trans "RESERVAR EXPERIENCIA" %}</a>
                 <a href="{% url 'activities' %}" class="
                     font-titan
                     font-bold
@@ -136,19 +137,19 @@
                     rounded-xl
                     p-5
                     transition
-                    delay-100 
-                    duration-200 
-                    ease-in-out 
-                    hover:-translate-y-1 
+                    delay-100
+                    duration-200
+                    ease-in-out
+                    hover:-translate-y-1
                     hover:scale-105
-                    
+
                     md:text-fluid-body
                     md:text-center"
-                    >VER ACTIVIDADES</a>
+                    >{% trans "VER ACTIVIDADES" %}</a>
             </div>
         </div>
         </div>
-        
+
     </section>
     <section class="
         mb-10
@@ -168,7 +169,7 @@
             text-(--color-cal) text-xs
             font-light
             text-center
-            ">AÑOS DE EXPERIENCIA</p>          
+            ">{% trans "AÑOS DE EXPERIENCIA" %}</p>
         </div>
         <div id="cta2" class="
             bg-(--color-cielo)
@@ -178,13 +179,13 @@
                 text-(--color-cal)
                 text-2xl
                 text-center">
-                Doma natural</p>
+                {% trans "Doma natural" %}</p>
             <p class="
-                text-(--color-cal) 
+                text-(--color-cal)
                 text-xs
                 text-center">
-                BIENESTAR ANIMAL</p>
-               
+                {% trans "BIENESTAR ANIMAL" %}</p>
+
         </div>
         <div id="cta3" class="
             bg-(--color-cielo)
@@ -194,12 +195,12 @@
             <p class="
                 text-(--color-cal)
                 text-2xl
-                text-center">Todos los niveles</p>
+                text-center">{% trans "Todos los niveles" %}</p>
             <p class="
-                text-(--color-cal) 
+                text-(--color-cal)
                 text-xs
                 text-center">
-                SIN EXPERIENCIA PREVIA</p>
+                {% trans "SIN EXPERIENCIA PREVIA" %}</p>
         </div>
     </section>
     <section class="
@@ -208,11 +209,11 @@
         <h2 class="
             text-2xl text-(--color-mar)
             mb-5
-            
+
             md:text-fluid-heading
             md:mb-10"
-            >NUESTRAS RUTAS</h2>
-        
+            >{% trans "NUESTRAS RUTAS" %}</h2>
+
         <div class="
             md:grid md:grid-cols-3 md:gap-4">
             <article class="
@@ -223,7 +224,7 @@
                 flex flex-col
                 ">
                 <div class="relative">
-                    <img src="{% static 'main/images/rutasEcuestres.jpg' %}" loading="lazy" alt="Jinete y caballo paseando por la playa durante el atardecer" class="
+                    <img src="{% static 'main/images/rutasEcuestres.jpg' %}" loading="lazy" alt="{% trans "Jinete y caballo paseando por la playa durante el atardecer" %}" class="
                     h-60
                     w-full
                     object-cover
@@ -239,9 +240,9 @@
                         inline-block
                         text-titan
                         font-bold
-                    
+
                         md:text-fluid-body">
-                        MÁS POPULAR
+                        {% trans "MÁS POPULAR" %}
                     </span>
                 </div>
                 <div class="p-5 flex flex-col grow">
@@ -250,7 +251,7 @@
                         text-lg
 
                         md:text-fluid-heading">
-                        Rutas ecuestres
+                        {% trans "Rutas ecuestres" %}
                     </h4>
                     <p class="
                         mb-4
@@ -258,10 +259,10 @@
 
                         md:text-fluid-body
                         ">
-                        Diseñadas para todos las edades y niveles. La experiencia más demandada.
+                        {% trans "Diseñadas para todos las edades y niveles. La experiencia más demandada." %}
                     </p>
                     <a href="{% url 'activities' %}#rutas" class="ml-auto mt-auto text-fluid-mini hover:text-mar">
-                        <i>Ver más</i>
+                        <i>{% trans "Ver más" %}</i>
                     </a>
                 </div>
             </article>
@@ -273,7 +274,7 @@
                 flex flex-col
                 ">
                 <div class="relative">
-                    <img src="{% static 'main/images/atardecer.jpg' %}" loading="lazy" alt="Jinete abrazada al caballo observando el atardecer" class="
+                    <img src="{% static 'main/images/atardecer.jpg' %}" loading="lazy" alt="{% trans "Jinete abrazada al caballo observando el atardecer" %}" class="
                         h-60
                         w-full
                         object-cover
@@ -289,19 +290,19 @@
                         inline-block
                         text-titan
                         font-bold
-                    
+
                         md:text-fluid-body
-                        ">NATURALEZA
+                        ">{% trans "NATURALEZA" %}
                     </span>
                 </div>
-                
+
                 <div class="p-5 flex flex-col grow">
                     <h4 class="
                         text-lg
                         mb-5
 
                         md:text-fluid-heading">
-                        Packs Vacacionales
+                        {% trans "Packs Vacacionales" %}
                     </h4>
                     <p class="
                         mb-4
@@ -309,13 +310,13 @@
 
                         md:text-fluid-body
                         ">
-                        Senderos sombreados por el Parque Natural del Estrecho.
+                        {% trans "Senderos sombreados por el Parque Natural del Estrecho." %}
                     </p>
                     <a href="{% url 'activities' %}#packs" class="ml-auto mt-auto text-fluid-mini hover:text-mar">
-                        <i>Ver más</i>
+                        <i>{% trans "Ver más" %}</i>
                     </a>
                 </div>
-                
+
             </article>
             <article class="
                 rounded-xl
@@ -325,7 +326,7 @@
                 flex flex-col
                 ">
                 <div class="relative">
-                    <img src="{% static 'main/images/paddock.jpg' %}" loading="lazy" alt="Caballo tumbado en el prado" class="
+                    <img src="{% static 'main/images/paddock.jpg' %}" loading="lazy" alt="{% trans "Caballo tumbado en el prado" %}" class="
                         h-60
                         w-full
                         object-cover
@@ -342,19 +343,19 @@
                         inline-block
                         text-titan
                         font-bold
-                    
+
                         md:text-fluid-body">
-                        EXCLUSIVO
+                        {% trans "EXCLUSIVO" %}
                     </span>
                 </div>
-                
+
                 <div class="p-5 flex flex-col grow">
                     <h4 class="
                         text-lg
                         mb-5
 
                         md:text-fluid-heading">
-                        Pupilaje
+                        {% trans "Pupilaje" %}
                     </h4>
                     <p class="
                         mb-4
@@ -362,17 +363,17 @@
 
                         md:text-fluid-body
                         ">
-                        El lugar perfecto para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse.
+                        {% trans "El lugar perfecto para ti y tu caballo. Paddocks individuales con sombra, siempre acompañado y con espacio para moverse." %}
                     </p>
                     <a href="{% url 'activities' %}#pupilaje" class="ml-auto mt-auto text-fluid-mini hover:text-mar">
-                        <i>Ver más</i>
+                        <i>{% trans "Ver más" %}</i>
                     </a>
                 </div>
             </article>
         </div>
-        
+
     </section>
-    
+
     <section class="
         bg-(--color-arena)
         rounded-xl
@@ -386,10 +387,10 @@
 
             md:text-fluid-heading md:text-center
             ">
-            "Nuestros caballos viven libres en el campo. Creemos en el vínculo real, no en la doma forzada."</p>
+            "{% trans "Nuestros caballos viven libres en el campo. Creemos en el vínculo real, no en la doma forzada." %}"</p>
         <p class="
             text-sm text-(--color-tierra) text-center
 
-            ">FILOSOFÍA · DOMA NATURAL · BIENESTAR ANIMAL</p>
+            ">{% trans "FILOSOFÍA · DOMA NATURAL · BIENESTAR ANIMAL" %}</p>
     </section>
 {% endblock %}

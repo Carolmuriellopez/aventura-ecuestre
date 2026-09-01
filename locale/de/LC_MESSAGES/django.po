@@ -1,0 +1,1084 @@
+# Translations for Aventura Ecuestre.
+# Copyright (C) 2026 Aventura Ecuestre
+# This file is distributed under the same license as the Aventura Ecuestre package.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Aventura Ecuestre\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-08-31 17:28+0000\n"
+"PO-Revision-Date: 2026-08-31 17:28+0000\n"
+"Last-Translator: \n"
+"Language-Team: German\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: main/forms.py:9
+msgid "Tu nombre"
+msgstr "Dein Name"
+
+#: main/forms.py:12
+msgid "correo@ejemplo"
+msgstr "email@beispiel.de"
+
+#: main/forms.py:21
+msgid "Introduce un número de teléfono válido."
+msgstr "Gib eine gültige Telefonnummer ein."
+
+#: main/forms.py:36
+msgid "Elija una actividad"
+msgstr "Wähle eine Aktivität"
+
+#: main/forms.py:37
+msgid "Pony"
+msgstr "Pony"
+
+#: main/forms.py:38
+msgid "Principiante"
+msgstr "Anfänger"
+
+#: main/forms.py:39
+msgid "Playa y pinar"
+msgstr "Strand und Pinienwald"
+
+#: main/forms.py:40
+msgid "Lances 3h"
+msgstr "Lances – 3 Std."
+
+#: main/forms.py:41
+msgid "Lances 4h"
+msgstr "Lances – 4 Std."
+
+#: main/forms.py:42
+msgid "Pack 1: holidays"
+msgstr "Paket 1: Urlaub"
+
+#: main/forms.py:43
+msgid "Pack 2: week"
+msgstr "Paket 2: Woche"
+
+#: main/forms.py:44 main/templates/main/home.html:358
+msgid "Pupilaje"
+msgstr "Pferdepension"
+
+#: main/forms.py:45
+msgid "Otros"
+msgstr "Sonstiges"
+
+#: main/forms.py:59
+msgid "¿Cuántos son?"
+msgstr "Wie viele seid ihr?"
+
+#: main/forms.py:72
+msgid ""
+"Cuéntanos el nivel de los jinetes, si hay niños, y el peso y altura "
+"aproximados. Así podremos asignar el caballo más adecuado para cada uno."
+msgstr ""
+"Erzähl uns vom Niveau der Reiter, ob Kinder dabei sind, sowie vom "
+"ungefähren Gewicht und der Körpergröße. So können wir jedem das passende "
+"Pferd zuweisen."
+
+#: main/forms.py:78
+msgid "La fecha no puede ser anterior a hoy."
+msgstr "Das Datum darf nicht in der Vergangenheit liegen."
+
+#: main/templates/main/about.html:5
+msgid "Rutas a caballo en Tarifa | Quiénes somos en Aventura Ecuestre"
+msgstr "Reitausflüge in Tarifa | Über uns bei Aventura Ecuestre"
+
+#: main/templates/main/about.html:6
+msgid ""
+"Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. "
+"Descubre a la guía perfecta para tu experiencia a caballo."
+msgstr ""
+"Entdecke unsere Reitausflüge entlang der Strände und Berge von Tarifa. "
+"Lerne die perfekte Führerin für dein Reiterlebnis kennen."
+
+#: main/templates/main/about.html:7
+msgid "Aventura Ecuestre - Rutas a Caballo en Tarifa con los mejores guías"
+msgstr "Aventura Ecuestre - Reitausflüge in Tarifa mit den besten Guides"
+
+#: main/templates/main/about.html:8
+msgid "Rutas a Caballo en Tarifa - Descubre quienes somos en Aventura Ecuestre"
+msgstr "Reitausflüge in Tarifa - Lerne uns bei Aventura Ecuestre kennen"
+
+#: main/templates/main/about.html:15
+msgid "Jinetes y caballos paseando por la orilla de la playa"
+msgstr "Reiter und Pferde spazieren am Strand entlang"
+
+#: main/templates/main/about.html:35 main/templates/main/activities.html:23
+#: main/templates/main/contact.html:25 main/templates/main/partials/nav.html:17
+msgid "INICIO"
+msgstr "START"
+
+#: main/templates/main/about.html:35 main/templates/main/partials/nav.html:20
+msgid "QUIÉNES SOMOS"
+msgstr "ÜBER UNS"
+
+#: main/templates/main/about.html:47
+msgid ""
+"Detrás de cada ruta hay una\n"
+"                <i><b class=\"\n"
+"                    text-(--color-luz)\n"
+"                    \">\n"
+"                    historia real\n"
+"                </b></i>"
+msgstr ""
+"Hinter jedem Ausritt steckt eine\n"
+"                <i><b class=\"\n"
+"                    text-(--color-luz)\n"
+"                    \">\n"
+"                    wahre Geschichte\n"
+"                </b></i>"
+
+#: main/templates/main/about.html:57
+msgid ""
+"Aventura Ecuestre no es una empresa de turismo al uso. Es el proyecto de "
+"vida de Carolina — una mujer enamorada de los caballos y del entorno "
+"privilegiado que comparten."
+msgstr ""
+"Aventura Ecuestre ist kein gewöhnliches Tourismusunternehmen. Es ist "
+"Carolinas Lebensprojekt — eine Frau, die Pferde und die privilegierte "
+"Umgebung liebt, die sie miteinander teilen."
+
+#: main/templates/main/about.html:81
+msgid "Carolina en la playa con sus caballos"
+msgstr "Carolina am Strand mit ihren Pferden"
+
+#: main/templates/main/about.html:119
+msgid "GUÍA CERTIFICADA  ·  PROPIETARIA"
+msgstr "ZERTIFIZIERTE FÜHRERIN  ·  INHABERIN"
+
+#: main/templates/main/about.html:125
+msgid "Técnico deportivo de equitación - Nivel 1"
+msgstr "Staatlich geprüfte Reitsporttechnikerin - Stufe 1"
+
+#: main/templates/main/about.html:147
+msgid "LA PERSONA DETRÁS DEL PROYECTO"
+msgstr "DIE PERSON HINTER DEM PROJEKT"
+
+#: main/templates/main/about.html:159
+msgid "Carolina: guía, propietaria y alma de Aventura Ecuestre"
+msgstr "Carolina: Führerin, Inhaberin und Seele von Aventura Ecuestre"
+
+#: main/templates/main/about.html:166
+msgid ""
+"Tarifa llegó a Carolina y ya no la soltó. Desde siempre sintió una conexión "
+"especial con los caballos y con los animales en general — una empatía que "
+"con los años se convirtió en vocación, oficio y forma de vida."
+msgstr ""
+"Tarifa hat Carolina gefunden und nie wieder losgelassen. Sie spürte schon "
+"immer eine besondere Verbindung zu Pferden und Tieren im Allgemeinen — "
+"eine Empathie, die im Laufe der Jahre zu Berufung, Beruf und Lebensweise "
+"wurde."
+
+#: main/templates/main/about.html:172
+msgid ""
+"Trabajó como guía ecuestre en distintos rincones de la zona hasta que llegó "
+"la oportunidad que lo cambió todo: tomar las riendas de Aventura Ecuestre y "
+"convertirlo en su propio proyecto. Su mayor sueño hecho realidad — una "
+"manada a la que cuida con todo su amor y un trabajo que no siente como "
+"trabajo."
+msgstr ""
+"Sie arbeitete als Reitführerin an verschiedenen Orten der Region, bis sich "
+"die Gelegenheit bot, die alles veränderte: die Zügel von Aventura Ecuestre "
+"zu übernehmen und es zu ihrem eigenen Projekt zu machen. Ihr größter Traum "
+"wurde wahr — eine Herde, die sie mit ganzer Liebe pflegt, und eine Arbeit, "
+"die sich nicht wie Arbeit anfühlt."
+
+#: main/templates/main/about.html:197
+msgid ""
+"Siempre supe que quería dedicarme a esto por completo. Tener mi propia "
+"manada, conocer a cada caballo por su nombre y su carácter, y llevar a la "
+"gente a descubrir Tarifa desde su lomo — eso es todo lo que necesito."
+msgstr ""
+"Ich wusste immer, dass ich mich dem voll und ganz widmen wollte. Meine "
+"eigene Herde zu haben, jedes Pferd bei Namen und Charakter zu kennen und "
+"Menschen dabei zu begleiten, Tarifa vom Pferderücken aus zu entdecken — "
+"mehr brauche ich nicht."
+
+#: main/templates/main/about.html:203
+msgid "CAROLINA  ·  GUÍA Y PROPIETARIA DE AVENTURA ECUESTRE"
+msgstr "CAROLINA  ·  FÜHRERIN UND INHABERIN VON AVENTURA ECUESTRE"
+
+#: main/templates/main/about.html:234
+msgid "Trato personal"
+msgstr "Persönliche Betreuung"
+
+#: main/templates/main/about.html:235
+msgid ""
+"Carol guía cada salida en persona. Conoce a sus caballos y selecciona el más "
+"adecuado para cada jinete. Grupos de máximo 8 personas"
+msgstr ""
+"Carol begleitet jeden Ausritt persönlich. Sie kennt ihre Pferde und wählt "
+"das passende für jeden Reiter aus. Gruppen von maximal 8 Personen"
+
+#: main/templates/main/about.html:258 main/templates/main/home.html:182
+msgid "Doma natural"
+msgstr "Natürliches Reiten"
+
+#: main/templates/main/about.html:259
+msgid ""
+"Interesada en la doma natural, trabaja desde el respeto y el vínculo. Sus "
+"caballos viven en semilibertad —  no en boxes. El bienestar animal no es un "
+"eslogan, es un día a día. "
+msgstr ""
+"Sie interessiert sich für natürliches Reiten und arbeitet auf Basis von "
+"Respekt und Verbindung. Ihre Pferde leben in Halbfreiheit — nicht in "
+"Boxen. Tierwohl ist kein Slogan, sondern gelebter Alltag."
+
+#: main/templates/main/about.html:280
+msgid "Territorio vivido"
+msgstr "Vertrautes Terrain"
+
+#: main/templates/main/about.html:281
+msgid ""
+"Casi toda una vida en Tarifa. Ella no solo conoce las rutas —  conoce la luz "
+"de cada hora, el comportamiento del viento y los rincones que no salen en "
+"ningún mapa."
+msgstr ""
+"Fast ein ganzes Leben in Tarifa. Sie kennt nicht nur die Wege — sie kennt "
+"das Licht zu jeder Tageszeit, das Verhalten des Windes und die Winkel, die "
+"auf keiner Karte zu finden sind."
+
+#: main/templates/main/about.html:289
+msgid "Caballos en el prado"
+msgstr "Pferde auf der Weide"
+
+#: main/templates/main/about.html:305
+msgid "LA MANADA"
+msgstr "DIE HERDE"
+
+#: main/templates/main/about.html:316
+msgid "Caballos cuidados con amor, cada uno con su historia"
+msgstr "Mit Liebe gepflegte Pferde, jedes mit seiner eigenen Geschichte"
+
+#: main/templates/main/about.html:325
+msgid ""
+"Carol conoce a cada uno de sus caballos por su nombre, su historia y sus "
+"manías. Cuando llega un jinete, sabe qué caballo va a conectar mejor con él. "
+"Porque su manada no es el medio para trabajar — es la razón por la que "
+"trabaja."
+msgstr ""
+"Carol kennt jedes ihrer Pferde beim Namen, seine Geschichte und seine "
+"Eigenheiten. Wenn ein Reiter ankommt, weiß sie, welches Pferd am besten zu "
+"ihm passt. Denn ihre Herde ist nicht das Mittel zum Arbeiten — sie ist der "
+"Grund, warum sie arbeitet."
+
+#: main/templates/main/about.html:342
+msgid "PURA RAZA ESPAÑOLA"
+msgstr "REINE SPANISCHE RASSE"
+
+#: main/templates/main/about.html:352
+msgid "HISPANO-ÁRABE"
+msgstr "HISPANO-ARABER"
+
+#: main/templates/main/about.html:362
+msgid "HISPANO-BRETÓN"
+msgstr "HISPANO-BRETONE"
+
+#: main/templates/main/about.html:372
+msgid "CRUZADOS"
+msgstr "KREUZUNGEN"
+
+#: main/templates/main/about.html:389
+msgid "Siente la libertad"
+msgstr "Spüre die Freiheit"
+
+#: main/templates/main/about.html:395
+msgid "Reserva tu experiencia y ven a Tarifa"
+msgstr "Buche dein Erlebnis und komm nach Tarifa"
+
+#: main/templates/main/about.html:413
+msgid "RESERVAR AHORA"
+msgstr "JETZT BUCHEN"
+
+#: main/templates/main/activities.html:5
+msgid ""
+"Rutas a caballo en Tarifa | Actividades que encuentras en Aventura Ecuestre"
+msgstr ""
+"Reitausflüge in Tarifa | Aktivitäten bei Aventura Ecuestre"
+
+#: main/templates/main/activities.html:6
+msgid ""
+"Elige entre las distintas rutas a caballo por las playas y montañas de "
+"Tarifa. Para todos los niveles, guiadas por expertos en doma natural, "
+"tenemos la experiencia perfecta para ti."
+msgstr ""
+"Wähle aus unseren verschiedenen Reitausflügen entlang der Strände und "
+"Berge von Tarifa. Für alle Niveaus, geführt von Experten für natürliches "
+"Reiten, haben wir das perfekte Erlebnis für dich."
+
+#: main/templates/main/activities.html:8 main/templates/main/home.html:7
+msgid "Aventura Ecuestre - Las mejores rutas a caballo en Tarifa"
+msgstr "Aventura Ecuestre - Die besten Reitausflüge in Tarifa"
+
+#: main/templates/main/activities.html:9
+msgid "Hemos diseñado las mejores rutas para una experiencia inovidable"
+msgstr "Wir haben die besten Ausflüge für ein unvergessliches Erlebnis gestaltet"
+
+#: main/templates/main/activities.html:23
+#: main/templates/main/partials/nav.html:23
+msgid "ACTIVIDADES"
+msgstr "AKTIVITÄTEN"
+
+#: main/templates/main/activities.html:34
+msgid ""
+"Elige tu <i><b class=\"\n"
+"                text-(--color-luz)\n"
+"\n"
+"                \">aventura a caballo\n"
+"            </b></i>"
+msgstr ""
+"Wähle dein <i><b class=\"\n"
+"                text-(--color-luz)\n"
+"\n"
+"                \">Reitabenteuer\n"
+"            </b></i>"
+
+#: main/templates/main/activities.html:47
+msgid ""
+"Hemos diseñado diferentes rutas para adaptarnos a tus deseos y nivel de "
+"experiencia. Todos nuestros servicios incluyen guía experta, equipo de "
+"seguridad y un caballo asignado específicamente para ti."
+msgstr ""
+"Wir haben verschiedene Ausflüge gestaltet, die sich an deine Wünsche und "
+"dein Erfahrungsniveau anpassen. Alle unsere Angebote beinhalten eine "
+"erfahrene Führung, Sicherheitsausrüstung und ein Pferd, das speziell für "
+"dich ausgewählt wird."
+
+#: main/templates/main/activities.html:77
+msgid "Incluido"
+msgstr "Inklusive"
+
+#: main/templates/main/activities.html:84
+msgid "Guía · Casco"
+msgstr "Führung · Helm"
+
+#: main/templates/main/activities.html:93
+msgid "Idiomas"
+msgstr "Sprachen"
+
+#: main/templates/main/activities.html:99
+msgid "Español · English"
+msgstr "Spanisch · Englisch"
+
+#: main/templates/main/activities.html:107
+msgid "Grupos"
+msgstr "Gruppen"
+
+#: main/templates/main/activities.html:112
+msgid "Máximo 8 personas"
+msgstr "Maximal 8 Personen"
+
+#: main/templates/main/activities.html:120
+msgid "Cancelación"
+msgstr "Stornierung"
+
+#: main/templates/main/activities.html:126
+msgid "Gratuita 24h antes"
+msgstr "Kostenlos bis 24 Std. vorher"
+
+#: main/templates/main/activities.html:142
+msgid ""
+"Cabalgar no es un juego — requiere cierta predisposición, equilibrio y "
+"capacidad de reacción. Por eso, los aires más rápidos como <b>trote</b> y "
+"<b>galope</b> siempre se harán con seguridad bajo la supervisión y las "
+"indicaciones del guía. Tu seguridad y la de los animales siempre van primero."
+msgstr ""
+"Reiten ist kein Spiel — es erfordert eine gewisse Veranlagung, "
+"Gleichgewicht und Reaktionsfähigkeit. Deshalb werden schnellere Gangarten "
+"wie <b>Trab</b> und <b>Galopp</b> immer sicher und unter Aufsicht und "
+"Anweisung der Führung durchgeführt. Deine Sicherheit und die der Tiere "
+"stehen immer an erster Stelle."
+
+#: main/templates/main/activities.html:166
+msgid "RUTAS ECUESTRES"
+msgstr "REITAUSFLÜGE"
+
+#: main/templates/main/activities.html:173
+msgid ""
+"Desde la emoción de la costa atlántica hasta la serenidad del bosque "
+"mediterráneo — tenemos la aventura perfecta esperándote."
+msgstr ""
+"Von der Aufregung der Atlantikküste bis zur Ruhe des Mittelmeerwaldes — "
+"das perfekte Abenteuer wartet auf dich."
+
+#: main/templates/main/activities.html:218
+msgid "PACKS VACACIONALES"
+msgstr "URLAUBSPAKETE"
+
+#: main/templates/main/activities.html:224
+msgid ""
+"Para jinetes que quieren vivir Tarifa a caballo durante varios días. Elige "
+"tu ritmo."
+msgstr ""
+"Für Reiter, die Tarifa über mehrere Tage hinweg zu Pferd erleben möchten. "
+"Wähle dein eigenes Tempo."
+
+#: main/templates/main/activities.html:258
+msgid "SERVICIO ESPECIALIZADO"
+msgstr "SPEZIALISIERTER SERVICE"
+
+#: main/templates/main/activities.html:270
+msgid "Caballo pastando"
+msgstr "Weidendes Pferd"
+
+#: main/templates/main/activities.html:288
+msgid "SERVICIO DE PUPILAJE"
+msgstr "PFERDEPENSION"
+
+#: main/templates/main/activities.html:294
+msgid ""
+"El lugar ideal para ti y tu caballo. Paddocks individuales con sombra, "
+"siempre acompañado y con espacio para moverse."
+msgstr ""
+"Der ideale Ort für dich und dein Pferd. Individuelle, schattige Paddocks, "
+"immer in Gesellschaft und mit genug Platz zum Bewegen."
+
+#: main/templates/main/activities.html:300
+msgid "Alquiler del espacio individual"
+msgstr "Miete des individuellen Bereichs"
+
+#: main/templates/main/activities.html:304
+msgid "Limpieza diaria y agua continua"
+msgstr "Tägliche Reinigung und durchgehende Wasserversorgung"
+
+#: main/templates/main/activities.html:308
+msgid "Dos pistas de entrenamiento — circular y de grandes dimensiones"
+msgstr "Zwei Trainingsplätze — ein Roundpen und ein großer Reitplatz"
+
+#: main/templates/main/activities.html:312
+msgid "Hospedamos a tu caballo durante tus vacaciones"
+msgstr "Wir betreuen dein Pferd während deines Urlaubs"
+
+#: main/templates/main/activities.html:322
+msgid "Pregúntanos sin compromiso — adaptamos el servicio a tus necesidades."
+msgstr "Frag uns unverbindlich — wir passen den Service an deine Bedürfnisse an."
+
+#: main/templates/main/activities.html:344
+msgid "CONSULTAR DISPONIBILIDAD"
+msgstr "VERFÜGBARKEIT ANFRAGEN"
+
+#: main/templates/main/contact.html:6
+msgid "Rutas a caballo en Tarifa | Contacta con Aventura Ecuestre"
+msgstr "Reitausflüge in Tarifa | Kontaktiere Aventura Ecuestre"
+
+#: main/templates/main/contact.html:7
+msgid ""
+"Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. "
+"Excursiones para todos los niveles, guiadas por expertos en doma natural. "
+"Contactanos."
+msgstr ""
+"Entdecke unsere Reitausflüge entlang der Strände und Berge von Tarifa. "
+"Ausflüge für alle Niveaus, geführt von Experten für natürliches Reiten. "
+"Kontaktiere uns."
+
+#: main/templates/main/contact.html:8
+msgid "Aventura Ecuestre - Contacta con nosotros"
+msgstr "Aventura Ecuestre - Kontaktiere uns"
+
+#: main/templates/main/contact.html:9
+msgid "Déjate sorprender con las mejores rutas que hemos diseñado para ti"
+msgstr "Lass dich von den besten Ausflügen überraschen, die wir für dich gestaltet haben"
+
+#: main/templates/main/contact.html:25 main/templates/main/partials/nav.html:26
+msgid "CONTACTO"
+msgstr "KONTAKT"
+
+#: main/templates/main/contact.html:36
+msgid ""
+"Escríbenos o <i><b class=\"\n"
+"                text-(--color-luz)\">\n"
+"                llámanos\n"
+"            </b></i>"
+msgstr ""
+"Schreib uns oder <i><b class=\"\n"
+"                text-(--color-luz)\">\n"
+"                ruf uns an\n"
+"            </b></i>"
+
+#: main/templates/main/contact.html:41
+msgid ""
+"Respondemos en menos de 24 horas. Para reservas urgentes, escríbenos "
+"directamente al WhatsApp — solemos estar en el campo pero siempre "
+"contestamos los mensajes."
+msgstr ""
+"Wir antworten innerhalb von 24 Stunden. Für dringende Buchungen schreib "
+"uns direkt auf WhatsApp — wir sind oft im Feld unterwegs, beantworten aber "
+"immer alle Nachrichten."
+
+#: main/templates/main/contact.html:60
+msgid "FORMULARIO DE CONTACTO"
+msgstr "KONTAKTFORMULAR"
+
+#: main/templates/main/contact.html:62
+msgid "Reserva con al menos 24 horas de antelación."
+msgstr "Buche mindestens 24 Stunden im Voraus."
+
+#: main/templates/main/contact.html:76
+msgid "NOMBRE"
+msgstr "NAME"
+
+#: main/templates/main/contact.html:84 main/templates/main/contact.html:269
+msgid "EMAIL"
+msgstr "E-MAIL"
+
+#: main/templates/main/contact.html:92 main/templates/main/contact.html:257
+msgid "TELÉFONO"
+msgstr "TELEFON"
+
+#: main/templates/main/contact.html:105
+msgid "IDIOMA"
+msgstr "SPRACHE"
+
+#: main/templates/main/contact.html:113
+msgid "ACTIVIDAD DE INTERÉS"
+msgstr "GEWÜNSCHTE AKTIVITÄT"
+
+#: main/templates/main/contact.html:121
+msgid "FECHA PREFERIDA"
+msgstr "GEWÜNSCHTES DATUM"
+
+#: main/templates/main/contact.html:134
+msgid "NÚMERO DE PERSONAS"
+msgstr "ANZAHL DER PERSONEN"
+
+#: main/templates/main/contact.html:142
+msgid "MENSAJE"
+msgstr "NACHRICHT"
+
+#: main/templates/main/contact.html:161
+msgid "ENVIAR CONSULTA"
+msgstr "ANFRAGE SENDEN"
+
+#: main/templates/main/contact.html:164
+msgid ""
+"Al enviar aceptas nuestra política de privacidad. No compartimos tus datos "
+"con terceros."
+msgstr ""
+"Mit dem Absenden akzeptierst du unsere Datenschutzrichtlinie. Wir geben "
+"deine Daten nicht an Dritte weiter."
+
+#: main/templates/main/contact.html:178
+msgid "No hemos podido enviar tu mensaje"
+msgstr "Wir konnten deine Nachricht nicht senden"
+
+#: main/templates/main/contact.html:181
+msgid ""
+"Ha ocurrido un problema al enviar tu consulta. Por favor, escríbenos "
+"directamente a"
+msgstr ""
+"Beim Senden deiner Anfrage ist ein Problem aufgetreten. Bitte schreib uns "
+"direkt an"
+
+#: main/templates/main/contact.html:183
+msgid "o llámanos al"
+msgstr "oder ruf uns an unter"
+
+#: main/templates/main/contact.html:187
+msgid "ENTENDIDO"
+msgstr "VERSTANDEN"
+
+#: main/templates/main/contact.html:221
+msgid "SALIDAS DIARIAS"
+msgstr "TÄGLICHE ABFAHRTEN"
+
+#: main/templates/main/contact.html:222
+msgid "horario según la estación"
+msgstr "Uhrzeiten je nach Saison"
+
+#: main/templates/main/contact.html:226
+msgid "RESPUESTA"
+msgstr "ANTWORTZEIT"
+
+#: main/templates/main/contact.html:227
+msgid "Menos de 24 horas"
+msgstr "Unter 24 Stunden"
+
+#: main/templates/main/contact.html:245
+msgid "DIRECCIÓN"
+msgstr "ADRESSE"
+
+#: main/templates/main/contact.html:247
+msgid "Carretera N-340 km 78<br>Frente al Camping Tarifa, 11380 Cádiz"
+msgstr "Landstraße N-340, km 78<br>Gegenüber Camping Tarifa, 11380 Cádiz"
+
+#: main/templates/main/contacto_gracias.html:4
+msgid ""
+"Rutas a caballo en Tarifa | Respondemos en el menor tiempo posible. Aventura "
+"Ecuestre"
+msgstr ""
+"Reitausflüge in Tarifa | Wir antworten so schnell wie möglich. Aventura "
+"Ecuestre"
+
+#: main/templates/main/contacto_gracias.html:5 main/templates/main/home.html:6
+msgid ""
+"Descubre nuestras rutas a caballo por las playas y montañas de Tarifa. "
+"Excursiones para todos los niveles, guiadas por expertos en doma natural."
+msgstr ""
+"Entdecke unsere Reitausflüge entlang der Strände und Berge von Tarifa. "
+"Ausflüge für alle Niveaus, geführt von Experten für natürliches Reiten."
+
+#: main/templates/main/contacto_gracias.html:6
+msgid "Aventura Ecuestre - Confirmación de contacto"
+msgstr "Aventura Ecuestre - Kontaktbestätigung"
+
+#: main/templates/main/contacto_gracias.html:7
+msgid "Respondemos en el menor plazo posible"
+msgstr "Wir antworten so schnell wie möglich"
+
+#: main/templates/main/contacto_gracias.html:40
+msgid "¡Mensaje enviado!"
+msgstr "Nachricht gesendet!"
+
+#: main/templates/main/contacto_gracias.html:48
+msgid ""
+"Gracias por ponerte en contacto con nosotros. Carol revisará tu consulta y "
+"te responderá en breve."
+msgstr ""
+"Danke, dass du dich mit uns in Verbindung gesetzt hast. Carol wird deine "
+"Anfrage prüfen und sich in Kürze bei dir melden."
+
+#: main/templates/main/contacto_gracias.html:71
+msgid "VOLVER AL INICIO"
+msgstr "ZURÜCK ZUR STARTSEITE"
+
+#: main/templates/main/home.html:5
+msgid "Rutas a caballo en Tarifa | Aventura Ecuestre"
+msgstr "Reitausflüge in Tarifa | Aventura Ecuestre"
+
+#: main/templates/main/home.html:8
+msgid "Déjate enamorar por una experiencia única"
+msgstr "Lass dich von einem einzigartigen Erlebnis verzaubern"
+
+#: main/templates/main/home.html:24
+msgid "Carolina con sus caballos Trece y Levante"
+msgstr "Carolina mit ihren Pferden Trece und Levante"
+
+#: main/templates/main/home.html:64
+msgid "Tarifa"
+msgstr "Tarifa"
+
+#: main/templates/main/home.html:91
+msgid ""
+"<span class=\"\n"
+"                block\n"
+"\n"
+"\n"
+"                \">Cabalga libre </span><span>en la <b class=\"text-(--color-"
+"arena) text-center\">Costa de la Luz</b></span>"
+msgstr ""
+"<span class=\"\n"
+"                block\n"
+"\n"
+"\n"
+"                \">Reite frei </span><span>an der <b class=\"text-(--color-"
+"arena) text-center\">Costa de la Luz</b></span>"
+
+#: main/templates/main/home.html:103
+msgid ""
+"Paseos a caballo por las playas más salvajes de Andalucía, con vistas al "
+"continente africano."
+msgstr ""
+"Reitausflüge entlang der wildesten Strände Andalusiens, mit Blick auf den "
+"afrikanischen Kontinent."
+
+#: main/templates/main/home.html:130
+#: main/templates/main/partials/packs/card-pack1.html:86
+#: main/templates/main/partials/packs/card-pack2.html:88
+#: main/templates/main/partials/rutas/card-ruta1.html:89
+#: main/templates/main/partials/rutas/card-ruta2.html:87
+#: main/templates/main/partials/rutas/card-ruta3.html:70
+#: main/templates/main/partials/rutas/card-ruta4.html:72
+#: main/templates/main/partials/rutas/card-ruta5.html:69
+msgid "RESERVAR EXPERIENCIA"
+msgstr "ERLEBNIS BUCHEN"
+
+#: main/templates/main/home.html:148
+msgid "VER ACTIVIDADES"
+msgstr "AKTIVITÄTEN ANSEHEN"
+
+#: main/templates/main/home.html:172
+msgid "AÑOS DE EXPERIENCIA"
+msgstr "JAHRE ERFAHRUNG"
+
+#: main/templates/main/home.html:187
+msgid "BIENESTAR ANIMAL"
+msgstr "TIERWOHL"
+
+#: main/templates/main/home.html:198
+msgid "Todos los niveles"
+msgstr "Alle Niveaus"
+
+#: main/templates/main/home.html:203
+msgid "SIN EXPERIENCIA PREVIA"
+msgstr "KEINE VORKENNTNISSE NÖTIG"
+
+#: main/templates/main/home.html:215
+msgid "NUESTRAS RUTAS"
+msgstr "UNSERE AUSFLÜGE"
+
+#: main/templates/main/home.html:227
+msgid "Jinete y caballo paseando por la playa durante el atardecer"
+msgstr "Reiter und Pferd spazieren bei Sonnenuntergang am Strand entlang"
+
+#: main/templates/main/home.html:245
+msgid "MÁS POPULAR"
+msgstr "AM BELIEBTESTEN"
+
+#: main/templates/main/home.html:254
+msgid "Rutas ecuestres"
+msgstr "Reitausflüge"
+
+#: main/templates/main/home.html:262
+msgid ""
+"Diseñadas para todos las edades y niveles. La experiencia más demandada."
+msgstr ""
+"Konzipiert für alle Altersgruppen und Niveaus. Unser gefragtestes Erlebnis."
+
+#: main/templates/main/home.html:265 main/templates/main/home.html:316
+#: main/templates/main/home.html:369
+msgid "Ver más"
+msgstr "Mehr erfahren"
+
+#: main/templates/main/home.html:277
+msgid "Jinete abrazada al caballo observando el atardecer"
+msgstr "Reiterin umarmt ihr Pferd beim Betrachten des Sonnenuntergangs"
+
+#: main/templates/main/home.html:295
+msgid "NATURALEZA"
+msgstr "NATUR"
+
+#: main/templates/main/home.html:305
+msgid "Packs Vacacionales"
+msgstr "Urlaubspakete"
+
+#: main/templates/main/home.html:313
+msgid "Senderos sombreados por el Parque Natural del Estrecho."
+msgstr "Schattige Wege durch den Naturpark Estrecho."
+
+#: main/templates/main/home.html:329
+msgid "Caballo tumbado en el prado"
+msgstr "Liegendes Pferd auf der Weide"
+
+#: main/templates/main/home.html:348
+msgid "EXCLUSIVO"
+msgstr "EXKLUSIV"
+
+#: main/templates/main/home.html:366
+msgid ""
+"El lugar perfecto para ti y tu caballo. Paddocks individuales con sombra, "
+"siempre acompañado y con espacio para moverse."
+msgstr ""
+"Der perfekte Ort für dich und dein Pferd. Individuelle, schattige "
+"Paddocks, immer in Gesellschaft und mit genug Platz zum Bewegen."
+
+#: main/templates/main/home.html:390
+msgid ""
+"Nuestros caballos viven libres en el campo. Creemos en el vínculo real, no "
+"en la doma forzada."
+msgstr ""
+"Unsere Pferde leben frei auf dem Land. Wir glauben an eine echte Bindung, "
+"nicht an erzwungenes Training."
+
+#: main/templates/main/home.html:394
+msgid "FILOSOFÍA · DOMA NATURAL · BIENESTAR ANIMAL"
+msgstr "PHILOSOPHIE · NATÜRLICHES REITEN · TIERWOHL"
+
+#: main/templates/main/layout.html:43
+msgid "Aventura Ecuestre - Rutas a caballo en Tarifa"
+msgstr "Aventura Ecuestre - Reitausflüge in Tarifa"
+
+#: main/templates/main/layout.html:44
+msgid ""
+"Excursiones y rutas a caballo en Tarifa, Cádiz. Paseos ecuestres por playa y "
+"montaña con guías profesionales."
+msgstr ""
+"Reitausflüge und Touren in Tarifa, Cádiz. Ausritte am Strand und in den "
+"Bergen mit professionellen Guides."
+
+#: main/templates/main/layout.html:50
+msgid "Aventura Ecuestre - Rutas a Caballo en Tarifa"
+msgstr "Aventura Ecuestre - Reitausflüge in Tarifa"
+
+#: main/templates/main/layout.html:51
+msgid "Excursiones a caballo por Tarifa, Cádiz"
+msgstr "Reitausflüge in Tarifa, Cádiz"
+
+#: main/templates/main/layout.html:61
+msgid "Excursiones y rutas a caballo en Tarifa, Cádiz"
+msgstr "Reitausflüge und Touren in Tarifa, Cádiz"
+
+#: main/templates/main/layout.html:117
+msgid "Contactar por WhatsApp"
+msgstr "Kontaktiere uns über WhatsApp"
+
+#: main/templates/main/partials/cookie_banner.html:2
+msgid "Configuración de cookies"
+msgstr "Cookie-Einstellungen"
+
+#: main/templates/main/partials/cookie_banner.html:15
+msgid "Tu privacidad, tu decisión"
+msgstr "Deine Privatsphäre, deine Entscheidung"
+
+#: main/templates/main/partials/cookie_banner.html:17
+msgid ""
+"Usamos cookies propias para que la web funcione y, si nos das tu permiso, "
+"cookies analíticas para entender cómo la visitas y mejorarla. Más info en "
+"nuestra"
+msgstr ""
+"Wir verwenden eigene Cookies, damit die Website funktioniert, und, sofern "
+"du uns dazu die Erlaubnis gibst, Analyse-Cookies, um zu verstehen, wie du "
+"sie nutzt, und sie zu verbessern. Mehr Infos in unserer"
+
+#: main/templates/main/partials/cookie_banner.html:18
+msgid "Política de Cookies"
+msgstr "Cookie-Richtlinie"
+
+#: main/templates/main/partials/cookie_banner.html:23
+msgid "Personalizar"
+msgstr "Anpassen"
+
+#: main/templates/main/partials/cookie_banner.html:25
+msgid "Rechazar"
+msgstr "Ablehnen"
+
+#: main/templates/main/partials/cookie_banner.html:26
+msgid "Aceptar todas"
+msgstr "Alle akzeptieren"
+
+#: main/templates/main/partials/cookie_banner.html:32
+msgid "Necesarias"
+msgstr "Notwendig"
+
+#: main/templates/main/partials/cookie_banner.html:33
+msgid "Imprescindibles para que la web funcione. Siempre activas."
+msgstr "Unverzichtbar für die Funktion der Website. Immer aktiv."
+
+#: main/templates/main/partials/cookie_banner.html:42
+msgid "Analíticas"
+msgstr "Analyse"
+
+#: main/templates/main/partials/cookie_banner.html:43
+msgid ""
+"Nos ayudan a saber qué páginas visitas y cómo mejorar la experiencia (Google "
+"Analytics)."
+msgstr ""
+"Sie helfen uns zu verstehen, welche Seiten du besuchst und wie wir dein "
+"Erlebnis verbessern können (Google Analytics)."
+
+#: main/templates/main/partials/cookie_banner.html:52
+msgid "Guardar preferencias"
+msgstr "Einstellungen speichern"
+
+#: main/templates/main/partials/footer.html:13
+msgid "Síguenos en Instagram"
+msgstr "Folge uns auf Instagram"
+
+#: main/templates/main/partials/footer.html:16
+msgid "Síguenos en Facebook"
+msgstr "Folge uns auf Facebook"
+
+#: main/templates/main/partials/footer.html:22
+msgid "Aviso legal"
+msgstr "Impressum"
+
+#: main/templates/main/partials/footer.html:25
+msgid "Política de privacidad"
+msgstr "Datenschutzrichtlinie"
+
+#: main/templates/main/partials/footer.html:28
+msgid "Política de cookies"
+msgstr "Cookie-Richtlinie"
+
+#: main/templates/main/partials/footer.html:32
+msgid ""
+"Copyright 2026 © All Right Reserved Aventura Ecuestre Tarifa. Hecho con "
+"mucho ♥️ por irenemendoza.dev"
+msgstr ""
+"Copyright 2026 © Alle Rechte vorbehalten Aventura Ecuestre Tarifa. Mit "
+"viel ♥️ gemacht von irenemendoza.dev"
+
+#: main/templates/main/partials/header.html:15
+msgid "Logo de Aventura Ecuestre | Inicio"
+msgstr "Aventura Ecuestre Logo | Startseite"
+
+#: main/templates/main/partials/header.html:20
+msgid "Abrir menú"
+msgstr "Menü öffnen"
+
+#: main/templates/main/partials/packs/card-pack1.html:11
+msgid "Jinete y caballo al atardecer"
+msgstr "Reiter und Pferd bei Sonnenuntergang"
+
+#: main/templates/main/partials/packs/card-pack1.html:29
+msgid "Relax Holidays"
+msgstr "Relax Holidays"
+
+#: main/templates/main/partials/packs/card-pack1.html:38
+msgid ""
+"Pack vacacional para jinetes que buscan conocer el paraíso tarifeño a "
+"caballo combinándolo con playas, gastronomía y el entorno natural. El ritmo "
+"perfecto para desconectar de verdad."
+msgstr ""
+"Ein Urlaubspaket für Reiter, die das Paradies von Tarifa zu Pferd "
+"entdecken möchten, kombiniert mit Stränden, Gastronomie und der "
+"natürlichen Umgebung. Das perfekte Tempo, um wirklich abzuschalten."
+
+#: main/templates/main/partials/packs/card-pack1.html:50
+msgid "10 horas en 5 días"
+msgstr "10 Stunden über 5 Tage"
+
+#: main/templates/main/partials/packs/card-pack1.html:64
+#: main/templates/main/partials/packs/card-pack2.html:66
+#: main/templates/main/partials/rutas/card-ruta2.html:65
+#: main/templates/main/partials/rutas/card-ruta3.html:48
+#: main/templates/main/partials/rutas/card-ruta4.html:50
+#: main/templates/main/partials/rutas/card-ruta5.html:47
+msgid "/persona"
+msgstr "/Person"
+
+#: main/templates/main/partials/packs/card-pack2.html:12
+msgid "Semana de vacaciones ecuestres en Tarifa"
+msgstr "Eine Woche Reiturlaub in Tarifa"
+
+#: main/templates/main/partials/packs/card-pack2.html:34
+msgid "AVANZADOS"
+msgstr "FORTGESCHRITTENE"
+
+#: main/templates/main/partials/packs/card-pack2.html:46
+msgid "Weekly Holidays"
+msgstr "Weekly Holidays"
+
+#: main/templates/main/partials/packs/card-pack2.html:54
+msgid ""
+"Para jinetes expertos. Conocerás los rincones más hermosos — las dunas, los "
+"senderos del Parque de los Alcornocales y los lugares más salvajes de "
+"nuestra naturaleza."
+msgstr ""
+"Für erfahrene Reiter. Du entdeckst die schönsten Orte — die Dünen, die "
+"Wege des Naturparks Los Alcornocales und die wildesten Ecken unserer "
+"Natur."
+
+#: main/templates/main/partials/packs/card-pack2.html:61
+msgid "3-4 horas en 5 días"
+msgstr "3-4 Stunden über 5 Tage"
+
+#: main/templates/main/partials/rutas/card-ruta1.html:12
+msgid "Niña con protecciones de seguridad a lomos de un pony"
+msgstr "Mädchen mit Sicherheitsausrüstung auf einem Pony"
+
+#: main/templates/main/partials/rutas/card-ruta1.html:34
+msgid "NIÑOS"
+msgstr "KINDER"
+
+#: main/templates/main/partials/rutas/card-ruta1.html:47
+msgid "Paseo en pony"
+msgstr "Ponyreiten"
+
+#: main/templates/main/partials/rutas/card-ruta1.html:55
+msgid ""
+"Dirigido a los más pequeños. Un primer encuentro mágico con el caballo por "
+"el pinar en un paseo tranquilo, seguro y lleno de ilusión."
+msgstr ""
+"Für die Kleinsten konzipiert. Eine magische erste Begegnung mit dem Pferd "
+"durch den Pinienwald, bei einem ruhigen, sicheren und wunderschönen "
+"Ausritt."
+
+#: main/templates/main/partials/rutas/card-ruta1.html:62
+msgid "30 min"
+msgstr "30 Min."
+
+#: main/templates/main/partials/rutas/card-ruta1.html:67
+msgid "/niño"
+msgstr "/Kind"
+
+#: main/templates/main/partials/rutas/card-ruta2.html:12
+msgid "Jinete principiante"
+msgstr "Anfänger-Reiter"
+
+#: main/templates/main/partials/rutas/card-ruta2.html:33
+msgid "PRINCIPIANTES"
+msgstr "ANFÄNGER"
+
+#: main/templates/main/partials/rutas/card-ruta2.html:46
+msgid "Iniciación a caballo"
+msgstr "Einführung ins Reiten"
+
+#: main/templates/main/partials/rutas/card-ruta2.html:53
+msgid ""
+"El punto de partida perfecto para quien nunca ha montado o lleva tiempo sin "
+"hacerlo. Sin prisas, sin presión — solo tú, tu caballo y el entorno natural "
+"de Tarifa."
+msgstr ""
+"Der perfekte Einstieg für alle, die noch nie geritten sind oder lange "
+"nicht mehr geritten sind. Ohne Eile, ohne Druck — nur du, dein Pferd und "
+"die Natur Tarifas."
+
+#: main/templates/main/partials/rutas/card-ruta2.html:60
+msgid "1 hora"
+msgstr "1 Std."
+
+#: main/templates/main/partials/rutas/card-ruta3.html:11
+msgid "Caballos parando para beber en el pinar"
+msgstr "Pferde machen im Pinienwald eine Trinkpause"
+
+#: main/templates/main/partials/rutas/card-ruta3.html:27
+msgid "Playa y montaña"
+msgstr "Strand und Berg"
+
+#: main/templates/main/partials/rutas/card-ruta3.html:36
+msgid ""
+"Desde la arena de la playa hasta los senderos de montaña. Paisaje doble — "
+"mar y cumbre — en una sola ruta."
+msgstr ""
+"Vom Sand des Strandes bis zu den Bergpfaden. Doppelte Landschaft — Meer "
+"und Gipfel — auf einem einzigen Ausritt."
+
+#: main/templates/main/partials/rutas/card-ruta3.html:43
+msgid "2 horas"
+msgstr "2 Std."
+
+#: main/templates/main/partials/rutas/card-ruta4.html:11
+msgid "Caballos paseando por la playa durante el atardecer"
+msgstr "Pferde spazieren bei Sonnenuntergang am Strand entlang"
+
+#: main/templates/main/partials/rutas/card-ruta4.html:29
+msgid "Punta Paloma"
+msgstr "Punta Paloma"
+
+#: main/templates/main/partials/rutas/card-ruta4.html:38
+msgid ""
+"Cruzamos la playa de Valdevaqueros hasta bordear la preciosa Duna de Punta "
+"Paloma por la costa. Mágica y maravillosa."
+msgstr ""
+"Wir überqueren den Strand von Valdevaqueros und umrunden die wunderschöne "
+"Düne von Punta Paloma entlang der Küste. Magisch und wunderbar."
+
+#: main/templates/main/partials/rutas/card-ruta4.html:45
+msgid "3 horas"
+msgstr "3 Std."
+
+#: main/templates/main/partials/rutas/card-ruta5.html:11
+msgid "Caballos pastando"
+msgstr "Weidende Pferde"
+
+#: main/templates/main/partials/rutas/card-ruta5.html:26
+msgid "Punta Paloma + Picnic"
+msgstr "Punta Paloma + Picknick"
+
+#: main/templates/main/partials/rutas/card-ruta5.html:35
+msgid ""
+"Nos adentramos en el interior del bosque de la Duna, paseamos por senderos "
+"de costa y hacemos picnic en el pinar."
+msgstr ""
+"Wir dringen tief in den Wald der Düne vor, reiten auf Küstenwegen und "
+"machen ein Picknick im Pinienwald."
+
+#: main/templates/main/partials/rutas/card-ruta5.html:42
+msgid "4 horas"
+msgstr "4 Std."
