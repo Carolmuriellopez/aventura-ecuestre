@@ -51,7 +51,7 @@
     <meta property="og:description" content="{% block og_description %}{% trans "Excursiones a caballo por Tarifa, Cádiz" %}{% endblock %}">
     <meta property="og:image" content="{% block og_image %}https://aventuraecuestre.com{% static 'main/images/atardecer.jpg' %}{% endblock %}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{% block og_url %}https://aventuraecuestre.com{% endblock %}">
+    <meta property="og:url" content="https://aventuraecuestre.com{{ request.path }}">
 
     <script type="application/ld+json">
         {
@@ -78,7 +78,7 @@
         "openingHours": "Mo-Su 09:00-18:00"
         }
     </script>
-    <link rel="canonical" href="{% block canonical %}https://aventuraecuestre.com{% endblock %}">
+    <link rel="canonical" href="https://aventuraecuestre.com{{ request.path }}">
     {% for code, path in hreflang_urls.items %}
         <link rel="alternate" hreflang="{{ code }}" href="https://aventuraecuestre.com{{ path }}">
     {% endfor %}
